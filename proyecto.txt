@@ -1,0 +1,2 @@
+Nuestra idea para el ejercicio uno fue "reecrear" el juego del dino de Google, pero esta vez, con colores.
+Una vez hecho make runQEMU, se pintara el fondo, los detalles, las nubes, cactus y el mismo dino.
