@@ -35,16 +35,18 @@ InfLoop:
 
 sleep:
    
-    SUB SP, SP, #16
-    STR X0, [SP]
-    STR X30, [SP, #8]
-    mov x0, 0x0f0F0000
-loop_sleep:
-    sub x0,x0,1
-    cbnz x13, loop_sleep
+    mov x29, x30
+    add x25, xzr, xzr
+    add x25, x25, #0x0FF
+    lsl x25, x25, #10
     
-    LDR X30, [SP, #8]
-    LDR X0, [SP]
-    ADD SP, SP, #16
+loop_sleep:
+    cbz x25, loop_end
+    ldur x26, [sp,#0]
+    stur x26, [sp,#0]
+    sub x25, x25, #1
+    b loop_sleep
+loop_end:
+    mov x30, x29
 
     ret
