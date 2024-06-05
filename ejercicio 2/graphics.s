@@ -8,9 +8,12 @@
 // Función para dibujar un pixel en la pantalla
 // Uso x1 para la coordenada x, x2 para la coordenada y y w10 para el color 
 draw_pixel:
-    SUB SP, SP, #16
+    SUB SP, SP, #40
     STR X1, [SP]
     STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X30, [SP, #32]
 
     mov x19, SCREEN_WIDTH
     mul x19, x2, x19       // x19 = y * SCREEN_WIDTH
@@ -18,10 +21,14 @@ draw_pixel:
     lsl x19, x19, #2       // x19 = 4 * (x + y * SCREEN_WIDTH)
     add x19, x0, x19       // x19 = Dirección de inicio + 4 * (x + y * SCREEN_WIDTH)
     str w10, [x19]         // Dibujar el pixel y pintarlo del color de w10
+   
+    LDR X30, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #40
     
-    LDR X2, [SP, #8]     
-    LDR X1, [SP]      
-    ADD SP, SP, #16    
     ret                    // Fin de la función
 
 
@@ -40,10 +47,20 @@ draw_line_straight:
     STR X30, [SP, #32]
 
     cmp x1, x3              
-    b.eq draw_vertical_line  // Si son iguales, es una línea vertical
+    b.ne not_vertical
+    bl draw_vertical_line  // Si son iguales, es una línea vertical
+    b not_horizontal
 
-    cmp x2, x4              
-    b.eq draw_horizontal_line // Si son iguales, es una línea horizontal
+not_vertical:
+    cmp x2, x4
+    b.ne not_horizontal               
+    bl draw_horizontal_line // Si son iguales, es una línea horizontal
+
+not_horizontal:
+    b.ne exit
+   
+
+exit:
 
     LDR X30, [SP, #32]
     LDR X4, [SP, #24]
@@ -119,7 +136,9 @@ draw_rectangle:
     STR X2, [SP, #8]
     STR X3, [SP, #16]
     STR X4, [SP, #24]
+    STR X9, [SP, #32]
     STR X30, [SP, #40]
+    
 
     // Similar a la función draw_line debemos verificar que el primer punto sea el superior izquierdo y el segundo el inferior derecho
 
@@ -154,6 +173,7 @@ up:
 
 stop_draw:
     LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
     LDR X4, [SP, #24]
     LDR X3, [SP, #16]
     LDR X2, [SP, #8]
