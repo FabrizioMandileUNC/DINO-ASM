@@ -7,6 +7,14366 @@
 .include "graphics.s"
 .include "draws.s"
 
+
+you:
+    //----------YOU-----------------
+    // Y
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1,298
+    mov x2, 93+30    
+    mov x3, 303
+    mov x4, 110+30
+    ldr x10, negro
+    bl draw_rectangle
+
+    mov x1,322
+    mov x2, 93+30    
+    mov x3, 326
+    mov x4, 110+30
+    ldr x10, negro
+    bl draw_rectangle
+
+    mov x1,304
+    mov x2, 111+30
+    mov x3, 321
+    mov x4, 119+30
+    ldr x10, negro
+    bl draw_rectangle
+
+    mov x1,310
+    mov x2, 120+30
+    mov x3, 315
+    mov x4, 138+30
+    ldr x10, negro
+    bl draw_rectangle
+
+    //---O---------------------------------------------
+
+    mov x1,339
+    mov x2, 93+30    
+    mov x3, 350
+    mov x4, 101+30
+    ldr x10, negro
+    bl draw_rectangle
+
+    mov x1,333
+    mov x2, 102+30
+    mov x3, 338
+    mov x4, 129+30
+    ldr x10, negro
+    bl draw_rectangle
+
+    mov x1,351
+    mov x2, 102+30
+    mov x3, 356
+    mov x4, 129+30
+    ldr x10, negro
+    bl draw_rectangle
+
+    mov x1,339
+    mov x2, 130+30
+    mov x3, 350
+    mov x4, 138+30
+    ldr x10, negro
+    bl draw_rectangle
+
+    //---U----------------------------
+
+    mov x1,363
+    mov x2, 93+30    
+    mov x3, 367
+    mov x4, 129+30
+    ldr x10, negro
+    bl draw_rectangle
+
+    mov x1,380
+    mov x2, 93+30    
+    mov x3, 385
+    mov x4, 129+30
+    ldr x10, negro
+    bl draw_rectangle
+
+    mov x1,368
+    mov x2, 130+30
+    mov x3, 379
+    mov x4, 138+30
+    ldr x10, negro
+    bl draw_rectangle
+
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+    ret
+
+win: 
+
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+    //W
+    mov X1, 302
+    mov x2, 152+30
+    mov x3, 307
+    mov x4, 197+30
+    ldr x10, negro
+    bl draw_rectangle
+
+    mov X1, 308
+    mov x2, 179+30
+    mov x3, 313
+    mov x4, 188+30
+    ldr x10, negro
+    bl draw_rectangle
+
+    mov X1, 314
+    mov x2, 170+30
+    mov x3, 319
+    mov x4, 178+30
+    ldr x10, negro
+    bl draw_rectangle
+
+    mov X1, 320
+    mov x2, 179+30
+    mov x3, 325
+    mov x4, 188+30
+    ldr x10, negro
+    bl draw_rectangle
+
+    mov X1, 326
+    mov x2, 152+30
+    mov x3, 330
+    mov x4, 197+30
+    ldr x10, negro
+    bl draw_rectangle
+    //I
+    mov X1, 337
+    mov x2, 152+30
+    mov x3, 354
+    mov x4, 160+30
+    ldr x10, negro
+    bl draw_rectangle
+
+    mov X1, 343
+    mov x2, 161+30
+    mov x3, 348
+    mov x4, 188+30
+    ldr x10, negro
+    bl draw_rectangle
+
+    mov X1, 337
+    mov x2, 189+30
+    mov x3, 354
+    mov x4, 197+30
+    ldr x10, negro
+    bl draw_rectangle
+    //N
+    mov X1, 361
+    mov x2, 152+30
+    mov x3, 366
+    mov x4, 197+30
+    ldr x10, negro
+    bl draw_rectangle
+
+    mov X1, 367
+    mov x2, 161+30
+    mov x3, 371
+    mov x4, 169+30
+    ldr x10, negro
+    bl draw_rectangle
+
+    mov X1, 372
+    mov x2, 170+30
+    mov x3, 377
+    mov x4, 178+30
+    ldr x10, negro
+    bl draw_rectangle
+
+    mov X1, 378
+    mov x2, 152+30
+    mov x3, 383
+    mov x4, 197+30
+    ldr x10, negro
+    bl draw_rectangle
+
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+    ret
+
+erase_you_win:
+    //----------YOU-----------------
+    // Y
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1,298
+    mov x2, 93+30    
+    mov x3, 303
+    mov x4, 110+30
+    ldr x10, cielo
+    bl draw_rectangle
+
+    mov x1,322
+    mov x2, 93+30    
+    mov x3, 326
+    mov x4, 110+30
+    ldr x10, cielo
+    bl draw_rectangle
+
+    mov x1,304
+    mov x2, 111+30
+    mov x3, 321
+    mov x4, 119+30
+    ldr x10, cielo
+    bl draw_rectangle
+
+    mov x1,310
+    mov x2, 120+30
+    mov x3, 315
+    mov x4, 138+30
+    ldr x10, cielo
+    bl draw_rectangle
+
+    //---O---------------------------------------------
+
+    mov x1,339
+    mov x2, 93+30    
+    mov x3, 350
+    mov x4, 101+30
+    ldr x10, cielo
+    bl draw_rectangle
+
+    mov x1,333
+    mov x2, 102+30
+    mov x3, 338
+    mov x4, 129+30
+    ldr x10, cielo
+    bl draw_rectangle
+
+    mov x1,351
+    mov x2, 102+30
+    mov x3, 356
+    mov x4, 129+30
+    ldr x10, cielo
+    bl draw_rectangle
+
+    mov x1,339
+    mov x2, 130+30
+    mov x3, 350
+    mov x4, 138+30
+    ldr x10, cielo
+    bl draw_rectangle
+
+    //---U----------------------------
+
+    mov x1,363
+    mov x2, 93+30    
+    mov x3, 367
+    mov x4, 129+30
+    ldr x10, cielo
+    bl draw_rectangle
+
+    mov x1,380
+    mov x2, 93+30    
+    mov x3, 385
+    mov x4, 129+30
+    ldr x10, cielo
+    bl draw_rectangle
+
+    mov x1,368
+    mov x2, 130+30
+    mov x3, 379
+    mov x4, 138+30
+    ldr x10, cielo
+    bl draw_rectangle
+
+    //W
+    mov X1, 302
+    mov x2, 152+30
+    mov x3, 307
+    mov x4, 197+30
+    ldr x10, cielo
+    bl draw_rectangle
+
+    mov X1, 308
+    mov x2, 179+30
+    mov x3, 313
+    mov x4, 188+30
+    ldr x10, cielo
+    bl draw_rectangle
+
+    mov X1, 314
+    mov x2, 170+30
+    mov x3, 319
+    mov x4, 178+30
+    ldr x10, cielo
+    bl draw_rectangle
+
+    mov X1, 320
+    mov x2, 179+30
+    mov x3, 325
+    mov x4, 188+30
+    ldr x10, cielo
+    bl draw_rectangle
+
+    mov X1, 326
+    mov x2, 152+30
+    mov x3, 330
+    mov x4, 197+30
+    ldr x10, cielo
+    bl draw_rectangle
+    //I
+    mov X1, 337
+    mov x2, 152+30
+    mov x3, 354
+    mov x4, 160+30
+    ldr x10, cielo
+    bl draw_rectangle
+
+    mov X1, 343
+    mov x2, 161+30
+    mov x3, 348
+    mov x4, 188+30
+    ldr x10, cielo
+    bl draw_rectangle
+
+    mov X1, 337
+    mov x2, 189+30
+    mov x3, 354
+    mov x4, 197+30
+    ldr x10, cielo
+    bl draw_rectangle
+    //N
+    mov X1, 361
+    mov x2, 152+30
+    mov x3, 366
+    mov x4, 197+30
+    ldr x10, cielo
+    bl draw_rectangle
+
+    mov X1, 367
+    mov x2, 161+30
+    mov x3, 371
+    mov x4, 169+30
+    ldr x10, cielo
+    bl draw_rectangle
+
+    mov X1, 372
+    mov x2, 170+30
+    mov x3, 377
+    mov x4, 178+30
+    ldr x10, cielo
+    bl draw_rectangle
+
+    mov X1, 378
+    mov x2, 152+30
+    mov x3, 383
+    mov x4, 197+30
+    ldr x10, cielo
+    bl draw_rectangle
+
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+    ret
+
+
+erase_dino1:
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87        // Coordenada x inicial
+    mov x2, 288         // Coordenada y inicial
+    mov x3, 96         // Coordenada x final
+    mov x4, 288        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87        // Coordenada x inicial
+    mov x2, 287         // Coordenada y inicial
+    mov x3, 89         // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 86        // Coordenada x inicial
+    mov x2, 280         // Coordenada y inicial
+    mov x3, 86         // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 85        // Coordenada x inicial
+    mov x2, 277         // Coordenada y inicial
+    mov x3, 85         // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89        // Coordenada x inicial
+    mov x2, 280         // Coordenada y inicial
+    mov x3, 89         // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90        // Coordenada x inicial
+    mov x2, 278         // Coordenada y inicial
+    mov x3, 90         // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 91        // Coordenada x inicial
+    mov x2, 276         // Coordenada y inicial
+    mov x3, 91         // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82        // Coordenada x inicial
+    mov x2, 288         // Coordenada y inicial
+    mov x3, 72         // Coordenada x final
+    mov x4, 288        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 72        // Coordenada x inicial
+    mov x2, 287         // Coordenada y inicial
+    mov x3, 74         // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 74        // Coordenada x inicial
+    mov x2, 281         // Coordenada y inicial
+    mov x3, 74         // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 75        // Coordenada x inicial
+    mov x2, 280         // Coordenada y inicial
+    mov x3, 75         // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 76        // Coordenada x inicial
+    mov x2, 279         // Coordenada y inicial
+    mov x3, 76         // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 77        // Coordenada x inicial
+    mov x2, 276         // Coordenada y inicial
+    mov x3, 78         // Coordenada x final
+    mov x4, 276        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72        // Coordenada x inicial
+    mov x2, 275         // Coordenada y inicial
+    mov x3, 91         // Coordenada x final
+    mov x4, 255        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56        // Coordenada x inicial
+    mov x2, 243         // Coordenada y inicial
+    mov x3, 56         // Coordenada x final
+    mov x4, 258        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 57        // Coordenada x inicial
+    mov x2, 246         // Coordenada y inicial
+    mov x3, 57         // Coordenada x final
+    mov x4, 259        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 58        // Coordenada x inicial
+    mov x2, 247         // Coordenada y inicial
+    mov x3, 58         // Coordenada x final
+    mov x4, 260        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 59        // Coordenada x inicial
+    mov x2, 248         // Coordenada y inicial
+    mov x3, 59         // Coordenada x final
+    mov x4, 261        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 60        // Coordenada x inicial
+    mov x2, 249         // Coordenada y inicial
+    mov x3, 60         // Coordenada x final
+    mov x4, 262        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 61        // Coordenada x inicial
+    mov x2, 250         // Coordenada y inicial
+    mov x3, 61         // Coordenada x final
+    mov x4, 262        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 62        // Coordenada x inicial
+    mov x2, 251         // Coordenada y inicial
+    mov x3, 62         // Coordenada x final
+    mov x4, 263        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 63        // Coordenada x inicial
+    mov x2, 252         // Coordenada y inicial
+    mov x3, 63         // Coordenada x final
+    mov x4, 264        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 64        // Coordenada x inicial
+    mov x2, 253         // Coordenada y inicial
+    mov x3, 64         // Coordenada x final
+    mov x4, 265        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 65        // Coordenada x inicial
+    mov x2, 254         // Coordenada y inicial
+    mov x3, 65         // Coordenada x final
+    mov x4, 267        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 66        // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 66         // Coordenada x final
+    mov x4, 268        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 67        // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 67         // Coordenada x final
+    mov x4, 269        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 68        // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 68         // Coordenada x final
+    mov x4, 270        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 69        // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 69         // Coordenada x final
+    mov x4, 272        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 70        // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 70         // Coordenada x final
+    mov x4, 273        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 71        // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 71         // Coordenada x final
+    mov x4, 274        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91        // Coordenada x inicial
+    mov x2, 276         // Coordenada y inicial
+    mov x3, 91         // Coordenada x final
+    mov x4, 249        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 92        // Coordenada x inicial
+    mov x2, 274         // Coordenada y inicial
+    mov x3, 94         // Coordenada x final
+    mov x4, 249        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 95        // Coordenada x inicial
+    mov x2, 273         // Coordenada y inicial
+    mov x3, 95         // Coordenada x final
+    mov x4, 247        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 96        // Coordenada x inicial
+    mov x2, 271         // Coordenada y inicial
+    mov x3, 96         // Coordenada x final
+    mov x4, 248        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 97        // Coordenada x inicial
+    mov x2, 269         // Coordenada y inicial
+    mov x3, 97         // Coordenada x final
+    mov x4, 232        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 98        // Coordenada x inicial
+    mov x2, 268         // Coordenada y inicial
+    mov x3, 98         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 99        // Coordenada x inicial
+    mov x2, 267         // Coordenada y inicial
+    mov x3, 99         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 100        // Coordenada x inicial
+    mov x2, 265         // Coordenada y inicial
+    mov x3, 100         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101        // Coordenada x inicial
+    mov x2, 264         // Coordenada y inicial
+    mov x3, 101         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101        // Coordenada x inicial
+    mov x2, 264         // Coordenada y inicial
+    mov x3, 101         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 102        // Coordenada x inicial
+    mov x2, 262         // Coordenada y inicial
+    mov x3, 104         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 104
+    mov x2, 262
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95
+    mov x2, 247
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76        // Coordenada x inicial
+    mov x2, 254         // Coordenada y inicial
+    mov x3, 104         // Coordenada x final
+    mov x4, 254        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 81        // Coordenada x inicial
+    mov x2, 253         // Coordenada y inicial
+    mov x3, 104         // Coordenada x final
+    mov x4, 253        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87        // Coordenada x inicial
+    mov x2, 252         // Coordenada y inicial
+    mov x3, 104         // Coordenada x final
+    mov x4, 252        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 88        // Coordenada x inicial
+    mov x2, 251         // Coordenada y inicial
+    mov x3, 104         // Coordenada x final
+    mov x4, 251        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89        // Coordenada x inicial
+    mov x2, 250         // Coordenada y inicial
+    mov x3, 104         // Coordenada x final
+    mov x4, 250        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90        // Coordenada x inicial
+    mov x2, 249         // Coordenada y inicial
+    mov x3, 104         // Coordenada x final
+    mov x4, 249        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+    
+    mov x1, 96        
+    mov x2, 248 
+    ldr x10, cielo             
+    bl draw_pixel
+
+    mov x1, 105        // Coordenada x inicial
+    mov x2, 256         // Coordenada y inicial
+    mov x3, 112         // Coordenada x final
+    mov x4, 256        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 112        // Coordenada x inicial
+    mov x2, 257         // Coordenada y inicial
+    mov x3, 112         // Coordenada x final
+    mov x4, 260        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105        // Coordenada x inicial
+    mov x2, 248         // Coordenada y inicial
+    mov x3, 115         // Coordenada x final
+    mov x4, 248        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105        // Coordenada x inicial
+    mov x2, 247         // Coordenada y inicial
+    mov x3, 105         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 106        // Coordenada x inicial
+    mov x2, 244         // Coordenada y inicial
+    mov x3, 117         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 117        
+    mov x2, 231 
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102        // Coordenada x inicial
+    mov x2, 236         // Coordenada y inicial
+    mov x3, 103         // Coordenada x final
+    mov x4, 235        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+
+dino_walk1:
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +30       // Coordenada x inicial
+    mov x2, 282         // Coordenada y inicial
+    mov x3, 96 +30        // Coordenada x final
+    mov x4, 282        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +30       // Coordenada x inicial
+    mov x2, 281         // Coordenada y inicial
+    mov x3, 89 +30        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 86 +30       // Coordenada x inicial
+    mov x2, 280         // Coordenada y inicial
+    mov x3, 86 +30        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 85 +30       // Coordenada x inicial
+    mov x2, 277         // Coordenada y inicial
+    mov x3, 85 +30        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +30       // Coordenada x inicial
+    mov x2, 280         // Coordenada y inicial
+    mov x3, 89 +30        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +30       // Coordenada x inicial
+    mov x2, 278         // Coordenada y inicial
+    mov x3, 90 +30        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 91 +30       // Coordenada x inicial
+    mov x2, 276         // Coordenada y inicial
+    mov x3, 91 +30        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +30       // Coordenada x inicial
+    mov x2, 288         // Coordenada y inicial
+    mov x3, 72 +30        // Coordenada x final
+    mov x4, 288        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 72 +30       // Coordenada x inicial
+    mov x2, 287         // Coordenada y inicial
+    mov x3, 74 +30        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 74 +30       // Coordenada x inicial
+    mov x2, 281         // Coordenada y inicial
+    mov x3, 74 +30        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 75 +30       // Coordenada x inicial
+    mov x2, 280         // Coordenada y inicial
+    mov x3, 75 +30        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 76 +30       // Coordenada x inicial
+    mov x2, 279         // Coordenada y inicial
+    mov x3, 76 +30        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 77 +30       // Coordenada x inicial
+    mov x2, 276         // Coordenada y inicial
+    mov x3, 78 +30        // Coordenada x final
+    mov x4, 276        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +30       // Coordenada x inicial
+    mov x2, 275         // Coordenada y inicial
+    mov x3, 91 +30        // Coordenada x final
+    mov x4, 255        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +30       // Coordenada x inicial
+    mov x2, 243         // Coordenada y inicial
+    mov x3, 56 +30        // Coordenada x final
+    mov x4, 258        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 57 +30       // Coordenada x inicial
+    mov x2, 246         // Coordenada y inicial
+    mov x3, 57 +30        // Coordenada x final
+    mov x4, 259        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 58 +30       // Coordenada x inicial
+    mov x2, 247         // Coordenada y inicial
+    mov x3, 58 +30        // Coordenada x final
+    mov x4, 260        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 59 +30       // Coordenada x inicial
+    mov x2, 248         // Coordenada y inicial
+    mov x3, 59 +30        // Coordenada x final
+    mov x4, 261        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 60 +30       // Coordenada x inicial
+    mov x2, 249         // Coordenada y inicial
+    mov x3, 60 +30        // Coordenada x final
+    mov x4, 262        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 61 +30       // Coordenada x inicial
+    mov x2, 250         // Coordenada y inicial
+    mov x3, 61 +30        // Coordenada x final
+    mov x4, 262        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 62 +30       // Coordenada x inicial
+    mov x2, 251         // Coordenada y inicial
+    mov x3, 62 +30        // Coordenada x final
+    mov x4, 263        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 63 +30       // Coordenada x inicial
+    mov x2, 252         // Coordenada y inicial
+    mov x3, 63 +30        // Coordenada x final
+    mov x4, 264        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 64 +30       // Coordenada x inicial
+    mov x2, 253         // Coordenada y inicial
+    mov x3, 64 +30        // Coordenada x final
+    mov x4, 265        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 65 +30       // Coordenada x inicial
+    mov x2, 254         // Coordenada y inicial
+    mov x3, 65 +30        // Coordenada x final
+    mov x4, 267        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 66 +30       // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 66 +30        // Coordenada x final
+    mov x4, 268        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 67 +30       // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 67 +30        // Coordenada x final
+    mov x4, 269        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 68 +30       // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 68 +30        // Coordenada x final
+    mov x4, 270        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 69 +30       // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 69 +30        // Coordenada x final
+    mov x4, 272        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 70 +30       // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 70 +30        // Coordenada x final
+    mov x4, 273        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 71 +30       // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 71 +30        // Coordenada x final
+    mov x4, 274        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +30       // Coordenada x inicial
+    mov x2, 276         // Coordenada y inicial
+    mov x3, 91 +30        // Coordenada x final
+    mov x4, 249        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 92 +30       // Coordenada x inicial
+    mov x2, 274         // Coordenada y inicial
+    mov x3, 94 +30        // Coordenada x final
+    mov x4, 249        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 95 +30       // Coordenada x inicial
+    mov x2, 273         // Coordenada y inicial
+    mov x3, 95 +30        // Coordenada x final
+    mov x4, 247        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 96 +30       // Coordenada x inicial
+    mov x2, 271         // Coordenada y inicial
+    mov x3, 96 +30        // Coordenada x final
+    mov x4, 248        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 97 +30       // Coordenada x inicial
+    mov x2, 269         // Coordenada y inicial
+    mov x3, 97 +30        // Coordenada x final
+    mov x4, 232        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 98 +30       // Coordenada x inicial
+    mov x2, 268         // Coordenada y inicial
+    mov x3, 98 +30        // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 99 +30       // Coordenada x inicial
+    mov x2, 267         // Coordenada y inicial
+    mov x3, 99 +30        // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 100+30        // Coordenada x inicial
+    mov x2, 265         // Coordenada y inicial
+    mov x3, 100+30         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+30        // Coordenada x inicial
+    mov x2, 264         // Coordenada y inicial
+    mov x3, 101+30         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+30        // Coordenada x inicial
+    mov x2, 264         // Coordenada y inicial
+    mov x3, 101+30         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 102+30        // Coordenada x inicial
+    mov x2, 262         // Coordenada y inicial
+    mov x3, 104+30         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 104+30
+    mov x2, 262
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95 +30    
+    mov x2, 247
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +30       // Coordenada x inicial
+    mov x2, 254         // Coordenada y inicial
+    mov x3, 104+30         // Coordenada x final
+    mov x4, 254        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 81 +30       // Coordenada x inicial
+    mov x2, 253         // Coordenada y inicial
+    mov x3, 104+30         // Coordenada x final
+    mov x4, 253        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +30       // Coordenada x inicial
+    mov x2, 252         // Coordenada y inicial
+    mov x3, 104+30         // Coordenada x final
+    mov x4, 252        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 88 +30       // Coordenada x inicial
+    mov x2, 251         // Coordenada y inicial
+    mov x3, 104+30         // Coordenada x final
+    mov x4, 251        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +30       // Coordenada x inicial
+    mov x2, 250         // Coordenada y inicial
+    mov x3, 104+30         // Coordenada x final
+    mov x4, 250        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +30       // Coordenada x inicial
+    mov x2, 249         // Coordenada y inicial
+    mov x3, 104+30         // Coordenada x final
+    mov x4, 249        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+    
+    mov x1, 96 +30       
+    mov x2, 248 
+    ldr x10, verde_oscuro             
+    bl draw_pixel
+
+    mov x1, 105+30        // Coordenada x inicial
+    mov x2, 256         // Coordenada y inicial
+    mov x3, 112+30         // Coordenada x final
+    mov x4, 256        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 112+30        // Coordenada x inicial
+    mov x2, 257         // Coordenada y inicial
+    mov x3, 112+30         // Coordenada x final
+    mov x4, 260        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+30        // Coordenada x inicial
+    mov x2, 248         // Coordenada y inicial
+    mov x3, 115+30         // Coordenada x final
+    mov x4, 248        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+30        // Coordenada x inicial
+    mov x2, 247         // Coordenada y inicial
+    mov x3, 105+30         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 106+30        // Coordenada x inicial
+    mov x2, 244         // Coordenada y inicial
+    mov x3, 117+30         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 117+30        
+    mov x2, 231 
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+30        // Coordenada x inicial
+    mov x2, 236         // Coordenada y inicial
+    mov x3, 103+30         // Coordenada x final
+    mov x4, 235        // Coordenada y final
+    ldr x10, negro             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_erase_walk1:
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +30       // Coordenada x inicial
+    mov x2, 282         // Coordenada y inicial
+    mov x3, 96 +30        // Coordenada x final
+    mov x4, 282        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +30       // Coordenada x inicial
+    mov x2, 281         // Coordenada y inicial
+    mov x3, 89 +30        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 86 +30       // Coordenada x inicial
+    mov x2, 280         // Coordenada y inicial
+    mov x3, 86 +30        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 85 +30       // Coordenada x inicial
+    mov x2, 277         // Coordenada y inicial
+    mov x3, 85 +30        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +30       // Coordenada x inicial
+    mov x2, 280         // Coordenada y inicial
+    mov x3, 89 +30        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +30       // Coordenada x inicial
+    mov x2, 278         // Coordenada y inicial
+    mov x3, 90 +30        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 91 +30       // Coordenada x inicial
+    mov x2, 276         // Coordenada y inicial
+    mov x3, 91 +30        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +30       // Coordenada x inicial
+    mov x2, 288         // Coordenada y inicial
+    mov x3, 72 +30        // Coordenada x final
+    mov x4, 288        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 72 +30       // Coordenada x inicial
+    mov x2, 287         // Coordenada y inicial
+    mov x3, 74 +30        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 74 +30       // Coordenada x inicial
+    mov x2, 281         // Coordenada y inicial
+    mov x3, 74 +30        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 75 +30       // Coordenada x inicial
+    mov x2, 280         // Coordenada y inicial
+    mov x3, 75 +30        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 76 +30       // Coordenada x inicial
+    mov x2, 279         // Coordenada y inicial
+    mov x3, 76 +30        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 77 +30       // Coordenada x inicial
+    mov x2, 276         // Coordenada y inicial
+    mov x3, 78 +30        // Coordenada x final
+    mov x4, 276        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +30       // Coordenada x inicial
+    mov x2, 275         // Coordenada y inicial
+    mov x3, 91 +30        // Coordenada x final
+    mov x4, 255        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +30       // Coordenada x inicial
+    mov x2, 243         // Coordenada y inicial
+    mov x3, 56 +30        // Coordenada x final
+    mov x4, 258        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 57 +30       // Coordenada x inicial
+    mov x2, 246         // Coordenada y inicial
+    mov x3, 57 +30        // Coordenada x final
+    mov x4, 259        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 58 +30       // Coordenada x inicial
+    mov x2, 247         // Coordenada y inicial
+    mov x3, 58 +30        // Coordenada x final
+    mov x4, 260        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 59 +30       // Coordenada x inicial
+    mov x2, 248         // Coordenada y inicial
+    mov x3, 59 +30        // Coordenada x final
+    mov x4, 261        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 60 +30       // Coordenada x inicial
+    mov x2, 249         // Coordenada y inicial
+    mov x3, 60 +30        // Coordenada x final
+    mov x4, 262        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 61 +30       // Coordenada x inicial
+    mov x2, 250         // Coordenada y inicial
+    mov x3, 61 +30        // Coordenada x final
+    mov x4, 262        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 62 +30       // Coordenada x inicial
+    mov x2, 251         // Coordenada y inicial
+    mov x3, 62 +30        // Coordenada x final
+    mov x4, 263        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 63 +30       // Coordenada x inicial
+    mov x2, 252         // Coordenada y inicial
+    mov x3, 63 +30        // Coordenada x final
+    mov x4, 264        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 64 +30       // Coordenada x inicial
+    mov x2, 253         // Coordenada y inicial
+    mov x3, 64 +30        // Coordenada x final
+    mov x4, 265        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 65 +30       // Coordenada x inicial
+    mov x2, 254         // Coordenada y inicial
+    mov x3, 65 +30        // Coordenada x final
+    mov x4, 267        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 66 +30       // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 66 +30        // Coordenada x final
+    mov x4, 268        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 67 +30       // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 67 +30        // Coordenada x final
+    mov x4, 269        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 68 +30       // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 68 +30        // Coordenada x final
+    mov x4, 270        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 69 +30       // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 69 +30        // Coordenada x final
+    mov x4, 272        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 70 +30       // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 70 +30        // Coordenada x final
+    mov x4, 273        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 71 +30       // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 71 +30        // Coordenada x final
+    mov x4, 274        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +30       // Coordenada x inicial
+    mov x2, 276         // Coordenada y inicial
+    mov x3, 91 +30        // Coordenada x final
+    mov x4, 249        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 92 +30       // Coordenada x inicial
+    mov x2, 274         // Coordenada y inicial
+    mov x3, 94 +30        // Coordenada x final
+    mov x4, 249        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 95 +30       // Coordenada x inicial
+    mov x2, 273         // Coordenada y inicial
+    mov x3, 95 +30        // Coordenada x final
+    mov x4, 247        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 96 +30       // Coordenada x inicial
+    mov x2, 271         // Coordenada y inicial
+    mov x3, 96 +30        // Coordenada x final
+    mov x4, 248        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 97 +30       // Coordenada x inicial
+    mov x2, 269         // Coordenada y inicial
+    mov x3, 97 +30        // Coordenada x final
+    mov x4, 232        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 98 +30       // Coordenada x inicial
+    mov x2, 268         // Coordenada y inicial
+    mov x3, 98 +30        // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 99 +30       // Coordenada x inicial
+    mov x2, 267         // Coordenada y inicial
+    mov x3, 99 +30        // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 100+30        // Coordenada x inicial
+    mov x2, 265         // Coordenada y inicial
+    mov x3, 100+30         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+30        // Coordenada x inicial
+    mov x2, 264         // Coordenada y inicial
+    mov x3, 101+30         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+30        // Coordenada x inicial
+    mov x2, 264         // Coordenada y inicial
+    mov x3, 101+30         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 102+30        // Coordenada x inicial
+    mov x2, 262         // Coordenada y inicial
+    mov x3, 104+30         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 104+30
+    mov x2, 262
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95 +30    
+    mov x2, 247
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +30       // Coordenada x inicial
+    mov x2, 254         // Coordenada y inicial
+    mov x3, 104+30         // Coordenada x final
+    mov x4, 254        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 81 +30       // Coordenada x inicial
+    mov x2, 253         // Coordenada y inicial
+    mov x3, 104+30         // Coordenada x final
+    mov x4, 253        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +30       // Coordenada x inicial
+    mov x2, 252         // Coordenada y inicial
+    mov x3, 104+30         // Coordenada x final
+    mov x4, 252        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 88 +30       // Coordenada x inicial
+    mov x2, 251         // Coordenada y inicial
+    mov x3, 104+30         // Coordenada x final
+    mov x4, 251        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +30       // Coordenada x inicial
+    mov x2, 250         // Coordenada y inicial
+    mov x3, 104+30         // Coordenada x final
+    mov x4, 250        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +30       // Coordenada x inicial
+    mov x2, 249         // Coordenada y inicial
+    mov x3, 104+30         // Coordenada x final
+    mov x4, 249        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+    
+    mov x1, 96 +30       
+    mov x2, 248 
+    ldr x10, cielo             
+    bl draw_pixel
+
+    mov x1, 105+30        // Coordenada x inicial
+    mov x2, 256         // Coordenada y inicial
+    mov x3, 112+30         // Coordenada x final
+    mov x4, 256        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 112+30        // Coordenada x inicial
+    mov x2, 257         // Coordenada y inicial
+    mov x3, 112+30         // Coordenada x final
+    mov x4, 260        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+30        // Coordenada x inicial
+    mov x2, 248         // Coordenada y inicial
+    mov x3, 115+30         // Coordenada x final
+    mov x4, 248        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+30        // Coordenada x inicial
+    mov x2, 247         // Coordenada y inicial
+    mov x3, 105+30         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 106+30        // Coordenada x inicial
+    mov x2, 244         // Coordenada y inicial
+    mov x3, 117+30         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 117+30        
+    mov x2, 231 
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+30        // Coordenada x inicial
+    mov x2, 236         // Coordenada y inicial
+    mov x3, 103+30         // Coordenada x final
+    mov x4, 235        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino2:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +60       // Coordenada x inicial
+    mov x2, 288         // Coordenada y inicial
+    mov x3, 96 +60        // Coordenada x final
+    mov x4, 288        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +60       // Coordenada x inicial
+    mov x2, 287         // Coordenada y inicial
+    mov x3, 89 +60        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 86 +60       // Coordenada x inicial
+    mov x2, 280         // Coordenada y inicial
+    mov x3, 86 +60        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 85 +60       // Coordenada x inicial
+    mov x2, 277         // Coordenada y inicial
+    mov x3, 85 +60        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +60       // Coordenada x inicial
+    mov x2, 280         // Coordenada y inicial
+    mov x3, 89 +60        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +60       // Coordenada x inicial
+    mov x2, 278         // Coordenada y inicial
+    mov x3, 90 +60        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 91 +60       // Coordenada x inicial
+    mov x2, 276         // Coordenada y inicial
+    mov x3, 91 +60        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +60       // Coordenada x inicial
+    mov x2, 288         // Coordenada y inicial
+    mov x3, 72 +60        // Coordenada x final
+    mov x4, 288        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 72 +60       // Coordenada x inicial
+    mov x2, 287         // Coordenada y inicial
+    mov x3, 74 +60        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 74 +60       // Coordenada x inicial
+    mov x2, 281         // Coordenada y inicial
+    mov x3, 74 +60        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 75 +60       // Coordenada x inicial
+    mov x2, 280         // Coordenada y inicial
+    mov x3, 75 +60        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 76 +60       // Coordenada x inicial
+    mov x2, 279         // Coordenada y inicial
+    mov x3, 76 +60        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 77 +60       // Coordenada x inicial
+    mov x2, 276         // Coordenada y inicial
+    mov x3, 78 +60        // Coordenada x final
+    mov x4, 276        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +60       // Coordenada x inicial
+    mov x2, 275         // Coordenada y inicial
+    mov x3, 91 +60        // Coordenada x final
+    mov x4, 255        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +60       // Coordenada x inicial
+    mov x2, 243         // Coordenada y inicial
+    mov x3, 56 +60        // Coordenada x final
+    mov x4, 258        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 57 +60       // Coordenada x inicial
+    mov x2, 246         // Coordenada y inicial
+    mov x3, 57 +60        // Coordenada x final
+    mov x4, 259        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 58 +60       // Coordenada x inicial
+    mov x2, 247         // Coordenada y inicial
+    mov x3, 58 +60        // Coordenada x final
+    mov x4, 260        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 59 +60       // Coordenada x inicial
+    mov x2, 248         // Coordenada y inicial
+    mov x3, 59 +60        // Coordenada x final
+    mov x4, 261        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 60 +60       // Coordenada x inicial
+    mov x2, 249         // Coordenada y inicial
+    mov x3, 60 +60        // Coordenada x final
+    mov x4, 262        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 61 +60       // Coordenada x inicial
+    mov x2, 250         // Coordenada y inicial
+    mov x3, 61 +60        // Coordenada x final
+    mov x4, 262        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 62 +60       // Coordenada x inicial
+    mov x2, 251         // Coordenada y inicial
+    mov x3, 62 +60        // Coordenada x final
+    mov x4, 263        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 63 +60       // Coordenada x inicial
+    mov x2, 252         // Coordenada y inicial
+    mov x3, 63 +60        // Coordenada x final
+    mov x4, 264        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 64 +60       // Coordenada x inicial
+    mov x2, 253         // Coordenada y inicial
+    mov x3, 64 +60        // Coordenada x final
+    mov x4, 265        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 65 +60       // Coordenada x inicial
+    mov x2, 254         // Coordenada y inicial
+    mov x3, 65 +60        // Coordenada x final
+    mov x4, 267        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 66 +60       // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 66 +60        // Coordenada x final
+    mov x4, 268        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 67 +60       // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 67 +60        // Coordenada x final
+    mov x4, 269        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 68 +60       // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 68 +60        // Coordenada x final
+    mov x4, 270        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 69 +60       // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 69 +60        // Coordenada x final
+    mov x4, 272        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 70 +60       // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 70 +60        // Coordenada x final
+    mov x4, 273        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 71 +60       // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 71 +60        // Coordenada x final
+    mov x4, 274        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +60       // Coordenada x inicial
+    mov x2, 276         // Coordenada y inicial
+    mov x3, 91 +60        // Coordenada x final
+    mov x4, 249        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 92 +60       // Coordenada x inicial
+    mov x2, 274         // Coordenada y inicial
+    mov x3, 94 +60        // Coordenada x final
+    mov x4, 249        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 95 +60       // Coordenada x inicial
+    mov x2, 273         // Coordenada y inicial
+    mov x3, 95 +60        // Coordenada x final
+    mov x4, 247        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 96 +60       // Coordenada x inicial
+    mov x2, 271         // Coordenada y inicial
+    mov x3, 96 +60        // Coordenada x final
+    mov x4, 248        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 97 +60       // Coordenada x inicial
+    mov x2, 269         // Coordenada y inicial
+    mov x3, 97 +60        // Coordenada x final
+    mov x4, 232        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 98 +60       // Coordenada x inicial
+    mov x2, 268         // Coordenada y inicial
+    mov x3, 98 +60        // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 99 +60       // Coordenada x inicial
+    mov x2, 267         // Coordenada y inicial
+    mov x3, 99 +60        // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 100+60        // Coordenada x inicial
+    mov x2, 265         // Coordenada y inicial
+    mov x3, 100+60         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+60        // Coordenada x inicial
+    mov x2, 264         // Coordenada y inicial
+    mov x3, 101+60         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+60        // Coordenada x inicial
+    mov x2, 264         // Coordenada y inicial
+    mov x3, 101+60         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 102+60        // Coordenada x inicial
+    mov x2, 262         // Coordenada y inicial
+    mov x3, 104+60         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 104+60
+    mov x2, 262
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95+60    
+    mov x2, 247
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +60       // Coordenada x inicial
+    mov x2, 254         // Coordenada y inicial
+    mov x3, 104+60         // Coordenada x final
+    mov x4, 254        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 81 +60       // Coordenada x inicial
+    mov x2, 253         // Coordenada y inicial
+    mov x3, 104+60         // Coordenada x final
+    mov x4, 253        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +60       // Coordenada x inicial
+    mov x2, 252         // Coordenada y inicial
+    mov x3, 104+60         // Coordenada x final
+    mov x4, 252        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 88 +60       // Coordenada x inicial
+    mov x2, 251         // Coordenada y inicial
+    mov x3, 104+60         // Coordenada x final
+    mov x4, 251        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +60       // Coordenada x inicial
+    mov x2, 250         // Coordenada y inicial
+    mov x3, 104+60         // Coordenada x final
+    mov x4, 250        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +60       // Coordenada x inicial
+    mov x2, 249         // Coordenada y inicial
+    mov x3, 104+60         // Coordenada x final
+    mov x4, 249        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+    
+    mov x1, 96 +60       
+    mov x2, 248 
+    ldr x10, verde_oscuro             
+    bl draw_pixel
+
+    mov x1, 105+60        // Coordenada x inicial
+    mov x2, 256         // Coordenada y inicial
+    mov x3, 112+60         // Coordenada x final
+    mov x4, 256        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 112+60        // Coordenada x inicial
+    mov x2, 257         // Coordenada y inicial
+    mov x3, 112+60         // Coordenada x final
+    mov x4, 260        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+60        // Coordenada x inicial
+    mov x2, 248         // Coordenada y inicial
+    mov x3, 115+60         // Coordenada x final
+    mov x4, 248        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+60        // Coordenada x inicial
+    mov x2, 247         // Coordenada y inicial
+    mov x3, 105+60         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 106+60        // Coordenada x inicial
+    mov x2, 244         // Coordenada y inicial
+    mov x3, 117+60         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 117+60        
+    mov x2, 231 
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+60        // Coordenada x inicial
+    mov x2, 236         // Coordenada y inicial
+    mov x3, 103+60         // Coordenada x final
+    mov x4, 235        // Coordenada y final
+    ldr x10, negro             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+erase_dino2:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +60       // Coordenada x inicial
+    mov x2, 288         // Coordenada y inicial
+    mov x3, 96 +60        // Coordenada x final
+    mov x4, 288        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +60       // Coordenada x inicial
+    mov x2, 287         // Coordenada y inicial
+    mov x3, 89 +60        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 86 +60       // Coordenada x inicial
+    mov x2, 280         // Coordenada y inicial
+    mov x3, 86 +60        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 85 +60       // Coordenada x inicial
+    mov x2, 277         // Coordenada y inicial
+    mov x3, 85 +60        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +60       // Coordenada x inicial
+    mov x2, 280         // Coordenada y inicial
+    mov x3, 89 +60        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +60       // Coordenada x inicial
+    mov x2, 278         // Coordenada y inicial
+    mov x3, 90 +60        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 91 +60       // Coordenada x inicial
+    mov x2, 276         // Coordenada y inicial
+    mov x3, 91 +60        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +60       // Coordenada x inicial
+    mov x2, 288         // Coordenada y inicial
+    mov x3, 72 +60        // Coordenada x final
+    mov x4, 288        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 72 +60       // Coordenada x inicial
+    mov x2, 287         // Coordenada y inicial
+    mov x3, 74 +60        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 74 +60       // Coordenada x inicial
+    mov x2, 281         // Coordenada y inicial
+    mov x3, 74 +60        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 75 +60       // Coordenada x inicial
+    mov x2, 280         // Coordenada y inicial
+    mov x3, 75 +60        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 76 +60       // Coordenada x inicial
+    mov x2, 279         // Coordenada y inicial
+    mov x3, 76 +60        // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 77 +60       // Coordenada x inicial
+    mov x2, 276         // Coordenada y inicial
+    mov x3, 78 +60        // Coordenada x final
+    mov x4, 276        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +60       // Coordenada x inicial
+    mov x2, 275         // Coordenada y inicial
+    mov x3, 91 +60        // Coordenada x final
+    mov x4, 255        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +60       // Coordenada x inicial
+    mov x2, 243         // Coordenada y inicial
+    mov x3, 56 +60        // Coordenada x final
+    mov x4, 258        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 57 +60       // Coordenada x inicial
+    mov x2, 246         // Coordenada y inicial
+    mov x3, 57 +60        // Coordenada x final
+    mov x4, 259        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 58 +60       // Coordenada x inicial
+    mov x2, 247         // Coordenada y inicial
+    mov x3, 58 +60        // Coordenada x final
+    mov x4, 260        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 59 +60       // Coordenada x inicial
+    mov x2, 248         // Coordenada y inicial
+    mov x3, 59 +60        // Coordenada x final
+    mov x4, 261        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 60 +60       // Coordenada x inicial
+    mov x2, 249         // Coordenada y inicial
+    mov x3, 60 +60        // Coordenada x final
+    mov x4, 262        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 61 +60       // Coordenada x inicial
+    mov x2, 250         // Coordenada y inicial
+    mov x3, 61 +60        // Coordenada x final
+    mov x4, 262        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 62 +60       // Coordenada x inicial
+    mov x2, 251         // Coordenada y inicial
+    mov x3, 62 +60        // Coordenada x final
+    mov x4, 263        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 63 +60       // Coordenada x inicial
+    mov x2, 252         // Coordenada y inicial
+    mov x3, 63 +60        // Coordenada x final
+    mov x4, 264        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 64 +60       // Coordenada x inicial
+    mov x2, 253         // Coordenada y inicial
+    mov x3, 64 +60        // Coordenada x final
+    mov x4, 265        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 65 +60       // Coordenada x inicial
+    mov x2, 254         // Coordenada y inicial
+    mov x3, 65 +60        // Coordenada x final
+    mov x4, 267        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 66 +60       // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 66 +60        // Coordenada x final
+    mov x4, 268        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 67 +60       // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 67 +60        // Coordenada x final
+    mov x4, 269        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 68 +60       // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 68 +60        // Coordenada x final
+    mov x4, 270        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 69 +60       // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 69 +60        // Coordenada x final
+    mov x4, 272        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 70 +60       // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 70 +60        // Coordenada x final
+    mov x4, 273        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 71 +60       // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 71 +60        // Coordenada x final
+    mov x4, 274        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +60       // Coordenada x inicial
+    mov x2, 276         // Coordenada y inicial
+    mov x3, 91 +60        // Coordenada x final
+    mov x4, 249        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 92 +60       // Coordenada x inicial
+    mov x2, 274         // Coordenada y inicial
+    mov x3, 94 +60        // Coordenada x final
+    mov x4, 249        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 95 +60       // Coordenada x inicial
+    mov x2, 273         // Coordenada y inicial
+    mov x3, 95 +60        // Coordenada x final
+    mov x4, 247        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 96 +60       // Coordenada x inicial
+    mov x2, 271         // Coordenada y inicial
+    mov x3, 96 +60        // Coordenada x final
+    mov x4, 248        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 97 +60       // Coordenada x inicial
+    mov x2, 269         // Coordenada y inicial
+    mov x3, 97 +60        // Coordenada x final
+    mov x4, 232        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 98 +60       // Coordenada x inicial
+    mov x2, 268         // Coordenada y inicial
+    mov x3, 98 +60        // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 99 +60       // Coordenada x inicial
+    mov x2, 267         // Coordenada y inicial
+    mov x3, 99 +60        // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 100+60        // Coordenada x inicial
+    mov x2, 265         // Coordenada y inicial
+    mov x3, 100+60         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+60        // Coordenada x inicial
+    mov x2, 264         // Coordenada y inicial
+    mov x3, 101+60         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+60        // Coordenada x inicial
+    mov x2, 264         // Coordenada y inicial
+    mov x3, 101+60         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 102+60        // Coordenada x inicial
+    mov x2, 262         // Coordenada y inicial
+    mov x3, 104+60         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 104+60
+    mov x2, 262
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95+60    
+    mov x2, 247
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +60       // Coordenada x inicial
+    mov x2, 254         // Coordenada y inicial
+    mov x3, 104+60         // Coordenada x final
+    mov x4, 254        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 81 +60       // Coordenada x inicial
+    mov x2, 253         // Coordenada y inicial
+    mov x3, 104+60         // Coordenada x final
+    mov x4, 253        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +60       // Coordenada x inicial
+    mov x2, 252         // Coordenada y inicial
+    mov x3, 104+60         // Coordenada x final
+    mov x4, 252        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 88 +60       // Coordenada x inicial
+    mov x2, 251         // Coordenada y inicial
+    mov x3, 104+60         // Coordenada x final
+    mov x4, 251        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +60       // Coordenada x inicial
+    mov x2, 250         // Coordenada y inicial
+    mov x3, 104+60         // Coordenada x final
+    mov x4, 250        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +60       // Coordenada x inicial
+    mov x2, 249         // Coordenada y inicial
+    mov x3, 104+60         // Coordenada x final
+    mov x4, 249        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+    
+    mov x1, 96 +60       
+    mov x2, 248 
+    ldr x10, cielo             
+    bl draw_pixel
+
+    mov x1, 105+60        // Coordenada x inicial
+    mov x2, 256         // Coordenada y inicial
+    mov x3, 112+60         // Coordenada x final
+    mov x4, 256        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 112+60        // Coordenada x inicial
+    mov x2, 257         // Coordenada y inicial
+    mov x3, 112+60         // Coordenada x final
+    mov x4, 260        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+60        // Coordenada x inicial
+    mov x2, 248         // Coordenada y inicial
+    mov x3, 115+60         // Coordenada x final
+    mov x4, 248        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+60        // Coordenada x inicial
+    mov x2, 247         // Coordenada y inicial
+    mov x3, 105+60         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 106+60        // Coordenada x inicial
+    mov x2, 244         // Coordenada y inicial
+    mov x3, 117+60         // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 117+60        
+    mov x2, 231 
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+60        // Coordenada x inicial
+    mov x2, 236         // Coordenada y inicial
+    mov x3, 103+60         // Coordenada x final
+    mov x4, 235        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_jump1:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +90       // Coordenada x inicial
+    mov x2, 288 -30        // Coordenada y inicial
+    mov x3, 96 +90        // Coordenada x final
+    mov x4, 288 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +90       // Coordenada x inicial
+    mov x2, 287 -30        // Coordenada y inicial
+    mov x3, 89 +90        // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 86 +90       // Coordenada x inicial
+    mov x2, 280 -30        // Coordenada y inicial
+    mov x3, 86 +90        // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 85 +90       // Coordenada x inicial
+    mov x2, 277 -30        // Coordenada y inicial
+    mov x3, 85 +90        // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +90       // Coordenada x inicial
+    mov x2, 280 -30        // Coordenada y inicial
+    mov x3, 89 +90        // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +90       // Coordenada x inicial
+    mov x2, 278 -30        // Coordenada y inicial
+    mov x3, 90 +90        // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 91 +90       // Coordenada x inicial
+    mov x2, 276 -30        // Coordenada y inicial
+    mov x3, 91 +90        // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +90       // Coordenada x inicial
+    mov x2, 288 -30        // Coordenada y inicial
+    mov x3, 72 +90        // Coordenada x final
+    mov x4, 288 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 72 +90       // Coordenada x inicial
+    mov x2, 287 -30        // Coordenada y inicial
+    mov x3, 74 +90        // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 74 +90       // Coordenada x inicial
+    mov x2, 281 -30        // Coordenada y inicial
+    mov x3, 74 +90        // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 75 +90       // Coordenada x inicial
+    mov x2, 280 -30        // Coordenada y inicial
+    mov x3, 75 +90        // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 76 +90       // Coordenada x inicial
+    mov x2, 279 -30        // Coordenada y inicial
+    mov x3, 76 +90        // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 77 +90       // Coordenada x inicial
+    mov x2, 276 -30        // Coordenada y inicial
+    mov x3, 78 +90        // Coordenada x final
+    mov x4, 276 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +90       // Coordenada x inicial
+    mov x2, 275 -30        // Coordenada y inicial
+    mov x3, 91 +90        // Coordenada x final
+    mov x4, 255 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +90       // Coordenada x inicial
+    mov x2, 243 -30        // Coordenada y inicial
+    mov x3, 56 +90        // Coordenada x final
+    mov x4, 258 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 57 +90       // Coordenada x inicial
+    mov x2, 246 -30        // Coordenada y inicial
+    mov x3, 57 +90        // Coordenada x final
+    mov x4, 259 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 58 +90       // Coordenada x inicial
+    mov x2, 247 -30        // Coordenada y inicial
+    mov x3, 58 +90        // Coordenada x final
+    mov x4, 260 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 59 +90       // Coordenada x inicial
+    mov x2, 248 -30        // Coordenada y inicial
+    mov x3, 59 +90        // Coordenada x final
+    mov x4, 261 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 60 +90       // Coordenada x inicial
+    mov x2, 249 -30        // Coordenada y inicial
+    mov x3, 60 +90        // Coordenada x final
+    mov x4, 262 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 61 +90       // Coordenada x inicial
+    mov x2, 250 -30        // Coordenada y inicial
+    mov x3, 61 +90        // Coordenada x final
+    mov x4, 262 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 62 +90       // Coordenada x inicial
+    mov x2, 251 -30        // Coordenada y inicial
+    mov x3, 62 +90        // Coordenada x final
+    mov x4, 263 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 63 +90       // Coordenada x inicial
+    mov x2, 252 -30        // Coordenada y inicial
+    mov x3, 63 +90        // Coordenada x final
+    mov x4, 264 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 64 +90       // Coordenada x inicial
+    mov x2, 253 -30        // Coordenada y inicial
+    mov x3, 64 +90        // Coordenada x final
+    mov x4, 265 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 65 +90       // Coordenada x inicial
+    mov x2, 254 -30        // Coordenada y inicial
+    mov x3, 65 +90        // Coordenada x final
+    mov x4, 267 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 66 +90       // Coordenada x inicial
+    mov x2, 255 -30        // Coordenada y inicial
+    mov x3, 66 +90        // Coordenada x final
+    mov x4, 268 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 67 +90       // Coordenada x inicial
+    mov x2, 255 -30        // Coordenada y inicial
+    mov x3, 67 +90        // Coordenada x final
+    mov x4, 269 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 68 +90       // Coordenada x inicial
+    mov x2, 255 -30        // Coordenada y inicial
+    mov x3, 68 +90        // Coordenada x final
+    mov x4, 270 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 69 +90       // Coordenada x inicial
+    mov x2, 255 -30        // Coordenada y inicial
+    mov x3, 69 +90        // Coordenada x final
+    mov x4, 272 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 70 +90       // Coordenada x inicial
+    mov x2, 255 -30        // Coordenada y inicial
+    mov x3, 70 +90        // Coordenada x final
+    mov x4, 273 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 71 +90       // Coordenada x inicial
+    mov x2, 255 -30        // Coordenada y inicial
+    mov x3, 71 +90        // Coordenada x final
+    mov x4, 274 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +90       // Coordenada x inicial
+    mov x2, 276 -30        // Coordenada y inicial
+    mov x3, 91 +90        // Coordenada x final
+    mov x4, 249 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 92 +90       // Coordenada x inicial
+    mov x2, 274 -30        // Coordenada y inicial
+    mov x3, 94 +90        // Coordenada x final
+    mov x4, 249 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 95 +90       // Coordenada x inicial
+    mov x2, 273 -30        // Coordenada y inicial
+    mov x3, 95 +90        // Coordenada x final
+    mov x4, 247 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 96 +90       // Coordenada x inicial
+    mov x2, 271 -30        // Coordenada y inicial
+    mov x3, 96 +90        // Coordenada x final
+    mov x4, 248 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 97 +90       // Coordenada x inicial
+    mov x2, 269 -30        // Coordenada y inicial
+    mov x3, 97 +90        // Coordenada x final
+    mov x4, 232 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 98 +90       // Coordenada x inicial
+    mov x2, 268 -30        // Coordenada y inicial
+    mov x3, 98 +90        // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 99 +90       // Coordenada x inicial
+    mov x2, 267 -30        // Coordenada y inicial
+    mov x3, 99 +90        // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 100+90        // Coordenada x inicial
+    mov x2, 265 -30        // Coordenada y inicial
+    mov x3, 100+90         // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+90        // Coordenada x inicial
+    mov x2, 264 -30        // Coordenada y inicial
+    mov x3, 101+90         // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+90        // Coordenada x inicial
+    mov x2, 264 -30        // Coordenada y inicial
+    mov x3, 101+90         // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 102+90        // Coordenada x inicial
+    mov x2, 262 -30        // Coordenada y inicial
+    mov x3, 104+90         // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 104+90
+    mov x2, 262+-0    
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95+90    
+    mov x2, 247+-0    
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +90       // Coordenada x inicial
+    mov x2, 254 -30        // Coordenada y inicial
+    mov x3, 104+90         // Coordenada x final
+    mov x4, 254 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 81 +90       // Coordenada x inicial
+    mov x2, 253 -30        // Coordenada y inicial
+    mov x3, 104+90         // Coordenada x final
+    mov x4, 253 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +90       // Coordenada x inicial
+    mov x2, 252 -30        // Coordenada y inicial
+    mov x3, 104+90         // Coordenada x final
+    mov x4, 252 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 88 +90       // Coordenada x inicial
+    mov x2, 251 -30        // Coordenada y inicial
+    mov x3, 104+90         // Coordenada x final
+    mov x4, 251 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +90       // Coordenada x inicial
+    mov x2, 250 -30        // Coordenada y inicial
+    mov x3, 104+90         // Coordenada x final
+    mov x4, 250 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +90       // Coordenada x inicial
+    mov x2, 249 -30        // Coordenada y inicial
+    mov x3, 104+90         // Coordenada x final
+    mov x4, 249 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+    
+    mov x1, 96 +90       
+    mov x2, 248 -30
+    ldr x10, verde_oscuro             
+    bl draw_pixel
+
+    mov x1, 105+90        // Coordenada x inicial
+    mov x2, 256 -30        // Coordenada y inicial
+    mov x3, 112+90         // Coordenada x final
+    mov x4, 256 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 112+90        // Coordenada x inicial
+    mov x2, 257 -30        // Coordenada y inicial
+    mov x3, 112+90         // Coordenada x final
+    mov x4, 260 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+90        // Coordenada x inicial
+    mov x2, 248 -30        // Coordenada y inicial
+    mov x3, 115+90         // Coordenada x final
+    mov x4, 248 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+90        // Coordenada x inicial
+    mov x2, 247 -30        // Coordenada y inicial
+    mov x3, 105+90         // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 106+90        // Coordenada x inicial
+    mov x2, 244 -30        // Coordenada y inicial
+    mov x3, 117+90         // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 117+90        
+    mov x2, 231 -30
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+90        // Coordenada x inicial
+    mov x2, 236 -30        // Coordenada y inicial
+    mov x3, 103+90         // Coordenada x final
+    mov x4, 235 -30       // Coordenada y final
+    ldr x10, negro             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_erase_jump1:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +90       // Coordenada x inicial
+    mov x2, 288 -30        // Coordenada y inicial
+    mov x3, 96 +90        // Coordenada x final
+    mov x4, 288 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +90       // Coordenada x inicial
+    mov x2, 287 -30        // Coordenada y inicial
+    mov x3, 89 +90        // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 86 +90       // Coordenada x inicial
+    mov x2, 280 -30        // Coordenada y inicial
+    mov x3, 86 +90        // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 85 +90       // Coordenada x inicial
+    mov x2, 277 -30        // Coordenada y inicial
+    mov x3, 85 +90        // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +90       // Coordenada x inicial
+    mov x2, 280 -30        // Coordenada y inicial
+    mov x3, 89 +90        // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +90       // Coordenada x inicial
+    mov x2, 278 -30        // Coordenada y inicial
+    mov x3, 90 +90        // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 91 +90       // Coordenada x inicial
+    mov x2, 276 -30        // Coordenada y inicial
+    mov x3, 91 +90        // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +90       // Coordenada x inicial
+    mov x2, 288 -30        // Coordenada y inicial
+    mov x3, 72 +90        // Coordenada x final
+    mov x4, 288 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 72 +90       // Coordenada x inicial
+    mov x2, 287 -30        // Coordenada y inicial
+    mov x3, 74 +90        // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 74 +90       // Coordenada x inicial
+    mov x2, 281 -30        // Coordenada y inicial
+    mov x3, 74 +90        // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 75 +90       // Coordenada x inicial
+    mov x2, 280 -30        // Coordenada y inicial
+    mov x3, 75 +90        // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 76 +90       // Coordenada x inicial
+    mov x2, 279 -30        // Coordenada y inicial
+    mov x3, 76 +90        // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 77 +90       // Coordenada x inicial
+    mov x2, 276 -30        // Coordenada y inicial
+    mov x3, 78 +90        // Coordenada x final
+    mov x4, 276 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +90       // Coordenada x inicial
+    mov x2, 275 -30        // Coordenada y inicial
+    mov x3, 91 +90        // Coordenada x final
+    mov x4, 255 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +90       // Coordenada x inicial
+    mov x2, 243 -30        // Coordenada y inicial
+    mov x3, 56 +90        // Coordenada x final
+    mov x4, 258 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 57 +90       // Coordenada x inicial
+    mov x2, 246 -30        // Coordenada y inicial
+    mov x3, 57 +90        // Coordenada x final
+    mov x4, 259 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 58 +90       // Coordenada x inicial
+    mov x2, 247 -30        // Coordenada y inicial
+    mov x3, 58 +90        // Coordenada x final
+    mov x4, 260 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 59 +90       // Coordenada x inicial
+    mov x2, 248 -30        // Coordenada y inicial
+    mov x3, 59 +90        // Coordenada x final
+    mov x4, 261 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 60 +90       // Coordenada x inicial
+    mov x2, 249 -30        // Coordenada y inicial
+    mov x3, 60 +90        // Coordenada x final
+    mov x4, 262 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 61 +90       // Coordenada x inicial
+    mov x2, 250 -30        // Coordenada y inicial
+    mov x3, 61 +90        // Coordenada x final
+    mov x4, 262 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 62 +90       // Coordenada x inicial
+    mov x2, 251 -30        // Coordenada y inicial
+    mov x3, 62 +90        // Coordenada x final
+    mov x4, 263 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 63 +90       // Coordenada x inicial
+    mov x2, 252 -30        // Coordenada y inicial
+    mov x3, 63 +90        // Coordenada x final
+    mov x4, 264 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 64 +90       // Coordenada x inicial
+    mov x2, 253 -30        // Coordenada y inicial
+    mov x3, 64 +90        // Coordenada x final
+    mov x4, 265 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 65 +90       // Coordenada x inicial
+    mov x2, 254 -30        // Coordenada y inicial
+    mov x3, 65 +90        // Coordenada x final
+    mov x4, 267 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 66 +90       // Coordenada x inicial
+    mov x2, 255 -30        // Coordenada y inicial
+    mov x3, 66 +90        // Coordenada x final
+    mov x4, 268 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 67 +90       // Coordenada x inicial
+    mov x2, 255 -30        // Coordenada y inicial
+    mov x3, 67 +90        // Coordenada x final
+    mov x4, 269 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 68 +90       // Coordenada x inicial
+    mov x2, 255 -30        // Coordenada y inicial
+    mov x3, 68 +90        // Coordenada x final
+    mov x4, 270 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 69 +90       // Coordenada x inicial
+    mov x2, 255 -30        // Coordenada y inicial
+    mov x3, 69 +90        // Coordenada x final
+    mov x4, 272 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 70 +90       // Coordenada x inicial
+    mov x2, 255 -30        // Coordenada y inicial
+    mov x3, 70 +90        // Coordenada x final
+    mov x4, 273 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 71 +90       // Coordenada x inicial
+    mov x2, 255 -30        // Coordenada y inicial
+    mov x3, 71 +90        // Coordenada x final
+    mov x4, 274 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +90       // Coordenada x inicial
+    mov x2, 276 -30        // Coordenada y inicial
+    mov x3, 91 +90        // Coordenada x final
+    mov x4, 249 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 92 +90       // Coordenada x inicial
+    mov x2, 274 -30        // Coordenada y inicial
+    mov x3, 94 +90        // Coordenada x final
+    mov x4, 249 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 95 +90       // Coordenada x inicial
+    mov x2, 273 -30        // Coordenada y inicial
+    mov x3, 95 +90        // Coordenada x final
+    mov x4, 247 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 96 +90       // Coordenada x inicial
+    mov x2, 271 -30        // Coordenada y inicial
+    mov x3, 96 +90        // Coordenada x final
+    mov x4, 248 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 97 +90       // Coordenada x inicial
+    mov x2, 269 -30        // Coordenada y inicial
+    mov x3, 97 +90        // Coordenada x final
+    mov x4, 232 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 98 +90       // Coordenada x inicial
+    mov x2, 268 -30        // Coordenada y inicial
+    mov x3, 98 +90        // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 99 +90       // Coordenada x inicial
+    mov x2, 267 -30        // Coordenada y inicial
+    mov x3, 99 +90        // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 100+90        // Coordenada x inicial
+    mov x2, 265 -30        // Coordenada y inicial
+    mov x3, 100+90         // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+90        // Coordenada x inicial
+    mov x2, 264 -30        // Coordenada y inicial
+    mov x3, 101+90         // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+90        // Coordenada x inicial
+    mov x2, 264 -30        // Coordenada y inicial
+    mov x3, 101+90         // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 102+90        // Coordenada x inicial
+    mov x2, 262 -30        // Coordenada y inicial
+    mov x3, 104+90         // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 104+90
+    mov x2, 262+-0    
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95+90    
+    mov x2, 247+-0    
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +90       // Coordenada x inicial
+    mov x2, 254 -30        // Coordenada y inicial
+    mov x3, 104+90         // Coordenada x final
+    mov x4, 254 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 81 +90       // Coordenada x inicial
+    mov x2, 253 -30        // Coordenada y inicial
+    mov x3, 104+90         // Coordenada x final
+    mov x4, 253 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +90       // Coordenada x inicial
+    mov x2, 252 -30        // Coordenada y inicial
+    mov x3, 104+90         // Coordenada x final
+    mov x4, 252 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 88 +90       // Coordenada x inicial
+    mov x2, 251 -30        // Coordenada y inicial
+    mov x3, 104+90         // Coordenada x final
+    mov x4, 251 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +90       // Coordenada x inicial
+    mov x2, 250 -30        // Coordenada y inicial
+    mov x3, 104+90         // Coordenada x final
+    mov x4, 250 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +90       // Coordenada x inicial
+    mov x2, 249 -30        // Coordenada y inicial
+    mov x3, 104+90         // Coordenada x final
+    mov x4, 249 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+    
+    mov x1, 96 +90       
+    mov x2, 248 -30
+    ldr x10, cielo             
+    bl draw_pixel
+
+    mov x1, 105+90        // Coordenada x inicial
+    mov x2, 256 -30        // Coordenada y inicial
+    mov x3, 112+90         // Coordenada x final
+    mov x4, 256 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 112+90        // Coordenada x inicial
+    mov x2, 257 -30        // Coordenada y inicial
+    mov x3, 112+90         // Coordenada x final
+    mov x4, 260 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+90        // Coordenada x inicial
+    mov x2, 248 -30        // Coordenada y inicial
+    mov x3, 115+90         // Coordenada x final
+    mov x4, 248 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+90        // Coordenada x inicial
+    mov x2, 247 -30        // Coordenada y inicial
+    mov x3, 105+90         // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 106+90        // Coordenada x inicial
+    mov x2, 244 -30        // Coordenada y inicial
+    mov x3, 117+90         // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 117+90        
+    mov x2, 231 -30
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+90        // Coordenada x inicial
+    mov x2, 236 -30        // Coordenada y inicial
+    mov x3, 103+90         // Coordenada x final
+    mov x4, 235 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_jump2:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +120       // Coordenada x inicial
+    mov x2, 288 -60        // Coordenada y inicial
+    mov x3, 96 +120        // Coordenada x final
+    mov x4, 288 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +120       // Coordenada x inicial
+    mov x2, 287 -60        // Coordenada y inicial
+    mov x3, 89 +120        // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 86 +120       // Coordenada x inicial
+    mov x2, 280 -60        // Coordenada y inicial
+    mov x3, 86 +120        // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 85 +120       // Coordenada x inicial
+    mov x2, 277 -60        // Coordenada y inicial
+    mov x3, 85 +120        // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +120       // Coordenada x inicial
+    mov x2, 280 -60        // Coordenada y inicial
+    mov x3, 89 +120        // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +120       // Coordenada x inicial
+    mov x2, 278 -60        // Coordenada y inicial
+    mov x3, 90 +120        // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 91 +120       // Coordenada x inicial
+    mov x2, 276 -60        // Coordenada y inicial
+    mov x3, 91 +120        // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +120       // Coordenada x inicial
+    mov x2, 288 -60        // Coordenada y inicial
+    mov x3, 72 +120        // Coordenada x final
+    mov x4, 288 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 72 +120       // Coordenada x inicial
+    mov x2, 287 -60        // Coordenada y inicial
+    mov x3, 74 +120        // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 74 +120       // Coordenada x inicial
+    mov x2, 281 -60        // Coordenada y inicial
+    mov x3, 74 +120        // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 75 +120       // Coordenada x inicial
+    mov x2, 280 -60        // Coordenada y inicial
+    mov x3, 75 +120        // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 76 +120       // Coordenada x inicial
+    mov x2, 279 -60        // Coordenada y inicial
+    mov x3, 76 +120        // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 77 +120       // Coordenada x inicial
+    mov x2, 276 -60        // Coordenada y inicial
+    mov x3, 78 +120        // Coordenada x final
+    mov x4, 276 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +120       // Coordenada x inicial
+    mov x2, 275 -60        // Coordenada y inicial
+    mov x3, 91 +120        // Coordenada x final
+    mov x4, 255 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +120       // Coordenada x inicial
+    mov x2, 243 -60        // Coordenada y inicial
+    mov x3, 56 +120        // Coordenada x final
+    mov x4, 258 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 57 +120       // Coordenada x inicial
+    mov x2, 246 -60        // Coordenada y inicial
+    mov x3, 57 +120        // Coordenada x final
+    mov x4, 259 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 58 +120       // Coordenada x inicial
+    mov x2, 247 -60        // Coordenada y inicial
+    mov x3, 58 +120        // Coordenada x final
+    mov x4, 260 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 59 +120       // Coordenada x inicial
+    mov x2, 248 -60        // Coordenada y inicial
+    mov x3, 59 +120        // Coordenada x final
+    mov x4, 261 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 60 +120       // Coordenada x inicial
+    mov x2, 249 -60        // Coordenada y inicial
+    mov x3, 60 +120        // Coordenada x final
+    mov x4, 262 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 61 +120       // Coordenada x inicial
+    mov x2, 250 -60        // Coordenada y inicial
+    mov x3, 61 +120        // Coordenada x final
+    mov x4, 262 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 62 +120       // Coordenada x inicial
+    mov x2, 251 -60        // Coordenada y inicial
+    mov x3, 62 +120        // Coordenada x final
+    mov x4, 263 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 63 +120       // Coordenada x inicial
+    mov x2, 252 -60        // Coordenada y inicial
+    mov x3, 63 +120        // Coordenada x final
+    mov x4, 264 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 64 +120       // Coordenada x inicial
+    mov x2, 253 -60        // Coordenada y inicial
+    mov x3, 64 +120        // Coordenada x final
+    mov x4, 265 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 65 +120       // Coordenada x inicial
+    mov x2, 254 -60        // Coordenada y inicial
+    mov x3, 65 +120        // Coordenada x final
+    mov x4, 267 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 66 +120       // Coordenada x inicial
+    mov x2, 255 -60        // Coordenada y inicial
+    mov x3, 66 +120        // Coordenada x final
+    mov x4, 268 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 67 +120       // Coordenada x inicial
+    mov x2, 255 -60        // Coordenada y inicial
+    mov x3, 67 +120        // Coordenada x final
+    mov x4, 269 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 68 +120       // Coordenada x inicial
+    mov x2, 255 -60        // Coordenada y inicial
+    mov x3, 68 +120        // Coordenada x final
+    mov x4, 270 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 69 +120       // Coordenada x inicial
+    mov x2, 255 -60        // Coordenada y inicial
+    mov x3, 69 +120        // Coordenada x final
+    mov x4, 272 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 70 +120       // Coordenada x inicial
+    mov x2, 255 -60        // Coordenada y inicial
+    mov x3, 70 +120        // Coordenada x final
+    mov x4, 273 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 71 +120       // Coordenada x inicial
+    mov x2, 255 -60        // Coordenada y inicial
+    mov x3, 71 +120        // Coordenada x final
+    mov x4, 274 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +120       // Coordenada x inicial
+    mov x2, 276 -60        // Coordenada y inicial
+    mov x3, 91 +120        // Coordenada x final
+    mov x4, 249 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 92 +120       // Coordenada x inicial
+    mov x2, 274 -60        // Coordenada y inicial
+    mov x3, 94 +120        // Coordenada x final
+    mov x4, 249 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 95 +120       // Coordenada x inicial
+    mov x2, 273 -60        // Coordenada y inicial
+    mov x3, 95 +120        // Coordenada x final
+    mov x4, 247 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 96 +120       // Coordenada x inicial
+    mov x2, 271 -60        // Coordenada y inicial
+    mov x3, 96 +120        // Coordenada x final
+    mov x4, 248 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 97 +120       // Coordenada x inicial
+    mov x2, 269 -60        // Coordenada y inicial
+    mov x3, 97 +120        // Coordenada x final
+    mov x4, 232 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 98 +120       // Coordenada x inicial
+    mov x2, 268 -60        // Coordenada y inicial
+    mov x3, 98 +120        // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 99 +120       // Coordenada x inicial
+    mov x2, 267 -60        // Coordenada y inicial
+    mov x3, 99 +120        // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 100+120        // Coordenada x inicial
+    mov x2, 265 -60        // Coordenada y inicial
+    mov x3, 100+120         // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+120        // Coordenada x inicial
+    mov x2, 264 -60        // Coordenada y inicial
+    mov x3, 101+120         // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+120        // Coordenada x inicial
+    mov x2, 264 -60        // Coordenada y inicial
+    mov x3, 101+120         // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 102+120        // Coordenada x inicial
+    mov x2, 262 -60        // Coordenada y inicial
+    mov x3, 104+120         // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 104+120
+    mov x2, 262 -60  
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95 +120    
+    mov x2, 247+-0    
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +120       // Coordenada x inicial
+    mov x2, 254 -60        // Coordenada y inicial
+    mov x3, 104+120         // Coordenada x final
+    mov x4, 254 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 81 +120       // Coordenada x inicial
+    mov x2, 253 -60        // Coordenada y inicial
+    mov x3, 104+120         // Coordenada x final
+    mov x4, 253 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +120       // Coordenada x inicial
+    mov x2, 252 -60        // Coordenada y inicial
+    mov x3, 104+120         // Coordenada x final
+    mov x4, 252 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 88 +120       // Coordenada x inicial
+    mov x2, 251 -60        // Coordenada y inicial
+    mov x3, 104+120         // Coordenada x final
+    mov x4, 251 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +120       // Coordenada x inicial
+    mov x2, 250 -60        // Coordenada y inicial
+    mov x3, 104+120         // Coordenada x final
+    mov x4, 250 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +120       // Coordenada x inicial
+    mov x2, 249 -60        // Coordenada y inicial
+    mov x3, 104+120         // Coordenada x final
+    mov x4, 249 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+    
+    mov x1, 96 +120       
+    mov x2, 248 -60
+    ldr x10, verde_oscuro             
+    bl draw_pixel
+
+    mov x1, 105+120        // Coordenada x inicial
+    mov x2, 256 -60        // Coordenada y inicial
+    mov x3, 112+120         // Coordenada x final
+    mov x4, 256 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 112+120        // Coordenada x inicial
+    mov x2, 257 -60        // Coordenada y inicial
+    mov x3, 112+120         // Coordenada x final
+    mov x4, 260 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+120        // Coordenada x inicial
+    mov x2, 248 -60        // Coordenada y inicial
+    mov x3, 115+120         // Coordenada x final
+    mov x4, 248 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+120        // Coordenada x inicial
+    mov x2, 247 -60        // Coordenada y inicial
+    mov x3, 105+120         // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 106+120        // Coordenada x inicial
+    mov x2, 244 -60        // Coordenada y inicial
+    mov x3, 117+120         // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 117+120        
+    mov x2, 231 -60
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+120        // Coordenada x inicial
+    mov x2, 236 -60        // Coordenada y inicial
+    mov x3, 103+120         // Coordenada x final
+    mov x4, 235 -60       // Coordenada y final
+    ldr x10, negro             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_erase_jump2:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +120       // Coordenada x inicial
+    mov x2, 288 -60        // Coordenada y inicial
+    mov x3, 96 +120        // Coordenada x final
+    mov x4, 288 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +120       // Coordenada x inicial
+    mov x2, 287 -60        // Coordenada y inicial
+    mov x3, 89 +120        // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 86 +120       // Coordenada x inicial
+    mov x2, 280 -60        // Coordenada y inicial
+    mov x3, 86 +120        // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 85 +120       // Coordenada x inicial
+    mov x2, 277 -60        // Coordenada y inicial
+    mov x3, 85 +120        // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +120       // Coordenada x inicial
+    mov x2, 280 -60        // Coordenada y inicial
+    mov x3, 89 +120        // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +120       // Coordenada x inicial
+    mov x2, 278 -60        // Coordenada y inicial
+    mov x3, 90 +120        // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 91 +120       // Coordenada x inicial
+    mov x2, 276 -60        // Coordenada y inicial
+    mov x3, 91 +120        // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +120       // Coordenada x inicial
+    mov x2, 288 -60        // Coordenada y inicial
+    mov x3, 72 +120        // Coordenada x final
+    mov x4, 288 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 72 +120       // Coordenada x inicial
+    mov x2, 287 -60        // Coordenada y inicial
+    mov x3, 74 +120        // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 74 +120       // Coordenada x inicial
+    mov x2, 281 -60        // Coordenada y inicial
+    mov x3, 74 +120        // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 75 +120       // Coordenada x inicial
+    mov x2, 280 -60        // Coordenada y inicial
+    mov x3, 75 +120        // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 76 +120       // Coordenada x inicial
+    mov x2, 279 -60        // Coordenada y inicial
+    mov x3, 76 +120        // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 77 +120       // Coordenada x inicial
+    mov x2, 276 -60        // Coordenada y inicial
+    mov x3, 78 +120        // Coordenada x final
+    mov x4, 276 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +120       // Coordenada x inicial
+    mov x2, 275 -60        // Coordenada y inicial
+    mov x3, 91 +120        // Coordenada x final
+    mov x4, 255 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +120       // Coordenada x inicial
+    mov x2, 243 -60        // Coordenada y inicial
+    mov x3, 56 +120        // Coordenada x final
+    mov x4, 258 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 57 +120       // Coordenada x inicial
+    mov x2, 246 -60        // Coordenada y inicial
+    mov x3, 57 +120        // Coordenada x final
+    mov x4, 259 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 58 +120       // Coordenada x inicial
+    mov x2, 247 -60        // Coordenada y inicial
+    mov x3, 58 +120        // Coordenada x final
+    mov x4, 260 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 59 +120       // Coordenada x inicial
+    mov x2, 248 -60        // Coordenada y inicial
+    mov x3, 59 +120        // Coordenada x final
+    mov x4, 261 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 60 +120       // Coordenada x inicial
+    mov x2, 249 -60        // Coordenada y inicial
+    mov x3, 60 +120        // Coordenada x final
+    mov x4, 262 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 61 +120       // Coordenada x inicial
+    mov x2, 250 -60        // Coordenada y inicial
+    mov x3, 61 +120        // Coordenada x final
+    mov x4, 262 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 62 +120       // Coordenada x inicial
+    mov x2, 251 -60        // Coordenada y inicial
+    mov x3, 62 +120        // Coordenada x final
+    mov x4, 263 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 63 +120       // Coordenada x inicial
+    mov x2, 252 -60        // Coordenada y inicial
+    mov x3, 63 +120        // Coordenada x final
+    mov x4, 264 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 64 +120       // Coordenada x inicial
+    mov x2, 253 -60        // Coordenada y inicial
+    mov x3, 64 +120        // Coordenada x final
+    mov x4, 265 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 65 +120       // Coordenada x inicial
+    mov x2, 254 -60        // Coordenada y inicial
+    mov x3, 65 +120        // Coordenada x final
+    mov x4, 267 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 66 +120       // Coordenada x inicial
+    mov x2, 255 -60        // Coordenada y inicial
+    mov x3, 66 +120        // Coordenada x final
+    mov x4, 268 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 67 +120       // Coordenada x inicial
+    mov x2, 255 -60        // Coordenada y inicial
+    mov x3, 67 +120        // Coordenada x final
+    mov x4, 269 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 68 +120       // Coordenada x inicial
+    mov x2, 255 -60        // Coordenada y inicial
+    mov x3, 68 +120        // Coordenada x final
+    mov x4, 270 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 69 +120       // Coordenada x inicial
+    mov x2, 255 -60        // Coordenada y inicial
+    mov x3, 69 +120        // Coordenada x final
+    mov x4, 272 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 70 +120       // Coordenada x inicial
+    mov x2, 255 -60        // Coordenada y inicial
+    mov x3, 70 +120        // Coordenada x final
+    mov x4, 273 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 71 +120       // Coordenada x inicial
+    mov x2, 255 -60        // Coordenada y inicial
+    mov x3, 71 +120        // Coordenada x final
+    mov x4, 274 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +120       // Coordenada x inicial
+    mov x2, 276 -60        // Coordenada y inicial
+    mov x3, 91 +120        // Coordenada x final
+    mov x4, 249 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 92 +120       // Coordenada x inicial
+    mov x2, 274 -60        // Coordenada y inicial
+    mov x3, 94 +120        // Coordenada x final
+    mov x4, 249 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 95 +120       // Coordenada x inicial
+    mov x2, 273 -60        // Coordenada y inicial
+    mov x3, 95 +120        // Coordenada x final
+    mov x4, 247 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 96 +120       // Coordenada x inicial
+    mov x2, 271 -60        // Coordenada y inicial
+    mov x3, 96 +120        // Coordenada x final
+    mov x4, 248 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 97 +120       // Coordenada x inicial
+    mov x2, 269 -60        // Coordenada y inicial
+    mov x3, 97 +120        // Coordenada x final
+    mov x4, 232 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 98 +120       // Coordenada x inicial
+    mov x2, 268 -60        // Coordenada y inicial
+    mov x3, 98 +120        // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 99 +120       // Coordenada x inicial
+    mov x2, 267 -60        // Coordenada y inicial
+    mov x3, 99 +120        // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 100+120        // Coordenada x inicial
+    mov x2, 265 -60        // Coordenada y inicial
+    mov x3, 100+120         // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+120        // Coordenada x inicial
+    mov x2, 264 -60        // Coordenada y inicial
+    mov x3, 101+120         // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+120        // Coordenada x inicial
+    mov x2, 264 -60        // Coordenada y inicial
+    mov x3, 101+120         // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 102+120        // Coordenada x inicial
+    mov x2, 262 -60        // Coordenada y inicial
+    mov x3, 104+120         // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 104+120
+    mov x2, 262 -60  
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95 +120    
+    mov x2, 247+-0    
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +120       // Coordenada x inicial
+    mov x2, 254 -60        // Coordenada y inicial
+    mov x3, 104+120         // Coordenada x final
+    mov x4, 254 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 81 +120       // Coordenada x inicial
+    mov x2, 253 -60        // Coordenada y inicial
+    mov x3, 104+120         // Coordenada x final
+    mov x4, 253 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +120       // Coordenada x inicial
+    mov x2, 252 -60        // Coordenada y inicial
+    mov x3, 104+120         // Coordenada x final
+    mov x4, 252 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 88 +120       // Coordenada x inicial
+    mov x2, 251 -60        // Coordenada y inicial
+    mov x3, 104+120         // Coordenada x final
+    mov x4, 251 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +120       // Coordenada x inicial
+    mov x2, 250 -60        // Coordenada y inicial
+    mov x3, 104+120         // Coordenada x final
+    mov x4, 250 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +120       // Coordenada x inicial
+    mov x2, 249 -60        // Coordenada y inicial
+    mov x3, 104+120         // Coordenada x final
+    mov x4, 249 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+    
+    mov x1, 96 +120       
+    mov x2, 248 -60
+    ldr x10, cielo             
+    bl draw_pixel
+
+    mov x1, 105+120        // Coordenada x inicial
+    mov x2, 256 -60        // Coordenada y inicial
+    mov x3, 112+120         // Coordenada x final
+    mov x4, 256 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 112+120        // Coordenada x inicial
+    mov x2, 257 -60        // Coordenada y inicial
+    mov x3, 112+120         // Coordenada x final
+    mov x4, 260 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+120        // Coordenada x inicial
+    mov x2, 248 -60        // Coordenada y inicial
+    mov x3, 115+120         // Coordenada x final
+    mov x4, 248 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+120        // Coordenada x inicial
+    mov x2, 247 -60        // Coordenada y inicial
+    mov x3, 105+120         // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 106+120        // Coordenada x inicial
+    mov x2, 244 -60        // Coordenada y inicial
+    mov x3, 117+120         // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 117+120        
+    mov x2, 231 -60
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+120        // Coordenada x inicial
+    mov x2, 236 -60        // Coordenada y inicial
+    mov x3, 103+120         // Coordenada x final
+    mov x4, 235 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_jump3:
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +150      // Coordenada x inicial
+    mov x2, 282 -75        // Coordenada y inicial
+    mov x3, 96 +150       // Coordenada x final
+    mov x4, 282 -75        // Coordenada y final
+    ldr x10, verde_oscuro
+    bl draw_line_straight
+
+    mov x1, 87 +150      // Coordenada x inicial
+    mov x2, 281 -75        // Coordenada y inicial
+    mov x3, 89 +150       // Coordenada x final
+    mov x4, 275 -75        // Coordenada y final
+    ldr x10, verde_oscuro
+    bl draw_rectangle
+
+    mov x1, 86 +150      // Coordenada x inicial
+    mov x2, 280 -75        // Coordenada y inicial
+    mov x3, 86 +150       // Coordenada x final
+    mov x4, 275 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 85 +150      // Coordenada x inicial
+    mov x2, 277 -75        // Coordenada y inicial
+    mov x3, 85 +150       // Coordenada x final
+    mov x4, 275 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +150      // Coordenada x inicial
+    mov x2, 280 -75        // Coordenada y inicial
+    mov x3, 89 +150       // Coordenada x final
+    mov x4, 275 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +150      // Coordenada x inicial
+    mov x2, 278 -75        // Coordenada y inicial
+    mov x3, 90 +150       // Coordenada x final
+    mov x4, 275 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 91 +150      // Coordenada x inicial
+    mov x2, 276 -75        // Coordenada y inicial
+    mov x3, 91 +150       // Coordenada x final
+    mov x4, 275 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +150      // Coordenada x inicial
+    mov x2, 288 -75        // Coordenada y inicial
+    mov x3, 72 +150       // Coordenada x final
+    mov x4, 288 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 72 +150      // Coordenada x inicial
+    mov x2, 287 -75        // Coordenada y inicial
+    mov x3, 74 +150       // Coordenada x final
+    mov x4, 275 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 74 +150      // Coordenada x inicial
+    mov x2, 281 -75        // Coordenada y inicial
+    mov x3, 74 +150       // Coordenada x final
+    mov x4, 275 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 75 +150      // Coordenada x inicial
+    mov x2, 280 -75        // Coordenada y inicial
+    mov x3, 75 +150       // Coordenada x final
+    mov x4, 275 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 76 +150      // Coordenada x inicial
+    mov x2, 279 -75        // Coordenada y inicial
+    mov x3, 76 +150       // Coordenada x final
+    mov x4, 275 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 77 +150      // Coordenada x inicial
+    mov x2, 276 -75        // Coordenada y inicial
+    mov x3, 78 +150       // Coordenada x final
+    mov x4, 276 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +150      // Coordenada x inicial
+    mov x2, 275 -75        // Coordenada y inicial
+    mov x3, 91 +150       // Coordenada x final
+    mov x4, 255 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +150      // Coordenada x inicial
+    mov x2, 243 -75        // Coordenada y inicial
+    mov x3, 56 +150       // Coordenada x final
+    mov x4, 258 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 57 +150      // Coordenada x inicial
+    mov x2, 246 -75        // Coordenada y inicial
+    mov x3, 57 +150       // Coordenada x final
+    mov x4, 259 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 58 +150      // Coordenada x inicial
+    mov x2, 247 -75        // Coordenada y inicial
+    mov x3, 58 +150       // Coordenada x final
+    mov x4, 260 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 59 +150      // Coordenada x inicial
+    mov x2, 248 -75        // Coordenada y inicial
+    mov x3, 59 +150       // Coordenada x final
+    mov x4, 261 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 60 +150      // Coordenada x inicial
+    mov x2, 249 -75        // Coordenada y inicial
+    mov x3, 60 +150       // Coordenada x final
+    mov x4, 262 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 61 +150      // Coordenada x inicial
+    mov x2, 250 -75        // Coordenada y inicial
+    mov x3, 61 +150       // Coordenada x final
+    mov x4, 262 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 62 +150      // Coordenada x inicial
+    mov x2, 251 -75        // Coordenada y inicial
+    mov x3, 62 +150       // Coordenada x final
+    mov x4, 263 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 63 +150      // Coordenada x inicial
+    mov x2, 252 -75        // Coordenada y inicial
+    mov x3, 63 +150       // Coordenada x final
+    mov x4, 264 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 64 +150      // Coordenada x inicial
+    mov x2, 253 -75        // Coordenada y inicial
+    mov x3, 64 +150       // Coordenada x final
+    mov x4, 265 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 65 +150      // Coordenada x inicial
+    mov x2, 254 -75        // Coordenada y inicial
+    mov x3, 65 +150       // Coordenada x final
+    mov x4, 267 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 66 +150      // Coordenada x inicial
+    mov x2, 255 -75        // Coordenada y inicial
+    mov x3, 66 +150       // Coordenada x final
+    mov x4, 268 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 67 +150      // Coordenada x inicial
+    mov x2, 255 -75        // Coordenada y inicial
+    mov x3, 67 +150       // Coordenada x final
+    mov x4, 269 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 68 +150      // Coordenada x inicial
+    mov x2, 255 -75        // Coordenada y inicial
+    mov x3, 68 +150       // Coordenada x final
+    mov x4, 270 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 69 +150      // Coordenada x inicial
+    mov x2, 255 -75        // Coordenada y inicial
+    mov x3, 69 +150       // Coordenada x final
+    mov x4, 272 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 70 +150      // Coordenada x inicial
+    mov x2, 255 -75        // Coordenada y inicial
+    mov x3, 70 +150       // Coordenada x final
+    mov x4, 273 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 71 +150      // Coordenada x inicial
+    mov x2, 255 -75        // Coordenada y inicial
+    mov x3, 71 +150       // Coordenada x final
+    mov x4, 274 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +150      // Coordenada x inicial
+    mov x2, 276 -75        // Coordenada y inicial
+    mov x3, 91 +150       // Coordenada x final
+    mov x4, 249 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 92 +150      // Coordenada x inicial
+    mov x2, 274 -75        // Coordenada y inicial
+    mov x3, 94 +150       // Coordenada x final
+    mov x4, 249 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 95 +150      // Coordenada x inicial
+    mov x2, 273 -75        // Coordenada y inicial
+    mov x3, 95 +150       // Coordenada x final
+    mov x4, 247 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 96 +150      // Coordenada x inicial
+    mov x2, 271 -75        // Coordenada y inicial
+    mov x3, 96 +150       // Coordenada x final
+    mov x4, 248 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 97 +150      // Coordenada x inicial
+    mov x2, 269 -75        // Coordenada y inicial
+    mov x3, 97 +150       // Coordenada x final
+    mov x4, 232 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 98 +150      // Coordenada x inicial
+    mov x2, 268 -75        // Coordenada y inicial
+    mov x3, 98 +150       // Coordenada x final
+    mov x4, 231 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 99 +150      // Coordenada x inicial
+    mov x2, 267 -75        // Coordenada y inicial
+    mov x3, 99 +150       // Coordenada x final
+    mov x4, 231 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 100+150       // Coordenada x inicial
+    mov x2, 265 -75        // Coordenada y inicial
+    mov x3, 100+150        // Coordenada x final
+    mov x4, 231 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+150       // Coordenada x inicial
+    mov x2, 264 -75        // Coordenada y inicial
+    mov x3, 101+150        // Coordenada x final
+    mov x4, 231 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+150       // Coordenada x inicial
+    mov x2, 264 -75        // Coordenada y inicial
+    mov x3, 101+150        // Coordenada x final
+    mov x4, 231 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 102+150       // Coordenada x inicial
+    mov x2, 262 -75        // Coordenada y inicial
+    mov x3, 104+150        // Coordenada x final
+    mov x4, 231 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 104+30
+    mov x2, 262-75    
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95 +150   
+    mov x2, 247-75    
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +150      // Coordenada x inicial
+    mov x2, 254 -75        // Coordenada y inicial
+    mov x3, 104+150        // Coordenada x final
+    mov x4, 254 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 81 +150      // Coordenada x inicial
+    mov x2, 253 -75        // Coordenada y inicial
+    mov x3, 104+150        // Coordenada x final
+    mov x4, 253 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +150      // Coordenada x inicial
+    mov x2, 252 -75        // Coordenada y inicial
+    mov x3, 104+150        // Coordenada x final
+    mov x4, 252 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 88 +150      // Coordenada x inicial
+    mov x2, 251 -75        // Coordenada y inicial
+    mov x3, 104+150        // Coordenada x final
+    mov x4, 251 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +150      // Coordenada x inicial
+    mov x2, 250 -75        // Coordenada y inicial
+    mov x3, 104+150        // Coordenada x final
+    mov x4, 250 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +150      // Coordenada x inicial
+    mov x2, 249 -75        // Coordenada y inicial
+    mov x3, 104+150        // Coordenada x final
+    mov x4, 249 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+    
+    mov x1, 96 +150      
+    mov x2, 248 -75
+    ldr x10, verde_oscuro             
+    bl draw_pixel
+
+    mov x1, 105+150       // Coordenada x inicial
+    mov x2, 256 -75        // Coordenada y inicial
+    mov x3, 112+150        // Coordenada x final
+    mov x4, 256 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 112+150       // Coordenada x inicial
+    mov x2, 257 -75        // Coordenada y inicial
+    mov x3, 112+150        // Coordenada x final
+    mov x4, 260 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+150       // Coordenada x inicial
+    mov x2, 248 -75        // Coordenada y inicial
+    mov x3, 115+150        // Coordenada x final
+    mov x4, 248 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+150       // Coordenada x inicial
+    mov x2, 247 -75        // Coordenada y inicial
+    mov x3, 105+150        // Coordenada x final
+    mov x4, 231 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 106+150       // Coordenada x inicial
+    mov x2, 244 -75        // Coordenada y inicial
+    mov x3, 117+150        // Coordenada x final
+    mov x4, 231 -75        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 117+150       
+    mov x2, 231 -75
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+150       // Coordenada x inicial
+    mov x2, 236 -75        // Coordenada y inicial
+    mov x3, 103+150        // Coordenada x final
+    mov x4, 235 -75        // Coordenada y final
+    ldr x10, negro             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_erase_jump3:
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +150      // Coordenada x inicial
+    mov x2, 282 -75        // Coordenada y inicial
+    mov x3, 96 +150       // Coordenada x final
+    mov x4, 282 -75        // Coordenada y final
+    ldr x10, cielo
+    bl draw_line_straight
+
+    mov x1, 87 +150      // Coordenada x inicial
+    mov x2, 281 -75        // Coordenada y inicial
+    mov x3, 89 +150       // Coordenada x final
+    mov x4, 275 -75        // Coordenada y final
+    ldr x10, cielo
+    bl draw_rectangle
+
+    mov x1, 86 +150      // Coordenada x inicial
+    mov x2, 280 -75        // Coordenada y inicial
+    mov x3, 86 +150       // Coordenada x final
+    mov x4, 275 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 85 +150      // Coordenada x inicial
+    mov x2, 277 -75        // Coordenada y inicial
+    mov x3, 85 +150       // Coordenada x final
+    mov x4, 275 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +150      // Coordenada x inicial
+    mov x2, 280 -75        // Coordenada y inicial
+    mov x3, 89 +150       // Coordenada x final
+    mov x4, 275 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +150      // Coordenada x inicial
+    mov x2, 278 -75        // Coordenada y inicial
+    mov x3, 90 +150       // Coordenada x final
+    mov x4, 275 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 91 +150      // Coordenada x inicial
+    mov x2, 276 -75        // Coordenada y inicial
+    mov x3, 91 +150       // Coordenada x final
+    mov x4, 275 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +150      // Coordenada x inicial
+    mov x2, 288 -75        // Coordenada y inicial
+    mov x3, 72 +150       // Coordenada x final
+    mov x4, 288 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 72 +150      // Coordenada x inicial
+    mov x2, 287 -75        // Coordenada y inicial
+    mov x3, 74 +150       // Coordenada x final
+    mov x4, 275 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 74 +150      // Coordenada x inicial
+    mov x2, 281 -75        // Coordenada y inicial
+    mov x3, 74 +150       // Coordenada x final
+    mov x4, 275 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 75 +150      // Coordenada x inicial
+    mov x2, 280 -75        // Coordenada y inicial
+    mov x3, 75 +150       // Coordenada x final
+    mov x4, 275 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 76 +150      // Coordenada x inicial
+    mov x2, 279 -75        // Coordenada y inicial
+    mov x3, 76 +150       // Coordenada x final
+    mov x4, 275 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 77 +150      // Coordenada x inicial
+    mov x2, 276 -75        // Coordenada y inicial
+    mov x3, 78 +150       // Coordenada x final
+    mov x4, 276 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +150      // Coordenada x inicial
+    mov x2, 275 -75        // Coordenada y inicial
+    mov x3, 91 +150       // Coordenada x final
+    mov x4, 255 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +150      // Coordenada x inicial
+    mov x2, 243 -75        // Coordenada y inicial
+    mov x3, 56 +150       // Coordenada x final
+    mov x4, 258 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 57 +150      // Coordenada x inicial
+    mov x2, 246 -75        // Coordenada y inicial
+    mov x3, 57 +150       // Coordenada x final
+    mov x4, 259 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 58 +150      // Coordenada x inicial
+    mov x2, 247 -75        // Coordenada y inicial
+    mov x3, 58 +150       // Coordenada x final
+    mov x4, 260 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 59 +150      // Coordenada x inicial
+    mov x2, 248 -75        // Coordenada y inicial
+    mov x3, 59 +150       // Coordenada x final
+    mov x4, 261 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 60 +150      // Coordenada x inicial
+    mov x2, 249 -75        // Coordenada y inicial
+    mov x3, 60 +150       // Coordenada x final
+    mov x4, 262 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 61 +150      // Coordenada x inicial
+    mov x2, 250 -75        // Coordenada y inicial
+    mov x3, 61 +150       // Coordenada x final
+    mov x4, 262 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 62 +150      // Coordenada x inicial
+    mov x2, 251 -75        // Coordenada y inicial
+    mov x3, 62 +150       // Coordenada x final
+    mov x4, 263 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 63 +150      // Coordenada x inicial
+    mov x2, 252 -75        // Coordenada y inicial
+    mov x3, 63 +150       // Coordenada x final
+    mov x4, 264 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 64 +150      // Coordenada x inicial
+    mov x2, 253 -75        // Coordenada y inicial
+    mov x3, 64 +150       // Coordenada x final
+    mov x4, 265 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 65 +150      // Coordenada x inicial
+    mov x2, 254 -75        // Coordenada y inicial
+    mov x3, 65 +150       // Coordenada x final
+    mov x4, 267 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 66 +150      // Coordenada x inicial
+    mov x2, 255 -75        // Coordenada y inicial
+    mov x3, 66 +150       // Coordenada x final
+    mov x4, 268 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 67 +150      // Coordenada x inicial
+    mov x2, 255 -75        // Coordenada y inicial
+    mov x3, 67 +150       // Coordenada x final
+    mov x4, 269 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 68 +150      // Coordenada x inicial
+    mov x2, 255 -75        // Coordenada y inicial
+    mov x3, 68 +150       // Coordenada x final
+    mov x4, 270 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 69 +150      // Coordenada x inicial
+    mov x2, 255 -75        // Coordenada y inicial
+    mov x3, 69 +150       // Coordenada x final
+    mov x4, 272 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 70 +150      // Coordenada x inicial
+    mov x2, 255 -75        // Coordenada y inicial
+    mov x3, 70 +150       // Coordenada x final
+    mov x4, 273 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 71 +150      // Coordenada x inicial
+    mov x2, 255 -75        // Coordenada y inicial
+    mov x3, 71 +150       // Coordenada x final
+    mov x4, 274 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +150      // Coordenada x inicial
+    mov x2, 276 -75        // Coordenada y inicial
+    mov x3, 91 +150       // Coordenada x final
+    mov x4, 249 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 92 +150      // Coordenada x inicial
+    mov x2, 274 -75        // Coordenada y inicial
+    mov x3, 94 +150       // Coordenada x final
+    mov x4, 249 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 95 +150      // Coordenada x inicial
+    mov x2, 273 -75        // Coordenada y inicial
+    mov x3, 95 +150       // Coordenada x final
+    mov x4, 247 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 96 +150      // Coordenada x inicial
+    mov x2, 271 -75        // Coordenada y inicial
+    mov x3, 96 +150       // Coordenada x final
+    mov x4, 248 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 97 +150      // Coordenada x inicial
+    mov x2, 269 -75        // Coordenada y inicial
+    mov x3, 97 +150       // Coordenada x final
+    mov x4, 232 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 98 +150      // Coordenada x inicial
+    mov x2, 268 -75        // Coordenada y inicial
+    mov x3, 98 +150       // Coordenada x final
+    mov x4, 231 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 99 +150      // Coordenada x inicial
+    mov x2, 267 -75        // Coordenada y inicial
+    mov x3, 99 +150       // Coordenada x final
+    mov x4, 231 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 100+150       // Coordenada x inicial
+    mov x2, 265 -75        // Coordenada y inicial
+    mov x3, 100+150        // Coordenada x final
+    mov x4, 231 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+150       // Coordenada x inicial
+    mov x2, 264 -75        // Coordenada y inicial
+    mov x3, 101+150        // Coordenada x final
+    mov x4, 231 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+150       // Coordenada x inicial
+    mov x2, 264 -75        // Coordenada y inicial
+    mov x3, 101+150        // Coordenada x final
+    mov x4, 231 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 102+150       // Coordenada x inicial
+    mov x2, 262 -75        // Coordenada y inicial
+    mov x3, 104+150        // Coordenada x final
+    mov x4, 231 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 104+30
+    mov x2, 262-75    
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95 +150   
+    mov x2, 247-75    
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +150      // Coordenada x inicial
+    mov x2, 254 -75        // Coordenada y inicial
+    mov x3, 104+150        // Coordenada x final
+    mov x4, 254 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 81 +150      // Coordenada x inicial
+    mov x2, 253 -75        // Coordenada y inicial
+    mov x3, 104+150        // Coordenada x final
+    mov x4, 253 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +150      // Coordenada x inicial
+    mov x2, 252 -75        // Coordenada y inicial
+    mov x3, 104+150        // Coordenada x final
+    mov x4, 252 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 88 +150      // Coordenada x inicial
+    mov x2, 251 -75        // Coordenada y inicial
+    mov x3, 104+150        // Coordenada x final
+    mov x4, 251 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +150      // Coordenada x inicial
+    mov x2, 250 -75        // Coordenada y inicial
+    mov x3, 104+150        // Coordenada x final
+    mov x4, 250 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +150      // Coordenada x inicial
+    mov x2, 249 -75        // Coordenada y inicial
+    mov x3, 104+150        // Coordenada x final
+    mov x4, 249 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+    
+    mov x1, 96 +150      
+    mov x2, 248 -75
+    ldr x10, cielo             
+    bl draw_pixel
+
+    mov x1, 105+150       // Coordenada x inicial
+    mov x2, 256 -75        // Coordenada y inicial
+    mov x3, 112+150        // Coordenada x final
+    mov x4, 256 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 112+150       // Coordenada x inicial
+    mov x2, 257 -75        // Coordenada y inicial
+    mov x3, 112+150        // Coordenada x final
+    mov x4, 260 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+150       // Coordenada x inicial
+    mov x2, 248 -75        // Coordenada y inicial
+    mov x3, 115+150        // Coordenada x final
+    mov x4, 248 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+150       // Coordenada x inicial
+    mov x2, 247 -75        // Coordenada y inicial
+    mov x3, 105+150        // Coordenada x final
+    mov x4, 231 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 106+150       // Coordenada x inicial
+    mov x2, 244 -75        // Coordenada y inicial
+    mov x3, 117+150        // Coordenada x final
+    mov x4, 231 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 117+150       
+    mov x2, 231 -75
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+150       // Coordenada x inicial
+    mov x2, 236 -75        // Coordenada y inicial
+    mov x3, 103+150        // Coordenada x final
+    mov x4, 235 -75        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_down1:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +195       // Coordenada x inicial
+    mov x2, 288 -55       // Coordenada y inicial
+    mov x3, 96 +195        // Coordenada x final
+    mov x4, 288 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +195       // Coordenada x inicial
+    mov x2, 287 -55       // Coordenada y inicial
+    mov x3, 89 +195        // Coordenada x final
+    mov x4, 275 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 86 +195       // Coordenada x inicial
+    mov x2, 280 -55       // Coordenada y inicial
+    mov x3, 86 +195        // Coordenada x final
+    mov x4, 275 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 85 +195       // Coordenada x inicial
+    mov x2, 277 -55       // Coordenada y inicial
+    mov x3, 85 +195        // Coordenada x final
+    mov x4, 275 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +195       // Coordenada x inicial
+    mov x2, 280 -55       // Coordenada y inicial
+    mov x3, 89 +195        // Coordenada x final
+    mov x4, 275 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +195       // Coordenada x inicial
+    mov x2, 278 -55       // Coordenada y inicial
+    mov x3, 90 +195        // Coordenada x final
+    mov x4, 275 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 91 +195       // Coordenada x inicial
+    mov x2, 276 -55       // Coordenada y inicial
+    mov x3, 91 +195        // Coordenada x final
+    mov x4, 275 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +195       // Coordenada x inicial
+    mov x2, 288 -55       // Coordenada y inicial
+    mov x3, 72 +195        // Coordenada x final
+    mov x4, 288 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 72 +195       // Coordenada x inicial
+    mov x2, 287 -55       // Coordenada y inicial
+    mov x3, 74 +195        // Coordenada x final
+    mov x4, 275 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 74 +195       // Coordenada x inicial
+    mov x2, 281 -55       // Coordenada y inicial
+    mov x3, 74 +195        // Coordenada x final
+    mov x4, 275 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 75 +195       // Coordenada x inicial
+    mov x2, 280 -55       // Coordenada y inicial
+    mov x3, 75 +195        // Coordenada x final
+    mov x4, 275 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 76 +195       // Coordenada x inicial
+    mov x2, 279 -55       // Coordenada y inicial
+    mov x3, 76 +195        // Coordenada x final
+    mov x4, 275 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 77 +195       // Coordenada x inicial
+    mov x2, 276 -55       // Coordenada y inicial
+    mov x3, 78 +195        // Coordenada x final
+    mov x4, 276 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +195       // Coordenada x inicial
+    mov x2, 275 -55       // Coordenada y inicial
+    mov x3, 91 +195        // Coordenada x final
+    mov x4, 255 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +195       // Coordenada x inicial
+    mov x2, 243 -55       // Coordenada y inicial
+    mov x3, 56 +195        // Coordenada x final
+    mov x4, 258 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 57 +195       // Coordenada x inicial
+    mov x2, 246 -55       // Coordenada y inicial
+    mov x3, 57 +195        // Coordenada x final
+    mov x4, 259 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 58 +195       // Coordenada x inicial
+    mov x2, 247 -55       // Coordenada y inicial
+    mov x3, 58 +195        // Coordenada x final
+    mov x4, 260 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 59 +195       // Coordenada x inicial
+    mov x2, 248 -55       // Coordenada y inicial
+    mov x3, 59 +195        // Coordenada x final
+    mov x4, 261 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 60 +195       // Coordenada x inicial
+    mov x2, 249 -55       // Coordenada y inicial
+    mov x3, 60 +195        // Coordenada x final
+    mov x4, 262 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 61 +195       // Coordenada x inicial
+    mov x2, 250 -55       // Coordenada y inicial
+    mov x3, 61 +195        // Coordenada x final
+    mov x4, 262 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 62 +195       // Coordenada x inicial
+    mov x2, 251 -55       // Coordenada y inicial
+    mov x3, 62 +195        // Coordenada x final
+    mov x4, 263 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 63 +195       // Coordenada x inicial
+    mov x2, 252 -55       // Coordenada y inicial
+    mov x3, 63 +195        // Coordenada x final
+    mov x4, 264 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 64 +195       // Coordenada x inicial
+    mov x2, 253 -55       // Coordenada y inicial
+    mov x3, 64 +195        // Coordenada x final
+    mov x4, 265 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 65 +195       // Coordenada x inicial
+    mov x2, 254 -55       // Coordenada y inicial
+    mov x3, 65 +195        // Coordenada x final
+    mov x4, 267 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 66 +195       // Coordenada x inicial
+    mov x2, 255 -55       // Coordenada y inicial
+    mov x3, 66 +195        // Coordenada x final
+    mov x4, 268 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 67 +195       // Coordenada x inicial
+    mov x2, 255 -55       // Coordenada y inicial
+    mov x3, 67 +195        // Coordenada x final
+    mov x4, 269 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 68 +195       // Coordenada x inicial
+    mov x2, 255 -55       // Coordenada y inicial
+    mov x3, 68 +195        // Coordenada x final
+    mov x4, 270 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 69 +195       // Coordenada x inicial
+    mov x2, 255 -55       // Coordenada y inicial
+    mov x3, 69 +195        // Coordenada x final
+    mov x4, 272 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 70 +195       // Coordenada x inicial
+    mov x2, 255 -55       // Coordenada y inicial
+    mov x3, 70 +195        // Coordenada x final
+    mov x4, 273 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 71 +195       // Coordenada x inicial
+    mov x2, 255 -55       // Coordenada y inicial
+    mov x3, 71 +195        // Coordenada x final
+    mov x4, 274 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +195       // Coordenada x inicial
+    mov x2, 276 -55       // Coordenada y inicial
+    mov x3, 91 +195        // Coordenada x final
+    mov x4, 249 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 92 +195       // Coordenada x inicial
+    mov x2, 274 -55       // Coordenada y inicial
+    mov x3, 94 +195        // Coordenada x final
+    mov x4, 249 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 95 +195       // Coordenada x inicial
+    mov x2, 273 -55       // Coordenada y inicial
+    mov x3, 95 +195        // Coordenada x final
+    mov x4, 247 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 96 +195       // Coordenada x inicial
+    mov x2, 271 -55       // Coordenada y inicial
+    mov x3, 96 +195        // Coordenada x final
+    mov x4, 248 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 97 +195       // Coordenada x inicial
+    mov x2, 269 -55       // Coordenada y inicial
+    mov x3, 97 +195        // Coordenada x final
+    mov x4, 232 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 98 +195       // Coordenada x inicial
+    mov x2, 268 -55       // Coordenada y inicial
+    mov x3, 98 +195        // Coordenada x final
+    mov x4, 231 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 99 +195       // Coordenada x inicial
+    mov x2, 267 -55       // Coordenada y inicial
+    mov x3, 99 +195        // Coordenada x final
+    mov x4, 231 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 100+195        // Coordenada x inicial
+    mov x2, 265 -55       // Coordenada y inicial
+    mov x3, 100+195         // Coordenada x final
+    mov x4, 231 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+195        // Coordenada x inicial
+    mov x2, 264 -55       // Coordenada y inicial
+    mov x3, 101+195         // Coordenada x final
+    mov x4, 231 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+195        // Coordenada x inicial
+    mov x2, 264 -55       // Coordenada y inicial
+    mov x3, 101+195         // Coordenada x final
+    mov x4, 231 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 102+195        // Coordenada x inicial
+    mov x2, 262 -55       // Coordenada y inicial
+    mov x3, 104+195         // Coordenada x final
+    mov x4, 231 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 104+195
+    mov x2, 262-55   
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95+195    
+    mov x2, 247-55   
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +195       // Coordenada x inicial
+    mov x2, 254 -55       // Coordenada y inicial
+    mov x3, 104+195         // Coordenada x final
+    mov x4, 254 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 81 +195       // Coordenada x inicial
+    mov x2, 253 -55       // Coordenada y inicial
+    mov x3, 104+195         // Coordenada x final
+    mov x4, 253 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +195       // Coordenada x inicial
+    mov x2, 252 -55       // Coordenada y inicial
+    mov x3, 104+195         // Coordenada x final
+    mov x4, 252 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 88 +195       // Coordenada x inicial
+    mov x2, 251 -55       // Coordenada y inicial
+    mov x3, 104+195         // Coordenada x final
+    mov x4, 251 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +195       // Coordenada x inicial
+    mov x2, 250 -55       // Coordenada y inicial
+    mov x3, 104+195         // Coordenada x final
+    mov x4, 250 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +195       // Coordenada x inicial
+    mov x2, 249 -55       // Coordenada y inicial
+    mov x3, 104+195         // Coordenada x final
+    mov x4, 249 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+    
+    mov x1, 96 +195       
+    mov x2, 248 -60
+    ldr x10, verde_oscuro             
+    bl draw_pixel
+
+    mov x1, 105+195        // Coordenada x inicial
+    mov x2, 256 -55       // Coordenada y inicial
+    mov x3, 112+195         // Coordenada x final
+    mov x4, 256 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 112+195        // Coordenada x inicial
+    mov x2, 257 -55       // Coordenada y inicial
+    mov x3, 112+195         // Coordenada x final
+    mov x4, 260 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+195        // Coordenada x inicial
+    mov x2, 248 -55       // Coordenada y inicial
+    mov x3, 115+195         // Coordenada x final
+    mov x4, 248 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+195        // Coordenada x inicial
+    mov x2, 247 -55       // Coordenada y inicial
+    mov x3, 105+195         // Coordenada x final
+    mov x4, 231 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 106+195        // Coordenada x inicial
+    mov x2, 244 -55       // Coordenada y inicial
+    mov x3, 117+195         // Coordenada x final
+    mov x4, 231 -55      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 117+195        
+    mov x2, 231 -60
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+195        // Coordenada x inicial
+    mov x2, 236 -55       // Coordenada y inicial
+    mov x3, 103+195         // Coordenada x final
+    mov x4, 235 -55      // Coordenada y final
+    ldr x10, negro             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_erase_down1:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +195       // Coordenada x inicial
+    mov x2, 288 -55       // Coordenada y inicial
+    mov x3, 96 +195        // Coordenada x final
+    mov x4, 288 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +195       // Coordenada x inicial
+    mov x2, 287 -55       // Coordenada y inicial
+    mov x3, 89 +195        // Coordenada x final
+    mov x4, 275 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 86 +195       // Coordenada x inicial
+    mov x2, 280 -55       // Coordenada y inicial
+    mov x3, 86 +195        // Coordenada x final
+    mov x4, 275 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 85 +195       // Coordenada x inicial
+    mov x2, 277 -55       // Coordenada y inicial
+    mov x3, 85 +195        // Coordenada x final
+    mov x4, 275 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +195       // Coordenada x inicial
+    mov x2, 280 -55       // Coordenada y inicial
+    mov x3, 89 +195        // Coordenada x final
+    mov x4, 275 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +195       // Coordenada x inicial
+    mov x2, 278 -55       // Coordenada y inicial
+    mov x3, 90 +195        // Coordenada x final
+    mov x4, 275 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 91 +195       // Coordenada x inicial
+    mov x2, 276 -55       // Coordenada y inicial
+    mov x3, 91 +195        // Coordenada x final
+    mov x4, 275 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +195       // Coordenada x inicial
+    mov x2, 288 -55       // Coordenada y inicial
+    mov x3, 72 +195        // Coordenada x final
+    mov x4, 288 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 72 +195       // Coordenada x inicial
+    mov x2, 287 -55       // Coordenada y inicial
+    mov x3, 74 +195        // Coordenada x final
+    mov x4, 275 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 74 +195       // Coordenada x inicial
+    mov x2, 281 -55       // Coordenada y inicial
+    mov x3, 74 +195        // Coordenada x final
+    mov x4, 275 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 75 +195       // Coordenada x inicial
+    mov x2, 280 -55       // Coordenada y inicial
+    mov x3, 75 +195        // Coordenada x final
+    mov x4, 275 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 76 +195       // Coordenada x inicial
+    mov x2, 279 -55       // Coordenada y inicial
+    mov x3, 76 +195        // Coordenada x final
+    mov x4, 275 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 77 +195       // Coordenada x inicial
+    mov x2, 276 -55       // Coordenada y inicial
+    mov x3, 78 +195        // Coordenada x final
+    mov x4, 276 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +195       // Coordenada x inicial
+    mov x2, 275 -55       // Coordenada y inicial
+    mov x3, 91 +195        // Coordenada x final
+    mov x4, 255 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +195       // Coordenada x inicial
+    mov x2, 243 -55       // Coordenada y inicial
+    mov x3, 56 +195        // Coordenada x final
+    mov x4, 258 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 57 +195       // Coordenada x inicial
+    mov x2, 246 -55       // Coordenada y inicial
+    mov x3, 57 +195        // Coordenada x final
+    mov x4, 259 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 58 +195       // Coordenada x inicial
+    mov x2, 247 -55       // Coordenada y inicial
+    mov x3, 58 +195        // Coordenada x final
+    mov x4, 260 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 59 +195       // Coordenada x inicial
+    mov x2, 248 -55       // Coordenada y inicial
+    mov x3, 59 +195        // Coordenada x final
+    mov x4, 261 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 60 +195       // Coordenada x inicial
+    mov x2, 249 -55       // Coordenada y inicial
+    mov x3, 60 +195        // Coordenada x final
+    mov x4, 262 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 61 +195       // Coordenada x inicial
+    mov x2, 250 -55       // Coordenada y inicial
+    mov x3, 61 +195        // Coordenada x final
+    mov x4, 262 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 62 +195       // Coordenada x inicial
+    mov x2, 251 -55       // Coordenada y inicial
+    mov x3, 62 +195        // Coordenada x final
+    mov x4, 263 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 63 +195       // Coordenada x inicial
+    mov x2, 252 -55       // Coordenada y inicial
+    mov x3, 63 +195        // Coordenada x final
+    mov x4, 264 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 64 +195       // Coordenada x inicial
+    mov x2, 253 -55       // Coordenada y inicial
+    mov x3, 64 +195        // Coordenada x final
+    mov x4, 265 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 65 +195       // Coordenada x inicial
+    mov x2, 254 -55       // Coordenada y inicial
+    mov x3, 65 +195        // Coordenada x final
+    mov x4, 267 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 66 +195       // Coordenada x inicial
+    mov x2, 255 -55       // Coordenada y inicial
+    mov x3, 66 +195        // Coordenada x final
+    mov x4, 268 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 67 +195       // Coordenada x inicial
+    mov x2, 255 -55       // Coordenada y inicial
+    mov x3, 67 +195        // Coordenada x final
+    mov x4, 269 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 68 +195       // Coordenada x inicial
+    mov x2, 255 -55       // Coordenada y inicial
+    mov x3, 68 +195        // Coordenada x final
+    mov x4, 270 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 69 +195       // Coordenada x inicial
+    mov x2, 255 -55       // Coordenada y inicial
+    mov x3, 69 +195        // Coordenada x final
+    mov x4, 272 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 70 +195       // Coordenada x inicial
+    mov x2, 255 -55       // Coordenada y inicial
+    mov x3, 70 +195        // Coordenada x final
+    mov x4, 273 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 71 +195       // Coordenada x inicial
+    mov x2, 255 -55       // Coordenada y inicial
+    mov x3, 71 +195        // Coordenada x final
+    mov x4, 274 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +195       // Coordenada x inicial
+    mov x2, 276 -55       // Coordenada y inicial
+    mov x3, 91 +195        // Coordenada x final
+    mov x4, 249 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 92 +195       // Coordenada x inicial
+    mov x2, 274 -55       // Coordenada y inicial
+    mov x3, 94 +195        // Coordenada x final
+    mov x4, 249 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 95 +195       // Coordenada x inicial
+    mov x2, 273 -55       // Coordenada y inicial
+    mov x3, 95 +195        // Coordenada x final
+    mov x4, 247 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 96 +195       // Coordenada x inicial
+    mov x2, 271 -55       // Coordenada y inicial
+    mov x3, 96 +195        // Coordenada x final
+    mov x4, 248 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 97 +195       // Coordenada x inicial
+    mov x2, 269 -55       // Coordenada y inicial
+    mov x3, 97 +195        // Coordenada x final
+    mov x4, 232 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 98 +195       // Coordenada x inicial
+    mov x2, 268 -55       // Coordenada y inicial
+    mov x3, 98 +195        // Coordenada x final
+    mov x4, 231 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 99 +195       // Coordenada x inicial
+    mov x2, 267 -55       // Coordenada y inicial
+    mov x3, 99 +195        // Coordenada x final
+    mov x4, 231 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 100+195        // Coordenada x inicial
+    mov x2, 265 -55       // Coordenada y inicial
+    mov x3, 100+195         // Coordenada x final
+    mov x4, 231 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+195        // Coordenada x inicial
+    mov x2, 264 -55       // Coordenada y inicial
+    mov x3, 101+195         // Coordenada x final
+    mov x4, 231 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+195        // Coordenada x inicial
+    mov x2, 264 -55       // Coordenada y inicial
+    mov x3, 101+195         // Coordenada x final
+    mov x4, 231 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 102+195        // Coordenada x inicial
+    mov x2, 262 -55       // Coordenada y inicial
+    mov x3, 104+195         // Coordenada x final
+    mov x4, 231 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 104+195
+    mov x2, 262-55   
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95+195    
+    mov x2, 247-55   
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +195       // Coordenada x inicial
+    mov x2, 254 -55       // Coordenada y inicial
+    mov x3, 104+195         // Coordenada x final
+    mov x4, 254 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 81 +195       // Coordenada x inicial
+    mov x2, 253 -55       // Coordenada y inicial
+    mov x3, 104+195         // Coordenada x final
+    mov x4, 253 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +195       // Coordenada x inicial
+    mov x2, 252 -55       // Coordenada y inicial
+    mov x3, 104+195         // Coordenada x final
+    mov x4, 252 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 88 +195       // Coordenada x inicial
+    mov x2, 251 -55       // Coordenada y inicial
+    mov x3, 104+195         // Coordenada x final
+    mov x4, 251 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +195       // Coordenada x inicial
+    mov x2, 250 -55       // Coordenada y inicial
+    mov x3, 104+195         // Coordenada x final
+    mov x4, 250 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +195       // Coordenada x inicial
+    mov x2, 249 -55       // Coordenada y inicial
+    mov x3, 104+195         // Coordenada x final
+    mov x4, 249 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+    
+    mov x1, 96 +195       
+    mov x2, 248 -60
+    ldr x10, cielo             
+    bl draw_pixel
+
+    mov x1, 105+195        // Coordenada x inicial
+    mov x2, 256 -55       // Coordenada y inicial
+    mov x3, 112+195         // Coordenada x final
+    mov x4, 256 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 112+195        // Coordenada x inicial
+    mov x2, 257 -55       // Coordenada y inicial
+    mov x3, 112+195         // Coordenada x final
+    mov x4, 260 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+195        // Coordenada x inicial
+    mov x2, 248 -55       // Coordenada y inicial
+    mov x3, 115+195         // Coordenada x final
+    mov x4, 248 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+195        // Coordenada x inicial
+    mov x2, 247 -55       // Coordenada y inicial
+    mov x3, 105+195         // Coordenada x final
+    mov x4, 231 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 106+195        // Coordenada x inicial
+    mov x2, 244 -55       // Coordenada y inicial
+    mov x3, 117+195         // Coordenada x final
+    mov x4, 231 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 117+195        
+    mov x2, 231 -60
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+195        // Coordenada x inicial
+    mov x2, 236 -55       // Coordenada y inicial
+    mov x3, 103+195         // Coordenada x final
+    mov x4, 235 -55      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_down2:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +225      // Coordenada x inicial
+    mov x2, 288 -25       // Coordenada y inicial
+    mov x3, 96 +225       // Coordenada x final
+    mov x4, 288 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +225      // Coordenada x inicial
+    mov x2, 287 -25       // Coordenada y inicial
+    mov x3, 89 +225       // Coordenada x final
+    mov x4, 275 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 86 +225      // Coordenada x inicial
+    mov x2, 280 -25       // Coordenada y inicial
+    mov x3, 86 +225       // Coordenada x final
+    mov x4, 275 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 85 +225      // Coordenada x inicial
+    mov x2, 277 -25       // Coordenada y inicial
+    mov x3, 85 +225       // Coordenada x final
+    mov x4, 275 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +225      // Coordenada x inicial
+    mov x2, 280 -25       // Coordenada y inicial
+    mov x3, 89 +225       // Coordenada x final
+    mov x4, 275 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +225      // Coordenada x inicial
+    mov x2, 278 -25       // Coordenada y inicial
+    mov x3, 90 +225       // Coordenada x final
+    mov x4, 275 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 91 +225      // Coordenada x inicial
+    mov x2, 276 -25       // Coordenada y inicial
+    mov x3, 91 +225       // Coordenada x final
+    mov x4, 275 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +225      // Coordenada x inicial
+    mov x2, 288 -25       // Coordenada y inicial
+    mov x3, 72 +225       // Coordenada x final
+    mov x4, 288 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 72 +225      // Coordenada x inicial
+    mov x2, 287 -25       // Coordenada y inicial
+    mov x3, 74 +225       // Coordenada x final
+    mov x4, 275 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 74 +225      // Coordenada x inicial
+    mov x2, 281 -25       // Coordenada y inicial
+    mov x3, 74 +225       // Coordenada x final
+    mov x4, 275 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 75 +225      // Coordenada x inicial
+    mov x2, 280 -25       // Coordenada y inicial
+    mov x3, 75 +225       // Coordenada x final
+    mov x4, 275 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 76 +225      // Coordenada x inicial
+    mov x2, 279 -25       // Coordenada y inicial
+    mov x3, 76 +225       // Coordenada x final
+    mov x4, 275 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 77 +225      // Coordenada x inicial
+    mov x2, 276 -25       // Coordenada y inicial
+    mov x3, 78 +225       // Coordenada x final
+    mov x4, 276 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +225      // Coordenada x inicial
+    mov x2, 275 -25       // Coordenada y inicial
+    mov x3, 91 +225       // Coordenada x final
+    mov x4, 255 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +225      // Coordenada x inicial
+    mov x2, 243 -25       // Coordenada y inicial
+    mov x3, 56 +225       // Coordenada x final
+    mov x4, 258 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 57 +225      // Coordenada x inicial
+    mov x2, 246 -25       // Coordenada y inicial
+    mov x3, 57 +225       // Coordenada x final
+    mov x4, 259 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 58 +225      // Coordenada x inicial
+    mov x2, 247 -25       // Coordenada y inicial
+    mov x3, 58 +225       // Coordenada x final
+    mov x4, 260 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 59 +225      // Coordenada x inicial
+    mov x2, 248 -25       // Coordenada y inicial
+    mov x3, 59 +225       // Coordenada x final
+    mov x4, 261 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 60 +225      // Coordenada x inicial
+    mov x2, 249 -25       // Coordenada y inicial
+    mov x3, 60 +225       // Coordenada x final
+    mov x4, 262 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 61 +225      // Coordenada x inicial
+    mov x2, 250 -25       // Coordenada y inicial
+    mov x3, 61 +225       // Coordenada x final
+    mov x4, 262 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 62 +225      // Coordenada x inicial
+    mov x2, 251 -25       // Coordenada y inicial
+    mov x3, 62 +225       // Coordenada x final
+    mov x4, 263 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 63 +225      // Coordenada x inicial
+    mov x2, 252 -25       // Coordenada y inicial
+    mov x3, 63 +225       // Coordenada x final
+    mov x4, 264 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 64 +225      // Coordenada x inicial
+    mov x2, 253 -25       // Coordenada y inicial
+    mov x3, 64 +225       // Coordenada x final
+    mov x4, 265 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 65 +225      // Coordenada x inicial
+    mov x2, 254 -25       // Coordenada y inicial
+    mov x3, 65 +225       // Coordenada x final
+    mov x4, 267 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 66 +225      // Coordenada x inicial
+    mov x2, 255 -25       // Coordenada y inicial
+    mov x3, 66 +225       // Coordenada x final
+    mov x4, 268 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 67 +225      // Coordenada x inicial
+    mov x2, 255 -25       // Coordenada y inicial
+    mov x3, 67 +225       // Coordenada x final
+    mov x4, 269 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 68 +225      // Coordenada x inicial
+    mov x2, 255 -25       // Coordenada y inicial
+    mov x3, 68 +225       // Coordenada x final
+    mov x4, 270 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 69 +225      // Coordenada x inicial
+    mov x2, 255 -25       // Coordenada y inicial
+    mov x3, 69 +225       // Coordenada x final
+    mov x4, 272 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 70 +225      // Coordenada x inicial
+    mov x2, 255 -25       // Coordenada y inicial
+    mov x3, 70 +225       // Coordenada x final
+    mov x4, 273 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 71 +225      // Coordenada x inicial
+    mov x2, 255 -25       // Coordenada y inicial
+    mov x3, 71 +225       // Coordenada x final
+    mov x4, 274 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +225      // Coordenada x inicial
+    mov x2, 276 -25       // Coordenada y inicial
+    mov x3, 91 +225       // Coordenada x final
+    mov x4, 249 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 92 +225      // Coordenada x inicial
+    mov x2, 274 -25       // Coordenada y inicial
+    mov x3, 94 +225       // Coordenada x final
+    mov x4, 249 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 95 +225      // Coordenada x inicial
+    mov x2, 273 -25       // Coordenada y inicial
+    mov x3, 95 +225       // Coordenada x final
+    mov x4, 247 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 96 +225      // Coordenada x inicial
+    mov x2, 271 -25       // Coordenada y inicial
+    mov x3, 96 +225       // Coordenada x final
+    mov x4, 248 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 97 +225      // Coordenada x inicial
+    mov x2, 269 -25       // Coordenada y inicial
+    mov x3, 97 +225       // Coordenada x final
+    mov x4, 232 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 98 +225      // Coordenada x inicial
+    mov x2, 268 -25       // Coordenada y inicial
+    mov x3, 98 +225       // Coordenada x final
+    mov x4, 231 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 99 +225      // Coordenada x inicial
+    mov x2, 267 -25       // Coordenada y inicial
+    mov x3, 99 +225       // Coordenada x final
+    mov x4, 231 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 100+225       // Coordenada x inicial
+    mov x2, 265 -25       // Coordenada y inicial
+    mov x3, 100+225        // Coordenada x final
+    mov x4, 231 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+225       // Coordenada x inicial
+    mov x2, 264 -25       // Coordenada y inicial
+    mov x3, 101+225        // Coordenada x final
+    mov x4, 231 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+225       // Coordenada x inicial
+    mov x2, 264 -25       // Coordenada y inicial
+    mov x3, 101+225        // Coordenada x final
+    mov x4, 231 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 102+225       // Coordenada x inicial
+    mov x2, 262 -25       // Coordenada y inicial
+    mov x3, 104+225        // Coordenada x final
+    mov x4, 231 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 104+195
+    mov x2, 262-25  
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95+225   
+    mov x2, 247-25   
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +225      // Coordenada x inicial
+    mov x2, 254 -25       // Coordenada y inicial
+    mov x3, 104+225        // Coordenada x final
+    mov x4, 254 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 81 +225      // Coordenada x inicial
+    mov x2, 253 -25       // Coordenada y inicial
+    mov x3, 104+225        // Coordenada x final
+    mov x4, 253 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +225      // Coordenada x inicial
+    mov x2, 252 -25       // Coordenada y inicial
+    mov x3, 104+225        // Coordenada x final
+    mov x4, 252 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 88 +225      // Coordenada x inicial
+    mov x2, 251 -25       // Coordenada y inicial
+    mov x3, 104+225        // Coordenada x final
+    mov x4, 251 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +225      // Coordenada x inicial
+    mov x2, 250 -25       // Coordenada y inicial
+    mov x3, 104+225        // Coordenada x final
+    mov x4, 250 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +225      // Coordenada x inicial
+    mov x2, 249 -25       // Coordenada y inicial
+    mov x3, 104+225        // Coordenada x final
+    mov x4, 249 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+    
+    mov x1, 96 +225      
+    mov x2, 248 -60
+    ldr x10, verde_oscuro             
+    bl draw_pixel
+
+    mov x1, 105+225       // Coordenada x inicial
+    mov x2, 256 -25       // Coordenada y inicial
+    mov x3, 112+225        // Coordenada x final
+    mov x4, 256 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 112+225       // Coordenada x inicial
+    mov x2, 257 -25       // Coordenada y inicial
+    mov x3, 112+225        // Coordenada x final
+    mov x4, 260 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+225       // Coordenada x inicial
+    mov x2, 248 -25       // Coordenada y inicial
+    mov x3, 115+225        // Coordenada x final
+    mov x4, 248 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+225       // Coordenada x inicial
+    mov x2, 247 -25       // Coordenada y inicial
+    mov x3, 105+225        // Coordenada x final
+    mov x4, 231 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 106+225       // Coordenada x inicial
+    mov x2, 244 -25       // Coordenada y inicial
+    mov x3, 117+225        // Coordenada x final
+    mov x4, 231 -25      // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 117+225       
+    mov x2, 231 -60
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+225       // Coordenada x inicial
+    mov x2, 236 -25       // Coordenada y inicial
+    mov x3, 103+225        // Coordenada x final
+    mov x4, 235 -25      // Coordenada y final
+    ldr x10, negro             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_erase_down2:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +225      // Coordenada x inicial
+    mov x2, 288 -25       // Coordenada y inicial
+    mov x3, 96 +225       // Coordenada x final
+    mov x4, 288 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +225      // Coordenada x inicial
+    mov x2, 287 -25       // Coordenada y inicial
+    mov x3, 89 +225       // Coordenada x final
+    mov x4, 275 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 86 +225      // Coordenada x inicial
+    mov x2, 280 -25       // Coordenada y inicial
+    mov x3, 86 +225       // Coordenada x final
+    mov x4, 275 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 85 +225      // Coordenada x inicial
+    mov x2, 277 -25       // Coordenada y inicial
+    mov x3, 85 +225       // Coordenada x final
+    mov x4, 275 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +225      // Coordenada x inicial
+    mov x2, 280 -25       // Coordenada y inicial
+    mov x3, 89 +225       // Coordenada x final
+    mov x4, 275 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +225      // Coordenada x inicial
+    mov x2, 278 -25       // Coordenada y inicial
+    mov x3, 90 +225       // Coordenada x final
+    mov x4, 275 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 91 +225      // Coordenada x inicial
+    mov x2, 276 -25       // Coordenada y inicial
+    mov x3, 91 +225       // Coordenada x final
+    mov x4, 275 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +225      // Coordenada x inicial
+    mov x2, 288 -25       // Coordenada y inicial
+    mov x3, 72 +225       // Coordenada x final
+    mov x4, 288 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 72 +225      // Coordenada x inicial
+    mov x2, 287 -25       // Coordenada y inicial
+    mov x3, 74 +225       // Coordenada x final
+    mov x4, 275 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 74 +225      // Coordenada x inicial
+    mov x2, 281 -25       // Coordenada y inicial
+    mov x3, 74 +225       // Coordenada x final
+    mov x4, 275 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 75 +225      // Coordenada x inicial
+    mov x2, 280 -25       // Coordenada y inicial
+    mov x3, 75 +225       // Coordenada x final
+    mov x4, 275 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 76 +225      // Coordenada x inicial
+    mov x2, 279 -25       // Coordenada y inicial
+    mov x3, 76 +225       // Coordenada x final
+    mov x4, 275 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 77 +225      // Coordenada x inicial
+    mov x2, 276 -25       // Coordenada y inicial
+    mov x3, 78 +225       // Coordenada x final
+    mov x4, 276 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +225      // Coordenada x inicial
+    mov x2, 275 -25       // Coordenada y inicial
+    mov x3, 91 +225       // Coordenada x final
+    mov x4, 255 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +225      // Coordenada x inicial
+    mov x2, 243 -25       // Coordenada y inicial
+    mov x3, 56 +225       // Coordenada x final
+    mov x4, 258 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 57 +225      // Coordenada x inicial
+    mov x2, 246 -25       // Coordenada y inicial
+    mov x3, 57 +225       // Coordenada x final
+    mov x4, 259 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 58 +225      // Coordenada x inicial
+    mov x2, 247 -25       // Coordenada y inicial
+    mov x3, 58 +225       // Coordenada x final
+    mov x4, 260 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 59 +225      // Coordenada x inicial
+    mov x2, 248 -25       // Coordenada y inicial
+    mov x3, 59 +225       // Coordenada x final
+    mov x4, 261 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 60 +225      // Coordenada x inicial
+    mov x2, 249 -25       // Coordenada y inicial
+    mov x3, 60 +225       // Coordenada x final
+    mov x4, 262 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 61 +225      // Coordenada x inicial
+    mov x2, 250 -25       // Coordenada y inicial
+    mov x3, 61 +225       // Coordenada x final
+    mov x4, 262 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 62 +225      // Coordenada x inicial
+    mov x2, 251 -25       // Coordenada y inicial
+    mov x3, 62 +225       // Coordenada x final
+    mov x4, 263 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 63 +225      // Coordenada x inicial
+    mov x2, 252 -25       // Coordenada y inicial
+    mov x3, 63 +225       // Coordenada x final
+    mov x4, 264 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 64 +225      // Coordenada x inicial
+    mov x2, 253 -25       // Coordenada y inicial
+    mov x3, 64 +225       // Coordenada x final
+    mov x4, 265 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 65 +225      // Coordenada x inicial
+    mov x2, 254 -25       // Coordenada y inicial
+    mov x3, 65 +225       // Coordenada x final
+    mov x4, 267 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 66 +225      // Coordenada x inicial
+    mov x2, 255 -25       // Coordenada y inicial
+    mov x3, 66 +225       // Coordenada x final
+    mov x4, 268 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 67 +225      // Coordenada x inicial
+    mov x2, 255 -25       // Coordenada y inicial
+    mov x3, 67 +225       // Coordenada x final
+    mov x4, 269 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 68 +225      // Coordenada x inicial
+    mov x2, 255 -25       // Coordenada y inicial
+    mov x3, 68 +225       // Coordenada x final
+    mov x4, 270 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 69 +225      // Coordenada x inicial
+    mov x2, 255 -25       // Coordenada y inicial
+    mov x3, 69 +225       // Coordenada x final
+    mov x4, 272 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 70 +225      // Coordenada x inicial
+    mov x2, 255 -25       // Coordenada y inicial
+    mov x3, 70 +225       // Coordenada x final
+    mov x4, 273 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 71 +225      // Coordenada x inicial
+    mov x2, 255 -25       // Coordenada y inicial
+    mov x3, 71 +225       // Coordenada x final
+    mov x4, 274 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +225      // Coordenada x inicial
+    mov x2, 276 -25       // Coordenada y inicial
+    mov x3, 91 +225       // Coordenada x final
+    mov x4, 249 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 92 +225      // Coordenada x inicial
+    mov x2, 274 -25       // Coordenada y inicial
+    mov x3, 94 +225       // Coordenada x final
+    mov x4, 249 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 95 +225      // Coordenada x inicial
+    mov x2, 273 -25       // Coordenada y inicial
+    mov x3, 95 +225       // Coordenada x final
+    mov x4, 247 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 96 +225      // Coordenada x inicial
+    mov x2, 271 -25       // Coordenada y inicial
+    mov x3, 96 +225       // Coordenada x final
+    mov x4, 248 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 97 +225      // Coordenada x inicial
+    mov x2, 269 -25       // Coordenada y inicial
+    mov x3, 97 +225       // Coordenada x final
+    mov x4, 232 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 98 +225      // Coordenada x inicial
+    mov x2, 268 -25       // Coordenada y inicial
+    mov x3, 98 +225       // Coordenada x final
+    mov x4, 231 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 99 +225      // Coordenada x inicial
+    mov x2, 267 -25       // Coordenada y inicial
+    mov x3, 99 +225       // Coordenada x final
+    mov x4, 231 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 100+225       // Coordenada x inicial
+    mov x2, 265 -25       // Coordenada y inicial
+    mov x3, 100+225        // Coordenada x final
+    mov x4, 231 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+225       // Coordenada x inicial
+    mov x2, 264 -25       // Coordenada y inicial
+    mov x3, 101+225        // Coordenada x final
+    mov x4, 231 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+225       // Coordenada x inicial
+    mov x2, 264 -25       // Coordenada y inicial
+    mov x3, 101+225        // Coordenada x final
+    mov x4, 231 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 102+225       // Coordenada x inicial
+    mov x2, 262 -25       // Coordenada y inicial
+    mov x3, 104+225        // Coordenada x final
+    mov x4, 231 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 104+195
+    mov x2, 262-25  
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95+225   
+    mov x2, 247-25   
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +225      // Coordenada x inicial
+    mov x2, 254 -25       // Coordenada y inicial
+    mov x3, 104+225        // Coordenada x final
+    mov x4, 254 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 81 +225      // Coordenada x inicial
+    mov x2, 253 -25       // Coordenada y inicial
+    mov x3, 104+225        // Coordenada x final
+    mov x4, 253 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +225      // Coordenada x inicial
+    mov x2, 252 -25       // Coordenada y inicial
+    mov x3, 104+225        // Coordenada x final
+    mov x4, 252 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 88 +225      // Coordenada x inicial
+    mov x2, 251 -25       // Coordenada y inicial
+    mov x3, 104+225        // Coordenada x final
+    mov x4, 251 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +225      // Coordenada x inicial
+    mov x2, 250 -25       // Coordenada y inicial
+    mov x3, 104+225        // Coordenada x final
+    mov x4, 250 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +225      // Coordenada x inicial
+    mov x2, 249 -25       // Coordenada y inicial
+    mov x3, 104+225        // Coordenada x final
+    mov x4, 249 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+    
+    mov x1, 96 +225      
+    mov x2, 248 -60
+    ldr x10, cielo             
+    bl draw_pixel
+
+    mov x1, 105+225       // Coordenada x inicial
+    mov x2, 256 -25       // Coordenada y inicial
+    mov x3, 112+225        // Coordenada x final
+    mov x4, 256 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 112+225       // Coordenada x inicial
+    mov x2, 257 -25       // Coordenada y inicial
+    mov x3, 112+225        // Coordenada x final
+    mov x4, 260 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+225       // Coordenada x inicial
+    mov x2, 248 -25       // Coordenada y inicial
+    mov x3, 115+225        // Coordenada x final
+    mov x4, 248 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+225       // Coordenada x inicial
+    mov x2, 247 -25       // Coordenada y inicial
+    mov x3, 105+225        // Coordenada x final
+    mov x4, 231 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 106+225       // Coordenada x inicial
+    mov x2, 244 -25       // Coordenada y inicial
+    mov x3, 117+225        // Coordenada x final
+    mov x4, 231 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 117+225       
+    mov x2, 231 -60
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+225       // Coordenada x inicial
+    mov x2, 236 -25       // Coordenada y inicial
+    mov x3, 103+225        // Coordenada x final
+    mov x4, 235 -25      // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_landing1:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +240     // Coordenada x inicial
+    mov x2, 288 +0      // Coordenada y inicial
+    mov x3, 96 +240      // Coordenada x final
+    mov x4, 288 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +240     // Coordenada x inicial
+    mov x2, 287 +0      // Coordenada y inicial
+    mov x3, 89 +240      // Coordenada x final
+    mov x4, 275 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 86 +240     // Coordenada x inicial
+    mov x2, 280 +0      // Coordenada y inicial
+    mov x3, 86 +240      // Coordenada x final
+    mov x4, 275 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 85 +240     // Coordenada x inicial
+    mov x2, 277 +0      // Coordenada y inicial
+    mov x3, 85 +240      // Coordenada x final
+    mov x4, 275 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +240     // Coordenada x inicial
+    mov x2, 280 +0      // Coordenada y inicial
+    mov x3, 89 +240      // Coordenada x final
+    mov x4, 275 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +240     // Coordenada x inicial
+    mov x2, 278 +0      // Coordenada y inicial
+    mov x3, 90 +240      // Coordenada x final
+    mov x4, 275 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 91 +240     // Coordenada x inicial
+    mov x2, 276 +0      // Coordenada y inicial
+    mov x3, 91 +240      // Coordenada x final
+    mov x4, 275 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +240     // Coordenada x inicial
+    mov x2, 288 +0      // Coordenada y inicial
+    mov x3, 72 +240      // Coordenada x final
+    mov x4, 288 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 72 +240     // Coordenada x inicial
+    mov x2, 287 +0      // Coordenada y inicial
+    mov x3, 74 +240      // Coordenada x final
+    mov x4, 275 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 74 +240     // Coordenada x inicial
+    mov x2, 281 +0      // Coordenada y inicial
+    mov x3, 74 +240      // Coordenada x final
+    mov x4, 275 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 75 +240     // Coordenada x inicial
+    mov x2, 280 +0      // Coordenada y inicial
+    mov x3, 75 +240      // Coordenada x final
+    mov x4, 275 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 76 +240     // Coordenada x inicial
+    mov x2, 279 +0      // Coordenada y inicial
+    mov x3, 76 +240      // Coordenada x final
+    mov x4, 275 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 77 +240     // Coordenada x inicial
+    mov x2, 276 +0      // Coordenada y inicial
+    mov x3, 78 +240      // Coordenada x final
+    mov x4, 276 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +240     // Coordenada x inicial
+    mov x2, 275 +0      // Coordenada y inicial
+    mov x3, 91 +240      // Coordenada x final
+    mov x4, 255 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +240     // Coordenada x inicial
+    mov x2, 243 +0      // Coordenada y inicial
+    mov x3, 56 +240      // Coordenada x final
+    mov x4, 258 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 57 +240     // Coordenada x inicial
+    mov x2, 246 +0      // Coordenada y inicial
+    mov x3, 57 +240      // Coordenada x final
+    mov x4, 259 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 58 +240     // Coordenada x inicial
+    mov x2, 247 +0      // Coordenada y inicial
+    mov x3, 58 +240      // Coordenada x final
+    mov x4, 260 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 59 +240     // Coordenada x inicial
+    mov x2, 248 +0      // Coordenada y inicial
+    mov x3, 59 +240      // Coordenada x final
+    mov x4, 261 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 60 +240     // Coordenada x inicial
+    mov x2, 249 +0      // Coordenada y inicial
+    mov x3, 60 +240      // Coordenada x final
+    mov x4, 262 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 61 +240     // Coordenada x inicial
+    mov x2, 250 +0      // Coordenada y inicial
+    mov x3, 61 +240      // Coordenada x final
+    mov x4, 262 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 62 +240     // Coordenada x inicial
+    mov x2, 251 +0      // Coordenada y inicial
+    mov x3, 62 +240      // Coordenada x final
+    mov x4, 263 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 63 +240     // Coordenada x inicial
+    mov x2, 252 +0      // Coordenada y inicial
+    mov x3, 63 +240      // Coordenada x final
+    mov x4, 264 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 64 +240     // Coordenada x inicial
+    mov x2, 253 +0      // Coordenada y inicial
+    mov x3, 64 +240      // Coordenada x final
+    mov x4, 265 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 65 +240     // Coordenada x inicial
+    mov x2, 254 +0      // Coordenada y inicial
+    mov x3, 65 +240      // Coordenada x final
+    mov x4, 267 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 66 +240     // Coordenada x inicial
+    mov x2, 255 +0      // Coordenada y inicial
+    mov x3, 66 +240      // Coordenada x final
+    mov x4, 268 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 67 +240     // Coordenada x inicial
+    mov x2, 255 +0      // Coordenada y inicial
+    mov x3, 67 +240      // Coordenada x final
+    mov x4, 269 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 68 +240     // Coordenada x inicial
+    mov x2, 255 +0      // Coordenada y inicial
+    mov x3, 68 +240      // Coordenada x final
+    mov x4, 270 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 69 +240     // Coordenada x inicial
+    mov x2, 255 +0      // Coordenada y inicial
+    mov x3, 69 +240      // Coordenada x final
+    mov x4, 272 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 70 +240     // Coordenada x inicial
+    mov x2, 255 +0      // Coordenada y inicial
+    mov x3, 70 +240      // Coordenada x final
+    mov x4, 273 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 71 +240     // Coordenada x inicial
+    mov x2, 255 +0      // Coordenada y inicial
+    mov x3, 71 +240      // Coordenada x final
+    mov x4, 274 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +240     // Coordenada x inicial
+    mov x2, 276 +0      // Coordenada y inicial
+    mov x3, 91 +240      // Coordenada x final
+    mov x4, 249 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 92 +240     // Coordenada x inicial
+    mov x2, 274 +0      // Coordenada y inicial
+    mov x3, 94 +240      // Coordenada x final
+    mov x4, 249 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 95 +240     // Coordenada x inicial
+    mov x2, 273 +0      // Coordenada y inicial
+    mov x3, 95 +240      // Coordenada x final
+    mov x4, 247 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 96 +240     // Coordenada x inicial
+    mov x2, 271 +0      // Coordenada y inicial
+    mov x3, 96 +240      // Coordenada x final
+    mov x4, 248 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 97 +240     // Coordenada x inicial
+    mov x2, 269 +0      // Coordenada y inicial
+    mov x3, 97 +240      // Coordenada x final
+    mov x4, 232 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 98 +240     // Coordenada x inicial
+    mov x2, 268 +0      // Coordenada y inicial
+    mov x3, 98 +240      // Coordenada x final
+    mov x4, 231 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 99 +240     // Coordenada x inicial
+    mov x2, 267 +0      // Coordenada y inicial
+    mov x3, 99 +240      // Coordenada x final
+    mov x4, 231 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 100+240      // Coordenada x inicial
+    mov x2, 265 +0      // Coordenada y inicial
+    mov x3, 100+240       // Coordenada x final
+    mov x4, 231 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+240      // Coordenada x inicial
+    mov x2, 264 +0      // Coordenada y inicial
+    mov x3, 101+240       // Coordenada x final
+    mov x4, 231 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+240      // Coordenada x inicial
+    mov x2, 264 +0      // Coordenada y inicial
+    mov x3, 101+240       // Coordenada x final
+    mov x4, 231 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 102+240      // Coordenada x inicial
+    mov x2, 262 +0      // Coordenada y inicial
+    mov x3, 104+240       // Coordenada x final
+    mov x4, 231 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 104+195
+    mov x2, 262+0 
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95+240  
+    mov x2, 247+0  
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +240     // Coordenada x inicial
+    mov x2, 254 +0      // Coordenada y inicial
+    mov x3, 104+240       // Coordenada x final
+    mov x4, 254 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 81 +240     // Coordenada x inicial
+    mov x2, 253 +0      // Coordenada y inicial
+    mov x3, 104+240       // Coordenada x final
+    mov x4, 253 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +240     // Coordenada x inicial
+    mov x2, 252 +0      // Coordenada y inicial
+    mov x3, 104+240       // Coordenada x final
+    mov x4, 252 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 88 +240     // Coordenada x inicial
+    mov x2, 251 +0      // Coordenada y inicial
+    mov x3, 104+240       // Coordenada x final
+    mov x4, 251 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +240     // Coordenada x inicial
+    mov x2, 250 +0      // Coordenada y inicial
+    mov x3, 104+240       // Coordenada x final
+    mov x4, 250 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +240     // Coordenada x inicial
+    mov x2, 249 +0      // Coordenada y inicial
+    mov x3, 104+240       // Coordenada x final
+    mov x4, 249 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+    
+    mov x1, 96 +240     
+    mov x2, 248 -60
+    ldr x10, verde_oscuro             
+    bl draw_pixel
+
+    mov x1, 105+240      // Coordenada x inicial
+    mov x2, 256 +0      // Coordenada y inicial
+    mov x3, 112+240       // Coordenada x final
+    mov x4, 256 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 112+240      // Coordenada x inicial
+    mov x2, 257 +0      // Coordenada y inicial
+    mov x3, 112+240       // Coordenada x final
+    mov x4, 260 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+240      // Coordenada x inicial
+    mov x2, 248 +0      // Coordenada y inicial
+    mov x3, 115+240       // Coordenada x final
+    mov x4, 248 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+240      // Coordenada x inicial
+    mov x2, 247 +0      // Coordenada y inicial
+    mov x3, 105+240       // Coordenada x final
+    mov x4, 231 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 106+240      // Coordenada x inicial
+    mov x2, 244 +0      // Coordenada y inicial
+    mov x3, 117+240       // Coordenada x final
+    mov x4, 231 +0     // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 117+240      
+    mov x2, 231 -60
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+240      // Coordenada x inicial
+    mov x2, 236 +0      // Coordenada y inicial
+    mov x3, 103+240       // Coordenada x final
+    mov x4, 235 +0     // Coordenada y final
+    ldr x10, negro             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_erase_landing1:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +240     // Coordenada x inicial
+    mov x2, 288 +0      // Coordenada y inicial
+    mov x3, 96 +240      // Coordenada x final
+    mov x4, 288 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +240     // Coordenada x inicial
+    mov x2, 287 +0      // Coordenada y inicial
+    mov x3, 89 +240      // Coordenada x final
+    mov x4, 275 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 86 +240     // Coordenada x inicial
+    mov x2, 280 +0      // Coordenada y inicial
+    mov x3, 86 +240      // Coordenada x final
+    mov x4, 275 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 85 +240     // Coordenada x inicial
+    mov x2, 277 +0      // Coordenada y inicial
+    mov x3, 85 +240      // Coordenada x final
+    mov x4, 275 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +240     // Coordenada x inicial
+    mov x2, 280 +0      // Coordenada y inicial
+    mov x3, 89 +240      // Coordenada x final
+    mov x4, 275 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +240     // Coordenada x inicial
+    mov x2, 278 +0      // Coordenada y inicial
+    mov x3, 90 +240      // Coordenada x final
+    mov x4, 275 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 91 +240     // Coordenada x inicial
+    mov x2, 276 +0      // Coordenada y inicial
+    mov x3, 91 +240      // Coordenada x final
+    mov x4, 275 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +240     // Coordenada x inicial
+    mov x2, 288 +0      // Coordenada y inicial
+    mov x3, 72 +240      // Coordenada x final
+    mov x4, 288 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 72 +240     // Coordenada x inicial
+    mov x2, 287 +0      // Coordenada y inicial
+    mov x3, 74 +240      // Coordenada x final
+    mov x4, 275 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 74 +240     // Coordenada x inicial
+    mov x2, 281 +0      // Coordenada y inicial
+    mov x3, 74 +240      // Coordenada x final
+    mov x4, 275 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 75 +240     // Coordenada x inicial
+    mov x2, 280 +0      // Coordenada y inicial
+    mov x3, 75 +240      // Coordenada x final
+    mov x4, 275 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 76 +240     // Coordenada x inicial
+    mov x2, 279 +0      // Coordenada y inicial
+    mov x3, 76 +240      // Coordenada x final
+    mov x4, 275 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 77 +240     // Coordenada x inicial
+    mov x2, 276 +0      // Coordenada y inicial
+    mov x3, 78 +240      // Coordenada x final
+    mov x4, 276 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +240     // Coordenada x inicial
+    mov x2, 275 +0      // Coordenada y inicial
+    mov x3, 91 +240      // Coordenada x final
+    mov x4, 255 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +240     // Coordenada x inicial
+    mov x2, 243 +0      // Coordenada y inicial
+    mov x3, 56 +240      // Coordenada x final
+    mov x4, 258 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 57 +240     // Coordenada x inicial
+    mov x2, 246 +0      // Coordenada y inicial
+    mov x3, 57 +240      // Coordenada x final
+    mov x4, 259 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 58 +240     // Coordenada x inicial
+    mov x2, 247 +0      // Coordenada y inicial
+    mov x3, 58 +240      // Coordenada x final
+    mov x4, 260 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 59 +240     // Coordenada x inicial
+    mov x2, 248 +0      // Coordenada y inicial
+    mov x3, 59 +240      // Coordenada x final
+    mov x4, 261 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 60 +240     // Coordenada x inicial
+    mov x2, 249 +0      // Coordenada y inicial
+    mov x3, 60 +240      // Coordenada x final
+    mov x4, 262 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 61 +240     // Coordenada x inicial
+    mov x2, 250 +0      // Coordenada y inicial
+    mov x3, 61 +240      // Coordenada x final
+    mov x4, 262 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 62 +240     // Coordenada x inicial
+    mov x2, 251 +0      // Coordenada y inicial
+    mov x3, 62 +240      // Coordenada x final
+    mov x4, 263 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 63 +240     // Coordenada x inicial
+    mov x2, 252 +0      // Coordenada y inicial
+    mov x3, 63 +240      // Coordenada x final
+    mov x4, 264 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 64 +240     // Coordenada x inicial
+    mov x2, 253 +0      // Coordenada y inicial
+    mov x3, 64 +240      // Coordenada x final
+    mov x4, 265 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 65 +240     // Coordenada x inicial
+    mov x2, 254 +0      // Coordenada y inicial
+    mov x3, 65 +240      // Coordenada x final
+    mov x4, 267 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 66 +240     // Coordenada x inicial
+    mov x2, 255 +0      // Coordenada y inicial
+    mov x3, 66 +240      // Coordenada x final
+    mov x4, 268 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 67 +240     // Coordenada x inicial
+    mov x2, 255 +0      // Coordenada y inicial
+    mov x3, 67 +240      // Coordenada x final
+    mov x4, 269 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 68 +240     // Coordenada x inicial
+    mov x2, 255 +0      // Coordenada y inicial
+    mov x3, 68 +240      // Coordenada x final
+    mov x4, 270 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 69 +240     // Coordenada x inicial
+    mov x2, 255 +0      // Coordenada y inicial
+    mov x3, 69 +240      // Coordenada x final
+    mov x4, 272 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 70 +240     // Coordenada x inicial
+    mov x2, 255 +0      // Coordenada y inicial
+    mov x3, 70 +240      // Coordenada x final
+    mov x4, 273 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 71 +240     // Coordenada x inicial
+    mov x2, 255 +0      // Coordenada y inicial
+    mov x3, 71 +240      // Coordenada x final
+    mov x4, 274 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +240     // Coordenada x inicial
+    mov x2, 276 +0      // Coordenada y inicial
+    mov x3, 91 +240      // Coordenada x final
+    mov x4, 249 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 92 +240     // Coordenada x inicial
+    mov x2, 274 +0      // Coordenada y inicial
+    mov x3, 94 +240      // Coordenada x final
+    mov x4, 249 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 95 +240     // Coordenada x inicial
+    mov x2, 273 +0      // Coordenada y inicial
+    mov x3, 95 +240      // Coordenada x final
+    mov x4, 247 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 96 +240     // Coordenada x inicial
+    mov x2, 271 +0      // Coordenada y inicial
+    mov x3, 96 +240      // Coordenada x final
+    mov x4, 248 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 97 +240     // Coordenada x inicial
+    mov x2, 269 +0      // Coordenada y inicial
+    mov x3, 97 +240      // Coordenada x final
+    mov x4, 232 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 98 +240     // Coordenada x inicial
+    mov x2, 268 +0      // Coordenada y inicial
+    mov x3, 98 +240      // Coordenada x final
+    mov x4, 231 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 99 +240     // Coordenada x inicial
+    mov x2, 267 +0      // Coordenada y inicial
+    mov x3, 99 +240      // Coordenada x final
+    mov x4, 231 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 100+240      // Coordenada x inicial
+    mov x2, 265 +0      // Coordenada y inicial
+    mov x3, 100+240       // Coordenada x final
+    mov x4, 231 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+240      // Coordenada x inicial
+    mov x2, 264 +0      // Coordenada y inicial
+    mov x3, 101+240       // Coordenada x final
+    mov x4, 231 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+240      // Coordenada x inicial
+    mov x2, 264 +0      // Coordenada y inicial
+    mov x3, 101+240       // Coordenada x final
+    mov x4, 231 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 102+240      // Coordenada x inicial
+    mov x2, 262 +0      // Coordenada y inicial
+    mov x3, 104+240       // Coordenada x final
+    mov x4, 231 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 104+195
+    mov x2, 262+0 
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95+240  
+    mov x2, 247+0  
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +240     // Coordenada x inicial
+    mov x2, 254 +0      // Coordenada y inicial
+    mov x3, 104+240       // Coordenada x final
+    mov x4, 254 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 81 +240     // Coordenada x inicial
+    mov x2, 253 +0      // Coordenada y inicial
+    mov x3, 104+240       // Coordenada x final
+    mov x4, 253 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +240     // Coordenada x inicial
+    mov x2, 252 +0      // Coordenada y inicial
+    mov x3, 104+240       // Coordenada x final
+    mov x4, 252 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 88 +240     // Coordenada x inicial
+    mov x2, 251 +0      // Coordenada y inicial
+    mov x3, 104+240       // Coordenada x final
+    mov x4, 251 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +240     // Coordenada x inicial
+    mov x2, 250 +0      // Coordenada y inicial
+    mov x3, 104+240       // Coordenada x final
+    mov x4, 250 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +240     // Coordenada x inicial
+    mov x2, 249 +0      // Coordenada y inicial
+    mov x3, 104+240       // Coordenada x final
+    mov x4, 249 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+    
+    mov x1, 96 +240     
+    mov x2, 248 -60
+    ldr x10, cielo             
+    bl draw_pixel
+
+    mov x1, 105+240      // Coordenada x inicial
+    mov x2, 256 +0      // Coordenada y inicial
+    mov x3, 112+240       // Coordenada x final
+    mov x4, 256 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 112+240      // Coordenada x inicial
+    mov x2, 257 +0      // Coordenada y inicial
+    mov x3, 112+240       // Coordenada x final
+    mov x4, 260 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+240      // Coordenada x inicial
+    mov x2, 248 +0      // Coordenada y inicial
+    mov x3, 115+240       // Coordenada x final
+    mov x4, 248 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+240      // Coordenada x inicial
+    mov x2, 247 +0      // Coordenada y inicial
+    mov x3, 105+240       // Coordenada x final
+    mov x4, 231 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 106+240      // Coordenada x inicial
+    mov x2, 244 +0      // Coordenada y inicial
+    mov x3, 117+240       // Coordenada x final
+    mov x4, 231 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 117+240      
+    mov x2, 231 -60
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+240      // Coordenada x inicial
+    mov x2, 236 +0      // Coordenada y inicial
+    mov x3, 103+240       // Coordenada x final
+    mov x4, 235 +0     // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_walk3:
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +250      // Coordenada x inicial
+    mov x2, 282         // Coordenada y inicial
+    mov x3, 96 +250       // Coordenada x final
+    mov x4, 282        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +250      // Coordenada x inicial
+    mov x2, 281         // Coordenada y inicial
+    mov x3, 89 +250       // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 86 +250      // Coordenada x inicial
+    mov x2, 280         // Coordenada y inicial
+    mov x3, 86 +250       // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 85 +250      // Coordenada x inicial
+    mov x2, 277         // Coordenada y inicial
+    mov x3, 85 +250       // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +250      // Coordenada x inicial
+    mov x2, 280         // Coordenada y inicial
+    mov x3, 89 +250       // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +250      // Coordenada x inicial
+    mov x2, 278         // Coordenada y inicial
+    mov x3, 90 +250       // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 91 +250      // Coordenada x inicial
+    mov x2, 276         // Coordenada y inicial
+    mov x3, 91 +250       // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +250      // Coordenada x inicial
+    mov x2, 288         // Coordenada y inicial
+    mov x3, 72 +250       // Coordenada x final
+    mov x4, 288        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 72 +250      // Coordenada x inicial
+    mov x2, 287         // Coordenada y inicial
+    mov x3, 74 +250       // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 74 +250      // Coordenada x inicial
+    mov x2, 281         // Coordenada y inicial
+    mov x3, 74 +250       // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 75 +250      // Coordenada x inicial
+    mov x2, 280         // Coordenada y inicial
+    mov x3, 75 +250       // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 76 +250      // Coordenada x inicial
+    mov x2, 279         // Coordenada y inicial
+    mov x3, 76 +250       // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 77 +250      // Coordenada x inicial
+    mov x2, 276         // Coordenada y inicial
+    mov x3, 78 +250       // Coordenada x final
+    mov x4, 276        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +250      // Coordenada x inicial
+    mov x2, 275         // Coordenada y inicial
+    mov x3, 91 +250       // Coordenada x final
+    mov x4, 255        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +250      // Coordenada x inicial
+    mov x2, 243         // Coordenada y inicial
+    mov x3, 56 +250       // Coordenada x final
+    mov x4, 258        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 57 +250      // Coordenada x inicial
+    mov x2, 246         // Coordenada y inicial
+    mov x3, 57 +250       // Coordenada x final
+    mov x4, 259        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 58 +250      // Coordenada x inicial
+    mov x2, 247         // Coordenada y inicial
+    mov x3, 58 +250       // Coordenada x final
+    mov x4, 260        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 59 +250      // Coordenada x inicial
+    mov x2, 248         // Coordenada y inicial
+    mov x3, 59 +250       // Coordenada x final
+    mov x4, 261        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 60 +250      // Coordenada x inicial
+    mov x2, 249         // Coordenada y inicial
+    mov x3, 60 +250       // Coordenada x final
+    mov x4, 262        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 61 +250      // Coordenada x inicial
+    mov x2, 250         // Coordenada y inicial
+    mov x3, 61 +250       // Coordenada x final
+    mov x4, 262        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 62 +250      // Coordenada x inicial
+    mov x2, 251         // Coordenada y inicial
+    mov x3, 62 +250       // Coordenada x final
+    mov x4, 263        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 63 +250      // Coordenada x inicial
+    mov x2, 252         // Coordenada y inicial
+    mov x3, 63 +250       // Coordenada x final
+    mov x4, 264        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 64 +250      // Coordenada x inicial
+    mov x2, 253         // Coordenada y inicial
+    mov x3, 64 +250       // Coordenada x final
+    mov x4, 265        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 65 +250      // Coordenada x inicial
+    mov x2, 254         // Coordenada y inicial
+    mov x3, 65 +250       // Coordenada x final
+    mov x4, 267        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 66 +250      // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 66 +250       // Coordenada x final
+    mov x4, 268        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 67 +250      // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 67 +250       // Coordenada x final
+    mov x4, 269        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 68 +250      // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 68 +250       // Coordenada x final
+    mov x4, 270        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 69 +250      // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 69 +250       // Coordenada x final
+    mov x4, 272        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 70 +250      // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 70 +250       // Coordenada x final
+    mov x4, 273        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 71 +250      // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 71 +250       // Coordenada x final
+    mov x4, 274        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +250      // Coordenada x inicial
+    mov x2, 276         // Coordenada y inicial
+    mov x3, 91 +250       // Coordenada x final
+    mov x4, 249        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 92 +250      // Coordenada x inicial
+    mov x2, 274         // Coordenada y inicial
+    mov x3, 94 +250       // Coordenada x final
+    mov x4, 249        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 95 +250      // Coordenada x inicial
+    mov x2, 273         // Coordenada y inicial
+    mov x3, 95 +250       // Coordenada x final
+    mov x4, 247        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 96 +250      // Coordenada x inicial
+    mov x2, 271         // Coordenada y inicial
+    mov x3, 96 +250       // Coordenada x final
+    mov x4, 248        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 97 +250      // Coordenada x inicial
+    mov x2, 269         // Coordenada y inicial
+    mov x3, 97 +250       // Coordenada x final
+    mov x4, 232        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 98 +250      // Coordenada x inicial
+    mov x2, 268         // Coordenada y inicial
+    mov x3, 98 +250       // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 99 +250      // Coordenada x inicial
+    mov x2, 267         // Coordenada y inicial
+    mov x3, 99 +250       // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 100+250       // Coordenada x inicial
+    mov x2, 265         // Coordenada y inicial
+    mov x3, 100+250        // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+250       // Coordenada x inicial
+    mov x2, 264         // Coordenada y inicial
+    mov x3, 101+250        // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+250       // Coordenada x inicial
+    mov x2, 264         // Coordenada y inicial
+    mov x3, 101+250        // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 102+250       // Coordenada x inicial
+    mov x2, 262         // Coordenada y inicial
+    mov x3, 104+250        // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 104+30
+    mov x2, 262
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95 +250   
+    mov x2, 247
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +250      // Coordenada x inicial
+    mov x2, 254         // Coordenada y inicial
+    mov x3, 104+250        // Coordenada x final
+    mov x4, 254        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 81 +250      // Coordenada x inicial
+    mov x2, 253         // Coordenada y inicial
+    mov x3, 104+250        // Coordenada x final
+    mov x4, 253        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +250      // Coordenada x inicial
+    mov x2, 252         // Coordenada y inicial
+    mov x3, 104+250        // Coordenada x final
+    mov x4, 252        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 88 +250      // Coordenada x inicial
+    mov x2, 251         // Coordenada y inicial
+    mov x3, 104+250        // Coordenada x final
+    mov x4, 251        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +250      // Coordenada x inicial
+    mov x2, 250         // Coordenada y inicial
+    mov x3, 104+250        // Coordenada x final
+    mov x4, 250        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +250      // Coordenada x inicial
+    mov x2, 249         // Coordenada y inicial
+    mov x3, 104+250        // Coordenada x final
+    mov x4, 249        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+    
+    mov x1, 96 +250      
+    mov x2, 248 
+    ldr x10, verde_oscuro             
+    bl draw_pixel
+
+    mov x1, 105+250       // Coordenada x inicial
+    mov x2, 256         // Coordenada y inicial
+    mov x3, 112+250        // Coordenada x final
+    mov x4, 256        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 112+250       // Coordenada x inicial
+    mov x2, 257         // Coordenada y inicial
+    mov x3, 112+250        // Coordenada x final
+    mov x4, 260        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+250       // Coordenada x inicial
+    mov x2, 248         // Coordenada y inicial
+    mov x3, 115+250        // Coordenada x final
+    mov x4, 248        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+250       // Coordenada x inicial
+    mov x2, 247         // Coordenada y inicial
+    mov x3, 105+250        // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 106+250       // Coordenada x inicial
+    mov x2, 244         // Coordenada y inicial
+    mov x3, 117+250        // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 117+250       
+    mov x2, 231 
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+250       // Coordenada x inicial
+    mov x2, 236         // Coordenada y inicial
+    mov x3, 103+250        // Coordenada x final
+    mov x4, 235        // Coordenada y final
+    ldr x10, negro             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_erase_walk3:
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +250      // Coordenada x inicial
+    mov x2, 282         // Coordenada y inicial
+    mov x3, 96 +250       // Coordenada x final
+    mov x4, 282        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +250      // Coordenada x inicial
+    mov x2, 281         // Coordenada y inicial
+    mov x3, 89 +250       // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 86 +250      // Coordenada x inicial
+    mov x2, 280         // Coordenada y inicial
+    mov x3, 86 +250       // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 85 +250      // Coordenada x inicial
+    mov x2, 277         // Coordenada y inicial
+    mov x3, 85 +250       // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +250      // Coordenada x inicial
+    mov x2, 280         // Coordenada y inicial
+    mov x3, 89 +250       // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +250      // Coordenada x inicial
+    mov x2, 278         // Coordenada y inicial
+    mov x3, 90 +250       // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 91 +250      // Coordenada x inicial
+    mov x2, 276         // Coordenada y inicial
+    mov x3, 91 +250       // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +250      // Coordenada x inicial
+    mov x2, 288         // Coordenada y inicial
+    mov x3, 72 +250       // Coordenada x final
+    mov x4, 288        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 72 +250      // Coordenada x inicial
+    mov x2, 287         // Coordenada y inicial
+    mov x3, 74 +250       // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 74 +250      // Coordenada x inicial
+    mov x2, 281         // Coordenada y inicial
+    mov x3, 74 +250       // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 75 +250      // Coordenada x inicial
+    mov x2, 280         // Coordenada y inicial
+    mov x3, 75 +250       // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 76 +250      // Coordenada x inicial
+    mov x2, 279         // Coordenada y inicial
+    mov x3, 76 +250       // Coordenada x final
+    mov x4, 275        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 77 +250      // Coordenada x inicial
+    mov x2, 276         // Coordenada y inicial
+    mov x3, 78 +250       // Coordenada x final
+    mov x4, 276        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +250      // Coordenada x inicial
+    mov x2, 275         // Coordenada y inicial
+    mov x3, 91 +250       // Coordenada x final
+    mov x4, 255        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +250      // Coordenada x inicial
+    mov x2, 243         // Coordenada y inicial
+    mov x3, 56 +250       // Coordenada x final
+    mov x4, 258        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 57 +250      // Coordenada x inicial
+    mov x2, 246         // Coordenada y inicial
+    mov x3, 57 +250       // Coordenada x final
+    mov x4, 259        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 58 +250      // Coordenada x inicial
+    mov x2, 247         // Coordenada y inicial
+    mov x3, 58 +250       // Coordenada x final
+    mov x4, 260        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 59 +250      // Coordenada x inicial
+    mov x2, 248         // Coordenada y inicial
+    mov x3, 59 +250       // Coordenada x final
+    mov x4, 261        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 60 +250      // Coordenada x inicial
+    mov x2, 249         // Coordenada y inicial
+    mov x3, 60 +250       // Coordenada x final
+    mov x4, 262        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 61 +250      // Coordenada x inicial
+    mov x2, 250         // Coordenada y inicial
+    mov x3, 61 +250       // Coordenada x final
+    mov x4, 262        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 62 +250      // Coordenada x inicial
+    mov x2, 251         // Coordenada y inicial
+    mov x3, 62 +250       // Coordenada x final
+    mov x4, 263        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 63 +250      // Coordenada x inicial
+    mov x2, 252         // Coordenada y inicial
+    mov x3, 63 +250       // Coordenada x final
+    mov x4, 264        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 64 +250      // Coordenada x inicial
+    mov x2, 253         // Coordenada y inicial
+    mov x3, 64 +250       // Coordenada x final
+    mov x4, 265        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 65 +250      // Coordenada x inicial
+    mov x2, 254         // Coordenada y inicial
+    mov x3, 65 +250       // Coordenada x final
+    mov x4, 267        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 66 +250      // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 66 +250       // Coordenada x final
+    mov x4, 268        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 67 +250      // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 67 +250       // Coordenada x final
+    mov x4, 269        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 68 +250      // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 68 +250       // Coordenada x final
+    mov x4, 270        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 69 +250      // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 69 +250       // Coordenada x final
+    mov x4, 272        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 70 +250      // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 70 +250       // Coordenada x final
+    mov x4, 273        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 71 +250      // Coordenada x inicial
+    mov x2, 255         // Coordenada y inicial
+    mov x3, 71 +250       // Coordenada x final
+    mov x4, 274        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +250      // Coordenada x inicial
+    mov x2, 276         // Coordenada y inicial
+    mov x3, 91 +250       // Coordenada x final
+    mov x4, 249        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 92 +250      // Coordenada x inicial
+    mov x2, 274         // Coordenada y inicial
+    mov x3, 94 +250       // Coordenada x final
+    mov x4, 249        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 95 +250      // Coordenada x inicial
+    mov x2, 273         // Coordenada y inicial
+    mov x3, 95 +250       // Coordenada x final
+    mov x4, 247        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 96 +250      // Coordenada x inicial
+    mov x2, 271         // Coordenada y inicial
+    mov x3, 96 +250       // Coordenada x final
+    mov x4, 248        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 97 +250      // Coordenada x inicial
+    mov x2, 269         // Coordenada y inicial
+    mov x3, 97 +250       // Coordenada x final
+    mov x4, 232        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 98 +250      // Coordenada x inicial
+    mov x2, 268         // Coordenada y inicial
+    mov x3, 98 +250       // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 99 +250      // Coordenada x inicial
+    mov x2, 267         // Coordenada y inicial
+    mov x3, 99 +250       // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 100+250       // Coordenada x inicial
+    mov x2, 265         // Coordenada y inicial
+    mov x3, 100+250        // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+250       // Coordenada x inicial
+    mov x2, 264         // Coordenada y inicial
+    mov x3, 101+250        // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+250       // Coordenada x inicial
+    mov x2, 264         // Coordenada y inicial
+    mov x3, 101+250        // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 102+250       // Coordenada x inicial
+    mov x2, 262         // Coordenada y inicial
+    mov x3, 104+250        // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 104+30
+    mov x2, 262
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95 +250   
+    mov x2, 247
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +250      // Coordenada x inicial
+    mov x2, 254         // Coordenada y inicial
+    mov x3, 104+250        // Coordenada x final
+    mov x4, 254        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 81 +250      // Coordenada x inicial
+    mov x2, 253         // Coordenada y inicial
+    mov x3, 104+250        // Coordenada x final
+    mov x4, 253        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +250      // Coordenada x inicial
+    mov x2, 252         // Coordenada y inicial
+    mov x3, 104+250        // Coordenada x final
+    mov x4, 252        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 88 +250      // Coordenada x inicial
+    mov x2, 251         // Coordenada y inicial
+    mov x3, 104+250        // Coordenada x final
+    mov x4, 251        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +250      // Coordenada x inicial
+    mov x2, 250         // Coordenada y inicial
+    mov x3, 104+250        // Coordenada x final
+    mov x4, 250        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +250      // Coordenada x inicial
+    mov x2, 249         // Coordenada y inicial
+    mov x3, 104+250        // Coordenada x final
+    mov x4, 249        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+    
+    mov x1, 96 +250      
+    mov x2, 248 
+    ldr x10, cielo             
+    bl draw_pixel
+
+    mov x1, 105+250       // Coordenada x inicial
+    mov x2, 256         // Coordenada y inicial
+    mov x3, 112+250        // Coordenada x final
+    mov x4, 256        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 112+250       // Coordenada x inicial
+    mov x2, 257         // Coordenada y inicial
+    mov x3, 112+250        // Coordenada x final
+    mov x4, 260        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+250       // Coordenada x inicial
+    mov x2, 248         // Coordenada y inicial
+    mov x3, 115+250        // Coordenada x final
+    mov x4, 248        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+250       // Coordenada x inicial
+    mov x2, 247         // Coordenada y inicial
+    mov x3, 105+250        // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 106+250       // Coordenada x inicial
+    mov x2, 244         // Coordenada y inicial
+    mov x3, 117+250        // Coordenada x final
+    mov x4, 231        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 117+250       
+    mov x2, 231 
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+250       // Coordenada x inicial
+    mov x2, 236         // Coordenada y inicial
+    mov x3, 103+250        // Coordenada x final
+    mov x4, 235        // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_jump4:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +280      // Coordenada x inicial
+    mov x2, 288 -30        // Coordenada y inicial
+    mov x3, 96 +280       // Coordenada x final
+    mov x4, 288 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +280      // Coordenada x inicial
+    mov x2, 287 -30        // Coordenada y inicial
+    mov x3, 89 +280       // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 86 +280      // Coordenada x inicial
+    mov x2, 280 -30        // Coordenada y inicial
+    mov x3, 86 +280       // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 85 +280      // Coordenada x inicial
+    mov x2, 277 -30        // Coordenada y inicial
+    mov x3, 85 +280       // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +280      // Coordenada x inicial
+    mov x2, 280 -30        // Coordenada y inicial
+    mov x3, 89 +280       // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +280      // Coordenada x inicial
+    mov x2, 278 -30        // Coordenada y inicial
+    mov x3, 90 +280       // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 91 +280      // Coordenada x inicial
+    mov x2, 276 -30        // Coordenada y inicial
+    mov x3, 91 +280       // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +280      // Coordenada x inicial
+    mov x2, 288 -30        // Coordenada y inicial
+    mov x3, 72 +280       // Coordenada x final
+    mov x4, 288 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 72 +280      // Coordenada x inicial
+    mov x2, 287 -30        // Coordenada y inicial
+    mov x3, 74 +280       // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 74 +280      // Coordenada x inicial
+    mov x2, 281 -30        // Coordenada y inicial
+    mov x3, 74 +280       // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 75 +280      // Coordenada x inicial
+    mov x2, 280 -30        // Coordenada y inicial
+    mov x3, 75 +280       // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 76 +280      // Coordenada x inicial
+    mov x2, 279 -30        // Coordenada y inicial
+    mov x3, 76 +280       // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 77 +280      // Coordenada x inicial
+    mov x2, 276 -30        // Coordenada y inicial
+    mov x3, 78 +280       // Coordenada x final
+    mov x4, 276 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +280      // Coordenada x inicial
+    mov x2, 275 -30        // Coordenada y inicial
+    mov x3, 91 +280       // Coordenada x final
+    mov x4, 255 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +280      // Coordenada x inicial
+    mov x2, 243 -30        // Coordenada y inicial
+    mov x3, 56 +280       // Coordenada x final
+    mov x4, 258 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 57 +280      // Coordenada x inicial
+    mov x2, 246 -30        // Coordenada y inicial
+    mov x3, 57 +280       // Coordenada x final
+    mov x4, 259 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 58 +280      // Coordenada x inicial
+    mov x2, 247 -30        // Coordenada y inicial
+    mov x3, 58 +280       // Coordenada x final
+    mov x4, 260 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 59 +280      // Coordenada x inicial
+    mov x2, 248 -30        // Coordenada y inicial
+    mov x3, 59 +280       // Coordenada x final
+    mov x4, 261 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 60 +280      // Coordenada x inicial
+    mov x2, 249 -30        // Coordenada y inicial
+    mov x3, 60 +280       // Coordenada x final
+    mov x4, 262 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 61 +280      // Coordenada x inicial
+    mov x2, 250 -30        // Coordenada y inicial
+    mov x3, 61 +280       // Coordenada x final
+    mov x4, 262 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 62 +280      // Coordenada x inicial
+    mov x2, 251 -30        // Coordenada y inicial
+    mov x3, 62 +280       // Coordenada x final
+    mov x4, 263 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 63 +280      // Coordenada x inicial
+    mov x2, 252 -30        // Coordenada y inicial
+    mov x3, 63 +280       // Coordenada x final
+    mov x4, 264 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 64 +280      // Coordenada x inicial
+    mov x2, 253 -30        // Coordenada y inicial
+    mov x3, 64 +280       // Coordenada x final
+    mov x4, 265 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 65 +280      // Coordenada x inicial
+    mov x2, 254 -30        // Coordenada y inicial
+    mov x3, 65 +280       // Coordenada x final
+    mov x4, 267 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 66 +280      // Coordenada x inicial
+    mov x2, 255 -30        // Coordenada y inicial
+    mov x3, 66 +280       // Coordenada x final
+    mov x4, 268 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 67 +280      // Coordenada x inicial
+    mov x2, 255 -30        // Coordenada y inicial
+    mov x3, 67 +280       // Coordenada x final
+    mov x4, 269 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 68 +280      // Coordenada x inicial
+    mov x2, 255 -30        // Coordenada y inicial
+    mov x3, 68 +280       // Coordenada x final
+    mov x4, 270 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 69 +280      // Coordenada x inicial
+    mov x2, 255 -30        // Coordenada y inicial
+    mov x3, 69 +280       // Coordenada x final
+    mov x4, 272 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 70 +280      // Coordenada x inicial
+    mov x2, 255 -30        // Coordenada y inicial
+    mov x3, 70 +280       // Coordenada x final
+    mov x4, 273 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 71 +280      // Coordenada x inicial
+    mov x2, 255 -30        // Coordenada y inicial
+    mov x3, 71 +280       // Coordenada x final
+    mov x4, 274 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +280      // Coordenada x inicial
+    mov x2, 276 -30        // Coordenada y inicial
+    mov x3, 91 +280       // Coordenada x final
+    mov x4, 249 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 92 +280      // Coordenada x inicial
+    mov x2, 274 -30        // Coordenada y inicial
+    mov x3, 94 +280       // Coordenada x final
+    mov x4, 249 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 95 +280      // Coordenada x inicial
+    mov x2, 273 -30        // Coordenada y inicial
+    mov x3, 95 +280       // Coordenada x final
+    mov x4, 247 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 96 +280      // Coordenada x inicial
+    mov x2, 271 -30        // Coordenada y inicial
+    mov x3, 96 +280       // Coordenada x final
+    mov x4, 248 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 97 +280      // Coordenada x inicial
+    mov x2, 269 -30        // Coordenada y inicial
+    mov x3, 97 +280       // Coordenada x final
+    mov x4, 232 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 98 +280      // Coordenada x inicial
+    mov x2, 268 -30        // Coordenada y inicial
+    mov x3, 98 +280       // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 99 +280      // Coordenada x inicial
+    mov x2, 267 -30        // Coordenada y inicial
+    mov x3, 99 +280       // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 100+280       // Coordenada x inicial
+    mov x2, 265 -30        // Coordenada y inicial
+    mov x3, 100+280        // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+280       // Coordenada x inicial
+    mov x2, 264 -30        // Coordenada y inicial
+    mov x3, 101+280        // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+280       // Coordenada x inicial
+    mov x2, 264 -30        // Coordenada y inicial
+    mov x3, 101+280        // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 102+280       // Coordenada x inicial
+    mov x2, 262 -30        // Coordenada y inicial
+    mov x3, 104+280        // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 104+90
+    mov x2, 262+-0    
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95+280   
+    mov x2, 247+-0    
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +280      // Coordenada x inicial
+    mov x2, 254 -30        // Coordenada y inicial
+    mov x3, 104+280        // Coordenada x final
+    mov x4, 254 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 81 +280      // Coordenada x inicial
+    mov x2, 253 -30        // Coordenada y inicial
+    mov x3, 104+280        // Coordenada x final
+    mov x4, 253 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +280      // Coordenada x inicial
+    mov x2, 252 -30        // Coordenada y inicial
+    mov x3, 104+280        // Coordenada x final
+    mov x4, 252 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 88 +280      // Coordenada x inicial
+    mov x2, 251 -30        // Coordenada y inicial
+    mov x3, 104+280        // Coordenada x final
+    mov x4, 251 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +280      // Coordenada x inicial
+    mov x2, 250 -30        // Coordenada y inicial
+    mov x3, 104+280        // Coordenada x final
+    mov x4, 250 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +280      // Coordenada x inicial
+    mov x2, 249 -30        // Coordenada y inicial
+    mov x3, 104+280        // Coordenada x final
+    mov x4, 249 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+    
+    mov x1, 96 +280      
+    mov x2, 248 -30
+    ldr x10, verde_oscuro             
+    bl draw_pixel
+
+    mov x1, 105+280       // Coordenada x inicial
+    mov x2, 256 -30        // Coordenada y inicial
+    mov x3, 112+280        // Coordenada x final
+    mov x4, 256 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 112+280       // Coordenada x inicial
+    mov x2, 257 -30        // Coordenada y inicial
+    mov x3, 112+280        // Coordenada x final
+    mov x4, 260 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+280       // Coordenada x inicial
+    mov x2, 248 -30        // Coordenada y inicial
+    mov x3, 115+280        // Coordenada x final
+    mov x4, 248 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+280       // Coordenada x inicial
+    mov x2, 247 -30        // Coordenada y inicial
+    mov x3, 105+280        // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 106+280       // Coordenada x inicial
+    mov x2, 244 -30        // Coordenada y inicial
+    mov x3, 117+280        // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 117+280       
+    mov x2, 231 -30
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+280       // Coordenada x inicial
+    mov x2, 236 -30        // Coordenada y inicial
+    mov x3, 103+280        // Coordenada x final
+    mov x4, 235 -30       // Coordenada y final
+    ldr x10, negro             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_erase_jump4:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +280      // Coordenada x inicial
+    mov x2, 288 -30        // Coordenada y inicial
+    mov x3, 96 +280       // Coordenada x final
+    mov x4, 288 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +280      // Coordenada x inicial
+    mov x2, 287 -30        // Coordenada y inicial
+    mov x3, 89 +280       // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 86 +280      // Coordenada x inicial
+    mov x2, 280 -30        // Coordenada y inicial
+    mov x3, 86 +280       // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 85 +280      // Coordenada x inicial
+    mov x2, 277 -30        // Coordenada y inicial
+    mov x3, 85 +280       // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +280      // Coordenada x inicial
+    mov x2, 280 -30        // Coordenada y inicial
+    mov x3, 89 +280       // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +280      // Coordenada x inicial
+    mov x2, 278 -30        // Coordenada y inicial
+    mov x3, 90 +280       // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 91 +280      // Coordenada x inicial
+    mov x2, 276 -30        // Coordenada y inicial
+    mov x3, 91 +280       // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +280      // Coordenada x inicial
+    mov x2, 288 -30        // Coordenada y inicial
+    mov x3, 72 +280       // Coordenada x final
+    mov x4, 288 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 72 +280      // Coordenada x inicial
+    mov x2, 287 -30        // Coordenada y inicial
+    mov x3, 74 +280       // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 74 +280      // Coordenada x inicial
+    mov x2, 281 -30        // Coordenada y inicial
+    mov x3, 74 +280       // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 75 +280      // Coordenada x inicial
+    mov x2, 280 -30        // Coordenada y inicial
+    mov x3, 75 +280       // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 76 +280      // Coordenada x inicial
+    mov x2, 279 -30        // Coordenada y inicial
+    mov x3, 76 +280       // Coordenada x final
+    mov x4, 275 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 77 +280      // Coordenada x inicial
+    mov x2, 276 -30        // Coordenada y inicial
+    mov x3, 78 +280       // Coordenada x final
+    mov x4, 276 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +280      // Coordenada x inicial
+    mov x2, 275 -30        // Coordenada y inicial
+    mov x3, 91 +280       // Coordenada x final
+    mov x4, 255 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +280      // Coordenada x inicial
+    mov x2, 243 -30        // Coordenada y inicial
+    mov x3, 56 +280       // Coordenada x final
+    mov x4, 258 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 57 +280      // Coordenada x inicial
+    mov x2, 246 -30        // Coordenada y inicial
+    mov x3, 57 +280       // Coordenada x final
+    mov x4, 259 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 58 +280      // Coordenada x inicial
+    mov x2, 247 -30        // Coordenada y inicial
+    mov x3, 58 +280       // Coordenada x final
+    mov x4, 260 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 59 +280      // Coordenada x inicial
+    mov x2, 248 -30        // Coordenada y inicial
+    mov x3, 59 +280       // Coordenada x final
+    mov x4, 261 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 60 +280      // Coordenada x inicial
+    mov x2, 249 -30        // Coordenada y inicial
+    mov x3, 60 +280       // Coordenada x final
+    mov x4, 262 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 61 +280      // Coordenada x inicial
+    mov x2, 250 -30        // Coordenada y inicial
+    mov x3, 61 +280       // Coordenada x final
+    mov x4, 262 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 62 +280      // Coordenada x inicial
+    mov x2, 251 -30        // Coordenada y inicial
+    mov x3, 62 +280       // Coordenada x final
+    mov x4, 263 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 63 +280      // Coordenada x inicial
+    mov x2, 252 -30        // Coordenada y inicial
+    mov x3, 63 +280       // Coordenada x final
+    mov x4, 264 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 64 +280      // Coordenada x inicial
+    mov x2, 253 -30        // Coordenada y inicial
+    mov x3, 64 +280       // Coordenada x final
+    mov x4, 265 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 65 +280      // Coordenada x inicial
+    mov x2, 254 -30        // Coordenada y inicial
+    mov x3, 65 +280       // Coordenada x final
+    mov x4, 267 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 66 +280      // Coordenada x inicial
+    mov x2, 255 -30        // Coordenada y inicial
+    mov x3, 66 +280       // Coordenada x final
+    mov x4, 268 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 67 +280      // Coordenada x inicial
+    mov x2, 255 -30        // Coordenada y inicial
+    mov x3, 67 +280       // Coordenada x final
+    mov x4, 269 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 68 +280      // Coordenada x inicial
+    mov x2, 255 -30        // Coordenada y inicial
+    mov x3, 68 +280       // Coordenada x final
+    mov x4, 270 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 69 +280      // Coordenada x inicial
+    mov x2, 255 -30        // Coordenada y inicial
+    mov x3, 69 +280       // Coordenada x final
+    mov x4, 272 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 70 +280      // Coordenada x inicial
+    mov x2, 255 -30        // Coordenada y inicial
+    mov x3, 70 +280       // Coordenada x final
+    mov x4, 273 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 71 +280      // Coordenada x inicial
+    mov x2, 255 -30        // Coordenada y inicial
+    mov x3, 71 +280       // Coordenada x final
+    mov x4, 274 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +280      // Coordenada x inicial
+    mov x2, 276 -30        // Coordenada y inicial
+    mov x3, 91 +280       // Coordenada x final
+    mov x4, 249 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 92 +280      // Coordenada x inicial
+    mov x2, 274 -30        // Coordenada y inicial
+    mov x3, 94 +280       // Coordenada x final
+    mov x4, 249 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 95 +280      // Coordenada x inicial
+    mov x2, 273 -30        // Coordenada y inicial
+    mov x3, 95 +280       // Coordenada x final
+    mov x4, 247 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 96 +280      // Coordenada x inicial
+    mov x2, 271 -30        // Coordenada y inicial
+    mov x3, 96 +280       // Coordenada x final
+    mov x4, 248 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 97 +280      // Coordenada x inicial
+    mov x2, 269 -30        // Coordenada y inicial
+    mov x3, 97 +280       // Coordenada x final
+    mov x4, 232 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 98 +280      // Coordenada x inicial
+    mov x2, 268 -30        // Coordenada y inicial
+    mov x3, 98 +280       // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 99 +280      // Coordenada x inicial
+    mov x2, 267 -30        // Coordenada y inicial
+    mov x3, 99 +280       // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 100+280       // Coordenada x inicial
+    mov x2, 265 -30        // Coordenada y inicial
+    mov x3, 100+280        // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+280       // Coordenada x inicial
+    mov x2, 264 -30        // Coordenada y inicial
+    mov x3, 101+280        // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+280       // Coordenada x inicial
+    mov x2, 264 -30        // Coordenada y inicial
+    mov x3, 101+280        // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 102+280       // Coordenada x inicial
+    mov x2, 262 -30        // Coordenada y inicial
+    mov x3, 104+280        // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 104+90
+    mov x2, 262+-0    
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95+280   
+    mov x2, 247+-0    
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +280      // Coordenada x inicial
+    mov x2, 254 -30        // Coordenada y inicial
+    mov x3, 104+280        // Coordenada x final
+    mov x4, 254 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 81 +280      // Coordenada x inicial
+    mov x2, 253 -30        // Coordenada y inicial
+    mov x3, 104+280        // Coordenada x final
+    mov x4, 253 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +280      // Coordenada x inicial
+    mov x2, 252 -30        // Coordenada y inicial
+    mov x3, 104+280        // Coordenada x final
+    mov x4, 252 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 88 +280      // Coordenada x inicial
+    mov x2, 251 -30        // Coordenada y inicial
+    mov x3, 104+280        // Coordenada x final
+    mov x4, 251 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +280      // Coordenada x inicial
+    mov x2, 250 -30        // Coordenada y inicial
+    mov x3, 104+280        // Coordenada x final
+    mov x4, 250 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +280      // Coordenada x inicial
+    mov x2, 249 -30        // Coordenada y inicial
+    mov x3, 104+280        // Coordenada x final
+    mov x4, 249 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+    
+    mov x1, 96 +280      
+    mov x2, 248 -30
+    ldr x10, cielo             
+    bl draw_pixel
+
+    mov x1, 105+280       // Coordenada x inicial
+    mov x2, 256 -30        // Coordenada y inicial
+    mov x3, 112+280        // Coordenada x final
+    mov x4, 256 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 112+280       // Coordenada x inicial
+    mov x2, 257 -30        // Coordenada y inicial
+    mov x3, 112+280        // Coordenada x final
+    mov x4, 260 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+280       // Coordenada x inicial
+    mov x2, 248 -30        // Coordenada y inicial
+    mov x3, 115+280        // Coordenada x final
+    mov x4, 248 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+280       // Coordenada x inicial
+    mov x2, 247 -30        // Coordenada y inicial
+    mov x3, 105+280        // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 106+280       // Coordenada x inicial
+    mov x2, 244 -30        // Coordenada y inicial
+    mov x3, 117+280        // Coordenada x final
+    mov x4, 231 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 117+280       
+    mov x2, 231 -30
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+280       // Coordenada x inicial
+    mov x2, 236 -30        // Coordenada y inicial
+    mov x3, 103+280        // Coordenada x final
+    mov x4, 235 -30       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_jump5:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +290     // Coordenada x inicial
+    mov x2, 288 -40        // Coordenada y inicial
+    mov x3, 96 +290      // Coordenada x final
+    mov x4, 288 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +290     // Coordenada x inicial
+    mov x2, 287 -40        // Coordenada y inicial
+    mov x3, 89 +290      // Coordenada x final
+    mov x4, 275 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 86 +290     // Coordenada x inicial
+    mov x2, 280 -40        // Coordenada y inicial
+    mov x3, 86 +290      // Coordenada x final
+    mov x4, 275 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 85 +290     // Coordenada x inicial
+    mov x2, 277 -40        // Coordenada y inicial
+    mov x3, 85 +290      // Coordenada x final
+    mov x4, 275 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +290     // Coordenada x inicial
+    mov x2, 280 -40        // Coordenada y inicial
+    mov x3, 89 +290      // Coordenada x final
+    mov x4, 275 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +290     // Coordenada x inicial
+    mov x2, 278 -40        // Coordenada y inicial
+    mov x3, 90 +290      // Coordenada x final
+    mov x4, 275 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 91 +290     // Coordenada x inicial
+    mov x2, 276 -40        // Coordenada y inicial
+    mov x3, 91 +290      // Coordenada x final
+    mov x4, 275 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +290     // Coordenada x inicial
+    mov x2, 288 -40        // Coordenada y inicial
+    mov x3, 72 +290      // Coordenada x final
+    mov x4, 288 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 72 +290     // Coordenada x inicial
+    mov x2, 287 -40        // Coordenada y inicial
+    mov x3, 74 +290      // Coordenada x final
+    mov x4, 275 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 74 +290     // Coordenada x inicial
+    mov x2, 281 -40        // Coordenada y inicial
+    mov x3, 74 +290      // Coordenada x final
+    mov x4, 275 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 75 +290     // Coordenada x inicial
+    mov x2, 280 -40        // Coordenada y inicial
+    mov x3, 75 +290      // Coordenada x final
+    mov x4, 275 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 76 +290     // Coordenada x inicial
+    mov x2, 279 -40        // Coordenada y inicial
+    mov x3, 76 +290      // Coordenada x final
+    mov x4, 275 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 77 +290     // Coordenada x inicial
+    mov x2, 276 -40        // Coordenada y inicial
+    mov x3, 78 +290      // Coordenada x final
+    mov x4, 276 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +290     // Coordenada x inicial
+    mov x2, 275 -40        // Coordenada y inicial
+    mov x3, 91 +290      // Coordenada x final
+    mov x4, 255 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +290     // Coordenada x inicial
+    mov x2, 243 -40        // Coordenada y inicial
+    mov x3, 56 +290      // Coordenada x final
+    mov x4, 258 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 57 +290     // Coordenada x inicial
+    mov x2, 246 -40        // Coordenada y inicial
+    mov x3, 57 +290      // Coordenada x final
+    mov x4, 259 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 58 +290     // Coordenada x inicial
+    mov x2, 247 -40        // Coordenada y inicial
+    mov x3, 58 +290      // Coordenada x final
+    mov x4, 260 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 59 +290     // Coordenada x inicial
+    mov x2, 248 -40        // Coordenada y inicial
+    mov x3, 59 +290      // Coordenada x final
+    mov x4, 261 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 60 +290     // Coordenada x inicial
+    mov x2, 249 -40        // Coordenada y inicial
+    mov x3, 60 +290      // Coordenada x final
+    mov x4, 262 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 61 +290     // Coordenada x inicial
+    mov x2, 250 -40        // Coordenada y inicial
+    mov x3, 61 +290      // Coordenada x final
+    mov x4, 262 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 62 +290     // Coordenada x inicial
+    mov x2, 251 -40        // Coordenada y inicial
+    mov x3, 62 +290      // Coordenada x final
+    mov x4, 263 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 63 +290     // Coordenada x inicial
+    mov x2, 252 -40        // Coordenada y inicial
+    mov x3, 63 +290      // Coordenada x final
+    mov x4, 264 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 64 +290     // Coordenada x inicial
+    mov x2, 253 -40        // Coordenada y inicial
+    mov x3, 64 +290      // Coordenada x final
+    mov x4, 265 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 65 +290     // Coordenada x inicial
+    mov x2, 254 -40        // Coordenada y inicial
+    mov x3, 65 +290      // Coordenada x final
+    mov x4, 267 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 66 +290     // Coordenada x inicial
+    mov x2, 255 -40        // Coordenada y inicial
+    mov x3, 66 +290      // Coordenada x final
+    mov x4, 268 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 67 +290     // Coordenada x inicial
+    mov x2, 255 -40        // Coordenada y inicial
+    mov x3, 67 +290      // Coordenada x final
+    mov x4, 269 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 68 +290     // Coordenada x inicial
+    mov x2, 255 -40        // Coordenada y inicial
+    mov x3, 68 +290      // Coordenada x final
+    mov x4, 270 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 69 +290     // Coordenada x inicial
+    mov x2, 255 -40        // Coordenada y inicial
+    mov x3, 69 +290      // Coordenada x final
+    mov x4, 272 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 70 +290     // Coordenada x inicial
+    mov x2, 255 -40        // Coordenada y inicial
+    mov x3, 70 +290      // Coordenada x final
+    mov x4, 273 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 71 +290     // Coordenada x inicial
+    mov x2, 255 -40        // Coordenada y inicial
+    mov x3, 71 +290      // Coordenada x final
+    mov x4, 274 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +290     // Coordenada x inicial
+    mov x2, 276 -40        // Coordenada y inicial
+    mov x3, 91 +290      // Coordenada x final
+    mov x4, 249 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 92 +290     // Coordenada x inicial
+    mov x2, 274 -40        // Coordenada y inicial
+    mov x3, 94 +290      // Coordenada x final
+    mov x4, 249 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 95 +290     // Coordenada x inicial
+    mov x2, 273 -40        // Coordenada y inicial
+    mov x3, 95 +290      // Coordenada x final
+    mov x4, 247 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 96 +290     // Coordenada x inicial
+    mov x2, 271 -40        // Coordenada y inicial
+    mov x3, 96 +290      // Coordenada x final
+    mov x4, 248 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 97 +290     // Coordenada x inicial
+    mov x2, 269 -40        // Coordenada y inicial
+    mov x3, 97 +290      // Coordenada x final
+    mov x4, 232 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 98 +290     // Coordenada x inicial
+    mov x2, 268 -40        // Coordenada y inicial
+    mov x3, 98 +290      // Coordenada x final
+    mov x4, 231 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 99 +290     // Coordenada x inicial
+    mov x2, 267 -40        // Coordenada y inicial
+    mov x3, 99 +290      // Coordenada x final
+    mov x4, 231 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 100+290      // Coordenada x inicial
+    mov x2, 265 -40        // Coordenada y inicial
+    mov x3, 100+290       // Coordenada x final
+    mov x4, 231 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+290      // Coordenada x inicial
+    mov x2, 264 -40        // Coordenada y inicial
+    mov x3, 101+290       // Coordenada x final
+    mov x4, 231 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+290      // Coordenada x inicial
+    mov x2, 264 -40        // Coordenada y inicial
+    mov x3, 101+290       // Coordenada x final
+    mov x4, 231 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 102+290      // Coordenada x inicial
+    mov x2, 262 -40        // Coordenada y inicial
+    mov x3, 104+290       // Coordenada x final
+    mov x4, 231 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 104+90
+    mov x2, 262+-0    
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95+290  
+    mov x2, 247+-0    
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +290     // Coordenada x inicial
+    mov x2, 254 -40        // Coordenada y inicial
+    mov x3, 104+290       // Coordenada x final
+    mov x4, 254 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 81 +290     // Coordenada x inicial
+    mov x2, 253 -40        // Coordenada y inicial
+    mov x3, 104+290       // Coordenada x final
+    mov x4, 253 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +290     // Coordenada x inicial
+    mov x2, 252 -40        // Coordenada y inicial
+    mov x3, 104+290       // Coordenada x final
+    mov x4, 252 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 88 +290     // Coordenada x inicial
+    mov x2, 251 -40        // Coordenada y inicial
+    mov x3, 104+290       // Coordenada x final
+    mov x4, 251 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +290     // Coordenada x inicial
+    mov x2, 250 -40        // Coordenada y inicial
+    mov x3, 104+290       // Coordenada x final
+    mov x4, 250 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +290     // Coordenada x inicial
+    mov x2, 249 -40        // Coordenada y inicial
+    mov x3, 104+290       // Coordenada x final
+    mov x4, 249 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+    
+    mov x1, 96 +290     
+    mov x2, 248 -40
+    ldr x10, verde_oscuro             
+    bl draw_pixel
+
+    mov x1, 105+290      // Coordenada x inicial
+    mov x2, 256 -40        // Coordenada y inicial
+    mov x3, 112+290       // Coordenada x final
+    mov x4, 256 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 112+290      // Coordenada x inicial
+    mov x2, 257 -40        // Coordenada y inicial
+    mov x3, 112+290       // Coordenada x final
+    mov x4, 260 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+290      // Coordenada x inicial
+    mov x2, 248 -40        // Coordenada y inicial
+    mov x3, 115+290       // Coordenada x final
+    mov x4, 248 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+290      // Coordenada x inicial
+    mov x2, 247 -40        // Coordenada y inicial
+    mov x3, 105+290       // Coordenada x final
+    mov x4, 231 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 106+290      // Coordenada x inicial
+    mov x2, 244 -40        // Coordenada y inicial
+    mov x3, 117+290       // Coordenada x final
+    mov x4, 231 -40       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 117+290      
+    mov x2, 231 -40
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+290      // Coordenada x inicial
+    mov x2, 236 -40        // Coordenada y inicial
+    mov x3, 103+290       // Coordenada x final
+    mov x4, 235 -40       // Coordenada y final
+    ldr x10, negro             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_erase_jump5:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +290     // Coordenada x inicial
+    mov x2, 288 -40        // Coordenada y inicial
+    mov x3, 96 +290      // Coordenada x final
+    mov x4, 288 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +290     // Coordenada x inicial
+    mov x2, 287 -40        // Coordenada y inicial
+    mov x3, 89 +290      // Coordenada x final
+    mov x4, 275 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 86 +290     // Coordenada x inicial
+    mov x2, 280 -40        // Coordenada y inicial
+    mov x3, 86 +290      // Coordenada x final
+    mov x4, 275 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 85 +290     // Coordenada x inicial
+    mov x2, 277 -40        // Coordenada y inicial
+    mov x3, 85 +290      // Coordenada x final
+    mov x4, 275 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +290     // Coordenada x inicial
+    mov x2, 280 -40        // Coordenada y inicial
+    mov x3, 89 +290      // Coordenada x final
+    mov x4, 275 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +290     // Coordenada x inicial
+    mov x2, 278 -40        // Coordenada y inicial
+    mov x3, 90 +290      // Coordenada x final
+    mov x4, 275 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 91 +290     // Coordenada x inicial
+    mov x2, 276 -40        // Coordenada y inicial
+    mov x3, 91 +290      // Coordenada x final
+    mov x4, 275 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +290     // Coordenada x inicial
+    mov x2, 288 -40        // Coordenada y inicial
+    mov x3, 72 +290      // Coordenada x final
+    mov x4, 288 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 72 +290     // Coordenada x inicial
+    mov x2, 287 -40        // Coordenada y inicial
+    mov x3, 74 +290      // Coordenada x final
+    mov x4, 275 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 74 +290     // Coordenada x inicial
+    mov x2, 281 -40        // Coordenada y inicial
+    mov x3, 74 +290      // Coordenada x final
+    mov x4, 275 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 75 +290     // Coordenada x inicial
+    mov x2, 280 -40        // Coordenada y inicial
+    mov x3, 75 +290      // Coordenada x final
+    mov x4, 275 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 76 +290     // Coordenada x inicial
+    mov x2, 279 -40        // Coordenada y inicial
+    mov x3, 76 +290      // Coordenada x final
+    mov x4, 275 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 77 +290     // Coordenada x inicial
+    mov x2, 276 -40        // Coordenada y inicial
+    mov x3, 78 +290      // Coordenada x final
+    mov x4, 276 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +290     // Coordenada x inicial
+    mov x2, 275 -40        // Coordenada y inicial
+    mov x3, 91 +290      // Coordenada x final
+    mov x4, 255 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +290     // Coordenada x inicial
+    mov x2, 243 -40        // Coordenada y inicial
+    mov x3, 56 +290      // Coordenada x final
+    mov x4, 258 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 57 +290     // Coordenada x inicial
+    mov x2, 246 -40        // Coordenada y inicial
+    mov x3, 57 +290      // Coordenada x final
+    mov x4, 259 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 58 +290     // Coordenada x inicial
+    mov x2, 247 -40        // Coordenada y inicial
+    mov x3, 58 +290      // Coordenada x final
+    mov x4, 260 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 59 +290     // Coordenada x inicial
+    mov x2, 248 -40        // Coordenada y inicial
+    mov x3, 59 +290      // Coordenada x final
+    mov x4, 261 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 60 +290     // Coordenada x inicial
+    mov x2, 249 -40        // Coordenada y inicial
+    mov x3, 60 +290      // Coordenada x final
+    mov x4, 262 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 61 +290     // Coordenada x inicial
+    mov x2, 250 -40        // Coordenada y inicial
+    mov x3, 61 +290      // Coordenada x final
+    mov x4, 262 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 62 +290     // Coordenada x inicial
+    mov x2, 251 -40        // Coordenada y inicial
+    mov x3, 62 +290      // Coordenada x final
+    mov x4, 263 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 63 +290     // Coordenada x inicial
+    mov x2, 252 -40        // Coordenada y inicial
+    mov x3, 63 +290      // Coordenada x final
+    mov x4, 264 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 64 +290     // Coordenada x inicial
+    mov x2, 253 -40        // Coordenada y inicial
+    mov x3, 64 +290      // Coordenada x final
+    mov x4, 265 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 65 +290     // Coordenada x inicial
+    mov x2, 254 -40        // Coordenada y inicial
+    mov x3, 65 +290      // Coordenada x final
+    mov x4, 267 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 66 +290     // Coordenada x inicial
+    mov x2, 255 -40        // Coordenada y inicial
+    mov x3, 66 +290      // Coordenada x final
+    mov x4, 268 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 67 +290     // Coordenada x inicial
+    mov x2, 255 -40        // Coordenada y inicial
+    mov x3, 67 +290      // Coordenada x final
+    mov x4, 269 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 68 +290     // Coordenada x inicial
+    mov x2, 255 -40        // Coordenada y inicial
+    mov x3, 68 +290      // Coordenada x final
+    mov x4, 270 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 69 +290     // Coordenada x inicial
+    mov x2, 255 -40        // Coordenada y inicial
+    mov x3, 69 +290      // Coordenada x final
+    mov x4, 272 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 70 +290     // Coordenada x inicial
+    mov x2, 255 -40        // Coordenada y inicial
+    mov x3, 70 +290      // Coordenada x final
+    mov x4, 273 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 71 +290     // Coordenada x inicial
+    mov x2, 255 -40        // Coordenada y inicial
+    mov x3, 71 +290      // Coordenada x final
+    mov x4, 274 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +290     // Coordenada x inicial
+    mov x2, 276 -40        // Coordenada y inicial
+    mov x3, 91 +290      // Coordenada x final
+    mov x4, 249 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 92 +290     // Coordenada x inicial
+    mov x2, 274 -40        // Coordenada y inicial
+    mov x3, 94 +290      // Coordenada x final
+    mov x4, 249 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 95 +290     // Coordenada x inicial
+    mov x2, 273 -40        // Coordenada y inicial
+    mov x3, 95 +290      // Coordenada x final
+    mov x4, 247 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 96 +290     // Coordenada x inicial
+    mov x2, 271 -40        // Coordenada y inicial
+    mov x3, 96 +290      // Coordenada x final
+    mov x4, 248 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 97 +290     // Coordenada x inicial
+    mov x2, 269 -40        // Coordenada y inicial
+    mov x3, 97 +290      // Coordenada x final
+    mov x4, 232 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 98 +290     // Coordenada x inicial
+    mov x2, 268 -40        // Coordenada y inicial
+    mov x3, 98 +290      // Coordenada x final
+    mov x4, 231 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 99 +290     // Coordenada x inicial
+    mov x2, 267 -40        // Coordenada y inicial
+    mov x3, 99 +290      // Coordenada x final
+    mov x4, 231 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 100+290      // Coordenada x inicial
+    mov x2, 265 -40        // Coordenada y inicial
+    mov x3, 100+290       // Coordenada x final
+    mov x4, 231 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+290      // Coordenada x inicial
+    mov x2, 264 -40        // Coordenada y inicial
+    mov x3, 101+290       // Coordenada x final
+    mov x4, 231 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+290      // Coordenada x inicial
+    mov x2, 264 -40        // Coordenada y inicial
+    mov x3, 101+290       // Coordenada x final
+    mov x4, 231 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 102+290      // Coordenada x inicial
+    mov x2, 262 -40        // Coordenada y inicial
+    mov x3, 104+290       // Coordenada x final
+    mov x4, 231 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 104+90
+    mov x2, 262+-0    
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95+290  
+    mov x2, 247+-0    
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +290     // Coordenada x inicial
+    mov x2, 254 -40        // Coordenada y inicial
+    mov x3, 104+290       // Coordenada x final
+    mov x4, 254 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 81 +290     // Coordenada x inicial
+    mov x2, 253 -40        // Coordenada y inicial
+    mov x3, 104+290       // Coordenada x final
+    mov x4, 253 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +290     // Coordenada x inicial
+    mov x2, 252 -40        // Coordenada y inicial
+    mov x3, 104+290       // Coordenada x final
+    mov x4, 252 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 88 +290     // Coordenada x inicial
+    mov x2, 251 -40        // Coordenada y inicial
+    mov x3, 104+290       // Coordenada x final
+    mov x4, 251 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +290     // Coordenada x inicial
+    mov x2, 250 -40        // Coordenada y inicial
+    mov x3, 104+290       // Coordenada x final
+    mov x4, 250 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +290     // Coordenada x inicial
+    mov x2, 249 -40        // Coordenada y inicial
+    mov x3, 104+290       // Coordenada x final
+    mov x4, 249 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+    
+    mov x1, 96 +290     
+    mov x2, 248 -40
+    ldr x10, cielo             
+    bl draw_pixel
+
+    mov x1, 105+290      // Coordenada x inicial
+    mov x2, 256 -40        // Coordenada y inicial
+    mov x3, 112+290       // Coordenada x final
+    mov x4, 256 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 112+290      // Coordenada x inicial
+    mov x2, 257 -40        // Coordenada y inicial
+    mov x3, 112+290       // Coordenada x final
+    mov x4, 260 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+290      // Coordenada x inicial
+    mov x2, 248 -40        // Coordenada y inicial
+    mov x3, 115+290       // Coordenada x final
+    mov x4, 248 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+290      // Coordenada x inicial
+    mov x2, 247 -40        // Coordenada y inicial
+    mov x3, 105+290       // Coordenada x final
+    mov x4, 231 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 106+290      // Coordenada x inicial
+    mov x2, 244 -40        // Coordenada y inicial
+    mov x3, 117+290       // Coordenada x final
+    mov x4, 231 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 117+290      
+    mov x2, 231 -40
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+290      // Coordenada x inicial
+    mov x2, 236 -40        // Coordenada y inicial
+    mov x3, 103+290       // Coordenada x final
+    mov x4, 235 -40       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_jump6:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +330     // Coordenada x inicial
+    mov x2, 288 -70        // Coordenada y inicial
+    mov x3, 96 +330      // Coordenada x final
+    mov x4, 288 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +330     // Coordenada x inicial
+    mov x2, 287 -70        // Coordenada y inicial
+    mov x3, 89 +330      // Coordenada x final
+    mov x4, 275 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 86 +330     // Coordenada x inicial
+    mov x2, 280 -70        // Coordenada y inicial
+    mov x3, 86 +330      // Coordenada x final
+    mov x4, 275 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 85 +330     // Coordenada x inicial
+    mov x2, 277 -70        // Coordenada y inicial
+    mov x3, 85 +330      // Coordenada x final
+    mov x4, 275 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +330     // Coordenada x inicial
+    mov x2, 280 -70        // Coordenada y inicial
+    mov x3, 89 +330      // Coordenada x final
+    mov x4, 275 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +330     // Coordenada x inicial
+    mov x2, 278 -70        // Coordenada y inicial
+    mov x3, 90 +330      // Coordenada x final
+    mov x4, 275 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 91 +330     // Coordenada x inicial
+    mov x2, 276 -70        // Coordenada y inicial
+    mov x3, 91 +330      // Coordenada x final
+    mov x4, 275 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +330     // Coordenada x inicial
+    mov x2, 288 -70        // Coordenada y inicial
+    mov x3, 72 +330      // Coordenada x final
+    mov x4, 288 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 72 +330     // Coordenada x inicial
+    mov x2, 287 -70        // Coordenada y inicial
+    mov x3, 74 +330      // Coordenada x final
+    mov x4, 275 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 74 +330     // Coordenada x inicial
+    mov x2, 281 -70        // Coordenada y inicial
+    mov x3, 74 +330      // Coordenada x final
+    mov x4, 275 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 75 +330     // Coordenada x inicial
+    mov x2, 280 -70        // Coordenada y inicial
+    mov x3, 75 +330      // Coordenada x final
+    mov x4, 275 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 76 +330     // Coordenada x inicial
+    mov x2, 279 -70        // Coordenada y inicial
+    mov x3, 76 +330      // Coordenada x final
+    mov x4, 275 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 77 +330     // Coordenada x inicial
+    mov x2, 276 -70        // Coordenada y inicial
+    mov x3, 78 +330      // Coordenada x final
+    mov x4, 276 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +330     // Coordenada x inicial
+    mov x2, 275 -70        // Coordenada y inicial
+    mov x3, 91 +330      // Coordenada x final
+    mov x4, 255 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +330     // Coordenada x inicial
+    mov x2, 243 -70        // Coordenada y inicial
+    mov x3, 56 +330      // Coordenada x final
+    mov x4, 258 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 57 +330     // Coordenada x inicial
+    mov x2, 246 -70        // Coordenada y inicial
+    mov x3, 57 +330      // Coordenada x final
+    mov x4, 259 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 58 +330     // Coordenada x inicial
+    mov x2, 247 -70        // Coordenada y inicial
+    mov x3, 58 +330      // Coordenada x final
+    mov x4, 260 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 59 +330     // Coordenada x inicial
+    mov x2, 248 -70        // Coordenada y inicial
+    mov x3, 59 +330      // Coordenada x final
+    mov x4, 261 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 60 +330     // Coordenada x inicial
+    mov x2, 249 -70        // Coordenada y inicial
+    mov x3, 60 +330      // Coordenada x final
+    mov x4, 262 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 61 +330     // Coordenada x inicial
+    mov x2, 250 -70        // Coordenada y inicial
+    mov x3, 61 +330      // Coordenada x final
+    mov x4, 262 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 62 +330     // Coordenada x inicial
+    mov x2, 251 -70        // Coordenada y inicial
+    mov x3, 62 +330      // Coordenada x final
+    mov x4, 263 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 63 +330     // Coordenada x inicial
+    mov x2, 252 -70        // Coordenada y inicial
+    mov x3, 63 +330      // Coordenada x final
+    mov x4, 264 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 64 +330     // Coordenada x inicial
+    mov x2, 253 -70        // Coordenada y inicial
+    mov x3, 64 +330      // Coordenada x final
+    mov x4, 265 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 65 +330     // Coordenada x inicial
+    mov x2, 254 -70        // Coordenada y inicial
+    mov x3, 65 +330      // Coordenada x final
+    mov x4, 267 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 66 +330     // Coordenada x inicial
+    mov x2, 255 -70        // Coordenada y inicial
+    mov x3, 66 +330      // Coordenada x final
+    mov x4, 268 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 67 +330     // Coordenada x inicial
+    mov x2, 255 -70        // Coordenada y inicial
+    mov x3, 67 +330      // Coordenada x final
+    mov x4, 269 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 68 +330     // Coordenada x inicial
+    mov x2, 255 -70        // Coordenada y inicial
+    mov x3, 68 +330      // Coordenada x final
+    mov x4, 270 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 69 +330     // Coordenada x inicial
+    mov x2, 255 -70        // Coordenada y inicial
+    mov x3, 69 +330      // Coordenada x final
+    mov x4, 272 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 70 +330     // Coordenada x inicial
+    mov x2, 255 -70        // Coordenada y inicial
+    mov x3, 70 +330      // Coordenada x final
+    mov x4, 273 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 71 +330     // Coordenada x inicial
+    mov x2, 255 -70        // Coordenada y inicial
+    mov x3, 71 +330      // Coordenada x final
+    mov x4, 274 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +330     // Coordenada x inicial
+    mov x2, 276 -70        // Coordenada y inicial
+    mov x3, 91 +330      // Coordenada x final
+    mov x4, 249 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 92 +330     // Coordenada x inicial
+    mov x2, 274 -70        // Coordenada y inicial
+    mov x3, 94 +330      // Coordenada x final
+    mov x4, 249 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 95 +330     // Coordenada x inicial
+    mov x2, 273 -70        // Coordenada y inicial
+    mov x3, 95 +330      // Coordenada x final
+    mov x4, 247 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 96 +330     // Coordenada x inicial
+    mov x2, 271 -70        // Coordenada y inicial
+    mov x3, 96 +330      // Coordenada x final
+    mov x4, 248 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 97 +330     // Coordenada x inicial
+    mov x2, 269 -70        // Coordenada y inicial
+    mov x3, 97 +330      // Coordenada x final
+    mov x4, 232 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 98 +330     // Coordenada x inicial
+    mov x2, 268 -70        // Coordenada y inicial
+    mov x3, 98 +330      // Coordenada x final
+    mov x4, 231 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 99 +330     // Coordenada x inicial
+    mov x2, 267 -70        // Coordenada y inicial
+    mov x3, 99 +330      // Coordenada x final
+    mov x4, 231 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 100+330      // Coordenada x inicial
+    mov x2, 265 -70        // Coordenada y inicial
+    mov x3, 100+330       // Coordenada x final
+    mov x4, 231 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+330      // Coordenada x inicial
+    mov x2, 264 -70        // Coordenada y inicial
+    mov x3, 101+330       // Coordenada x final
+    mov x4, 231 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+330      // Coordenada x inicial
+    mov x2, 264 -70        // Coordenada y inicial
+    mov x3, 101+330       // Coordenada x final
+    mov x4, 231 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 102+330      // Coordenada x inicial
+    mov x2, 262 -70        // Coordenada y inicial
+    mov x3, 104+330       // Coordenada x final
+    mov x4, 231 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 104+90
+    mov x2, 262+-0    
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95+330  
+    mov x2, 247+-0    
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +330     // Coordenada x inicial
+    mov x2, 254 -70        // Coordenada y inicial
+    mov x3, 104+330       // Coordenada x final
+    mov x4, 254 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 81 +330     // Coordenada x inicial
+    mov x2, 253 -70        // Coordenada y inicial
+    mov x3, 104+330       // Coordenada x final
+    mov x4, 253 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +330     // Coordenada x inicial
+    mov x2, 252 -70        // Coordenada y inicial
+    mov x3, 104+330       // Coordenada x final
+    mov x4, 252 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 88 +330     // Coordenada x inicial
+    mov x2, 251 -70        // Coordenada y inicial
+    mov x3, 104+330       // Coordenada x final
+    mov x4, 251 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +330     // Coordenada x inicial
+    mov x2, 250 -70        // Coordenada y inicial
+    mov x3, 104+330       // Coordenada x final
+    mov x4, 250 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +330     // Coordenada x inicial
+    mov x2, 249 -70        // Coordenada y inicial
+    mov x3, 104+330       // Coordenada x final
+    mov x4, 249 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+    
+    mov x1, 96 +330     
+    mov x2, 248 -70
+    ldr x10, verde_oscuro             
+    bl draw_pixel
+
+    mov x1, 105+330      // Coordenada x inicial
+    mov x2, 256 -70        // Coordenada y inicial
+    mov x3, 112+330       // Coordenada x final
+    mov x4, 256 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 112+330      // Coordenada x inicial
+    mov x2, 257 -70        // Coordenada y inicial
+    mov x3, 112+330       // Coordenada x final
+    mov x4, 260 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+330      // Coordenada x inicial
+    mov x2, 248 -70        // Coordenada y inicial
+    mov x3, 115+330       // Coordenada x final
+    mov x4, 248 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+330      // Coordenada x inicial
+    mov x2, 247 -70        // Coordenada y inicial
+    mov x3, 105+330       // Coordenada x final
+    mov x4, 231 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 106+330      // Coordenada x inicial
+    mov x2, 244 -70        // Coordenada y inicial
+    mov x3, 117+330       // Coordenada x final
+    mov x4, 231 -70       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 117+330      
+    mov x2, 231 -70
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+330      // Coordenada x inicial
+    mov x2, 236 -70        // Coordenada y inicial
+    mov x3, 103+330       // Coordenada x final
+    mov x4, 235 -70       // Coordenada y final
+    ldr x10, negro             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_erase_jump6:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +330     // Coordenada x inicial
+    mov x2, 288 -70        // Coordenada y inicial
+    mov x3, 96 +330      // Coordenada x final
+    mov x4, 288 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +330     // Coordenada x inicial
+    mov x2, 287 -70        // Coordenada y inicial
+    mov x3, 89 +330      // Coordenada x final
+    mov x4, 275 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 86 +330     // Coordenada x inicial
+    mov x2, 280 -70        // Coordenada y inicial
+    mov x3, 86 +330      // Coordenada x final
+    mov x4, 275 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 85 +330     // Coordenada x inicial
+    mov x2, 277 -70        // Coordenada y inicial
+    mov x3, 85 +330      // Coordenada x final
+    mov x4, 275 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +330     // Coordenada x inicial
+    mov x2, 280 -70        // Coordenada y inicial
+    mov x3, 89 +330      // Coordenada x final
+    mov x4, 275 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +330     // Coordenada x inicial
+    mov x2, 278 -70        // Coordenada y inicial
+    mov x3, 90 +330      // Coordenada x final
+    mov x4, 275 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 91 +330     // Coordenada x inicial
+    mov x2, 276 -70        // Coordenada y inicial
+    mov x3, 91 +330      // Coordenada x final
+    mov x4, 275 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +330     // Coordenada x inicial
+    mov x2, 288 -70        // Coordenada y inicial
+    mov x3, 72 +330      // Coordenada x final
+    mov x4, 288 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 72 +330     // Coordenada x inicial
+    mov x2, 287 -70        // Coordenada y inicial
+    mov x3, 74 +330      // Coordenada x final
+    mov x4, 275 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 74 +330     // Coordenada x inicial
+    mov x2, 281 -70        // Coordenada y inicial
+    mov x3, 74 +330      // Coordenada x final
+    mov x4, 275 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 75 +330     // Coordenada x inicial
+    mov x2, 280 -70        // Coordenada y inicial
+    mov x3, 75 +330      // Coordenada x final
+    mov x4, 275 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 76 +330     // Coordenada x inicial
+    mov x2, 279 -70        // Coordenada y inicial
+    mov x3, 76 +330      // Coordenada x final
+    mov x4, 275 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 77 +330     // Coordenada x inicial
+    mov x2, 276 -70        // Coordenada y inicial
+    mov x3, 78 +330      // Coordenada x final
+    mov x4, 276 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +330     // Coordenada x inicial
+    mov x2, 275 -70        // Coordenada y inicial
+    mov x3, 91 +330      // Coordenada x final
+    mov x4, 255 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +330     // Coordenada x inicial
+    mov x2, 243 -70        // Coordenada y inicial
+    mov x3, 56 +330      // Coordenada x final
+    mov x4, 258 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 57 +330     // Coordenada x inicial
+    mov x2, 246 -70        // Coordenada y inicial
+    mov x3, 57 +330      // Coordenada x final
+    mov x4, 259 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 58 +330     // Coordenada x inicial
+    mov x2, 247 -70        // Coordenada y inicial
+    mov x3, 58 +330      // Coordenada x final
+    mov x4, 260 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 59 +330     // Coordenada x inicial
+    mov x2, 248 -70        // Coordenada y inicial
+    mov x3, 59 +330      // Coordenada x final
+    mov x4, 261 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 60 +330     // Coordenada x inicial
+    mov x2, 249 -70        // Coordenada y inicial
+    mov x3, 60 +330      // Coordenada x final
+    mov x4, 262 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 61 +330     // Coordenada x inicial
+    mov x2, 250 -70        // Coordenada y inicial
+    mov x3, 61 +330      // Coordenada x final
+    mov x4, 262 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 62 +330     // Coordenada x inicial
+    mov x2, 251 -70        // Coordenada y inicial
+    mov x3, 62 +330      // Coordenada x final
+    mov x4, 263 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 63 +330     // Coordenada x inicial
+    mov x2, 252 -70        // Coordenada y inicial
+    mov x3, 63 +330      // Coordenada x final
+    mov x4, 264 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 64 +330     // Coordenada x inicial
+    mov x2, 253 -70        // Coordenada y inicial
+    mov x3, 64 +330      // Coordenada x final
+    mov x4, 265 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 65 +330     // Coordenada x inicial
+    mov x2, 254 -70        // Coordenada y inicial
+    mov x3, 65 +330      // Coordenada x final
+    mov x4, 267 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 66 +330     // Coordenada x inicial
+    mov x2, 255 -70        // Coordenada y inicial
+    mov x3, 66 +330      // Coordenada x final
+    mov x4, 268 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 67 +330     // Coordenada x inicial
+    mov x2, 255 -70        // Coordenada y inicial
+    mov x3, 67 +330      // Coordenada x final
+    mov x4, 269 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 68 +330     // Coordenada x inicial
+    mov x2, 255 -70        // Coordenada y inicial
+    mov x3, 68 +330      // Coordenada x final
+    mov x4, 270 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 69 +330     // Coordenada x inicial
+    mov x2, 255 -70        // Coordenada y inicial
+    mov x3, 69 +330      // Coordenada x final
+    mov x4, 272 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 70 +330     // Coordenada x inicial
+    mov x2, 255 -70        // Coordenada y inicial
+    mov x3, 70 +330      // Coordenada x final
+    mov x4, 273 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 71 +330     // Coordenada x inicial
+    mov x2, 255 -70        // Coordenada y inicial
+    mov x3, 71 +330      // Coordenada x final
+    mov x4, 274 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +330     // Coordenada x inicial
+    mov x2, 276 -70        // Coordenada y inicial
+    mov x3, 91 +330      // Coordenada x final
+    mov x4, 249 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 92 +330     // Coordenada x inicial
+    mov x2, 274 -70        // Coordenada y inicial
+    mov x3, 94 +330      // Coordenada x final
+    mov x4, 249 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 95 +330     // Coordenada x inicial
+    mov x2, 273 -70        // Coordenada y inicial
+    mov x3, 95 +330      // Coordenada x final
+    mov x4, 247 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 96 +330     // Coordenada x inicial
+    mov x2, 271 -70        // Coordenada y inicial
+    mov x3, 96 +330      // Coordenada x final
+    mov x4, 248 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 97 +330     // Coordenada x inicial
+    mov x2, 269 -70        // Coordenada y inicial
+    mov x3, 97 +330      // Coordenada x final
+    mov x4, 232 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 98 +330     // Coordenada x inicial
+    mov x2, 268 -70        // Coordenada y inicial
+    mov x3, 98 +330      // Coordenada x final
+    mov x4, 231 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 99 +330     // Coordenada x inicial
+    mov x2, 267 -70        // Coordenada y inicial
+    mov x3, 99 +330      // Coordenada x final
+    mov x4, 231 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 100+330      // Coordenada x inicial
+    mov x2, 265 -70        // Coordenada y inicial
+    mov x3, 100+330       // Coordenada x final
+    mov x4, 231 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+330      // Coordenada x inicial
+    mov x2, 264 -70        // Coordenada y inicial
+    mov x3, 101+330       // Coordenada x final
+    mov x4, 231 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+330      // Coordenada x inicial
+    mov x2, 264 -70        // Coordenada y inicial
+    mov x3, 101+330       // Coordenada x final
+    mov x4, 231 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 102+330      // Coordenada x inicial
+    mov x2, 262 -70        // Coordenada y inicial
+    mov x3, 104+330       // Coordenada x final
+    mov x4, 231 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 104+90
+    mov x2, 262+-0    
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95+330  
+    mov x2, 247+-0    
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +330     // Coordenada x inicial
+    mov x2, 254 -70        // Coordenada y inicial
+    mov x3, 104+330       // Coordenada x final
+    mov x4, 254 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 81 +330     // Coordenada x inicial
+    mov x2, 253 -70        // Coordenada y inicial
+    mov x3, 104+330       // Coordenada x final
+    mov x4, 253 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +330     // Coordenada x inicial
+    mov x2, 252 -70        // Coordenada y inicial
+    mov x3, 104+330       // Coordenada x final
+    mov x4, 252 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 88 +330     // Coordenada x inicial
+    mov x2, 251 -70        // Coordenada y inicial
+    mov x3, 104+330       // Coordenada x final
+    mov x4, 251 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +330     // Coordenada x inicial
+    mov x2, 250 -70        // Coordenada y inicial
+    mov x3, 104+330       // Coordenada x final
+    mov x4, 250 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +330     // Coordenada x inicial
+    mov x2, 249 -70        // Coordenada y inicial
+    mov x3, 104+330       // Coordenada x final
+    mov x4, 249 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+    
+    mov x1, 96 +330     
+    mov x2, 248 -70
+    ldr x10, cielo             
+    bl draw_pixel
+
+    mov x1, 105+330      // Coordenada x inicial
+    mov x2, 256 -70        // Coordenada y inicial
+    mov x3, 112+330       // Coordenada x final
+    mov x4, 256 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 112+330      // Coordenada x inicial
+    mov x2, 257 -70        // Coordenada y inicial
+    mov x3, 112+330       // Coordenada x final
+    mov x4, 260 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+330      // Coordenada x inicial
+    mov x2, 248 -70        // Coordenada y inicial
+    mov x3, 115+330       // Coordenada x final
+    mov x4, 248 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+330      // Coordenada x inicial
+    mov x2, 247 -70        // Coordenada y inicial
+    mov x3, 105+330       // Coordenada x final
+    mov x4, 231 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 106+330      // Coordenada x inicial
+    mov x2, 244 -70        // Coordenada y inicial
+    mov x3, 117+330       // Coordenada x final
+    mov x4, 231 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 117+330      
+    mov x2, 231 -70
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+330      // Coordenada x inicial
+    mov x2, 236 -70        // Coordenada y inicial
+    mov x3, 103+330       // Coordenada x final
+    mov x4, 235 -70       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_jump7:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +370     // Coordenada x inicial
+    mov x2, 288 -60        // Coordenada y inicial
+    mov x3, 96 +370      // Coordenada x final
+    mov x4, 288 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +370     // Coordenada x inicial
+    mov x2, 287 -60        // Coordenada y inicial
+    mov x3, 89 +370      // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 86 +370     // Coordenada x inicial
+    mov x2, 280 -60        // Coordenada y inicial
+    mov x3, 86 +370      // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 85 +370     // Coordenada x inicial
+    mov x2, 277 -60        // Coordenada y inicial
+    mov x3, 85 +370      // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +370     // Coordenada x inicial
+    mov x2, 280 -60        // Coordenada y inicial
+    mov x3, 89 +370      // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +370     // Coordenada x inicial
+    mov x2, 278 -60        // Coordenada y inicial
+    mov x3, 90 +370      // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 91 +370     // Coordenada x inicial
+    mov x2, 276 -60        // Coordenada y inicial
+    mov x3, 91 +370      // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +370     // Coordenada x inicial
+    mov x2, 288 -60        // Coordenada y inicial
+    mov x3, 72 +370      // Coordenada x final
+    mov x4, 288 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 72 +370     // Coordenada x inicial
+    mov x2, 287 -60        // Coordenada y inicial
+    mov x3, 74 +370      // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 74 +370     // Coordenada x inicial
+    mov x2, 281 -60        // Coordenada y inicial
+    mov x3, 74 +370      // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 75 +370     // Coordenada x inicial
+    mov x2, 280 -60        // Coordenada y inicial
+    mov x3, 75 +370      // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 76 +370     // Coordenada x inicial
+    mov x2, 279 -60        // Coordenada y inicial
+    mov x3, 76 +370      // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 77 +370     // Coordenada x inicial
+    mov x2, 276 -60        // Coordenada y inicial
+    mov x3, 78 +370      // Coordenada x final
+    mov x4, 276 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +370     // Coordenada x inicial
+    mov x2, 275 -60        // Coordenada y inicial
+    mov x3, 91 +370      // Coordenada x final
+    mov x4, 255 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +370     // Coordenada x inicial
+    mov x2, 243 -60        // Coordenada y inicial
+    mov x3, 56 +370      // Coordenada x final
+    mov x4, 258 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 57 +370     // Coordenada x inicial
+    mov x2, 246 -60        // Coordenada y inicial
+    mov x3, 57 +370      // Coordenada x final
+    mov x4, 259 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 58 +370     // Coordenada x inicial
+    mov x2, 247 -60        // Coordenada y inicial
+    mov x3, 58 +370      // Coordenada x final
+    mov x4, 260 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 59 +370     // Coordenada x inicial
+    mov x2, 248 -60        // Coordenada y inicial
+    mov x3, 59 +370      // Coordenada x final
+    mov x4, 261 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 60 +370     // Coordenada x inicial
+    mov x2, 249 -60        // Coordenada y inicial
+    mov x3, 60 +370      // Coordenada x final
+    mov x4, 262 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 61 +370     // Coordenada x inicial
+    mov x2, 250 -60        // Coordenada y inicial
+    mov x3, 61 +370      // Coordenada x final
+    mov x4, 262 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 62 +370     // Coordenada x inicial
+    mov x2, 251 -60        // Coordenada y inicial
+    mov x3, 62 +370      // Coordenada x final
+    mov x4, 263 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 63 +370     // Coordenada x inicial
+    mov x2, 252 -60        // Coordenada y inicial
+    mov x3, 63 +370      // Coordenada x final
+    mov x4, 264 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 64 +370     // Coordenada x inicial
+    mov x2, 253 -60        // Coordenada y inicial
+    mov x3, 64 +370      // Coordenada x final
+    mov x4, 265 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 65 +370     // Coordenada x inicial
+    mov x2, 254 -60        // Coordenada y inicial
+    mov x3, 65 +370      // Coordenada x final
+    mov x4, 267 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 66 +370     // Coordenada x inicial
+    mov x2, 255 -60        // Coordenada y inicial
+    mov x3, 66 +370      // Coordenada x final
+    mov x4, 268 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 67 +370     // Coordenada x inicial
+    mov x2, 255 -60        // Coordenada y inicial
+    mov x3, 67 +370      // Coordenada x final
+    mov x4, 269 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 68 +370     // Coordenada x inicial
+    mov x2, 255 -60        // Coordenada y inicial
+    mov x3, 68 +370      // Coordenada x final
+    mov x4, 270 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 69 +370     // Coordenada x inicial
+    mov x2, 255 -60        // Coordenada y inicial
+    mov x3, 69 +370      // Coordenada x final
+    mov x4, 272 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 70 +370     // Coordenada x inicial
+    mov x2, 255 -60        // Coordenada y inicial
+    mov x3, 70 +370      // Coordenada x final
+    mov x4, 273 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 71 +370     // Coordenada x inicial
+    mov x2, 255 -60        // Coordenada y inicial
+    mov x3, 71 +370      // Coordenada x final
+    mov x4, 274 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +370     // Coordenada x inicial
+    mov x2, 276 -60        // Coordenada y inicial
+    mov x3, 91 +370      // Coordenada x final
+    mov x4, 249 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 92 +370     // Coordenada x inicial
+    mov x2, 274 -60        // Coordenada y inicial
+    mov x3, 94 +370      // Coordenada x final
+    mov x4, 249 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 95 +370     // Coordenada x inicial
+    mov x2, 273 -60        // Coordenada y inicial
+    mov x3, 95 +370      // Coordenada x final
+    mov x4, 247 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 96 +370     // Coordenada x inicial
+    mov x2, 271 -60        // Coordenada y inicial
+    mov x3, 96 +370      // Coordenada x final
+    mov x4, 248 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 97 +370     // Coordenada x inicial
+    mov x2, 269 -60        // Coordenada y inicial
+    mov x3, 97 +370      // Coordenada x final
+    mov x4, 232 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 98 +370     // Coordenada x inicial
+    mov x2, 268 -60        // Coordenada y inicial
+    mov x3, 98 +370      // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 99 +370     // Coordenada x inicial
+    mov x2, 267 -60        // Coordenada y inicial
+    mov x3, 99 +370      // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 100+370      // Coordenada x inicial
+    mov x2, 265 -60        // Coordenada y inicial
+    mov x3, 100+370       // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+370      // Coordenada x inicial
+    mov x2, 264 -60        // Coordenada y inicial
+    mov x3, 101+370       // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+370      // Coordenada x inicial
+    mov x2, 264 -60        // Coordenada y inicial
+    mov x3, 101+370       // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 102+370      // Coordenada x inicial
+    mov x2, 262 -60        // Coordenada y inicial
+    mov x3, 104+370       // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 104+90
+    mov x2, 262+-0    
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95+370  
+    mov x2, 247+-0    
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +370     // Coordenada x inicial
+    mov x2, 254 -60        // Coordenada y inicial
+    mov x3, 104+370       // Coordenada x final
+    mov x4, 254 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 81 +370     // Coordenada x inicial
+    mov x2, 253 -60        // Coordenada y inicial
+    mov x3, 104+370       // Coordenada x final
+    mov x4, 253 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +370     // Coordenada x inicial
+    mov x2, 252 -60        // Coordenada y inicial
+    mov x3, 104+370       // Coordenada x final
+    mov x4, 252 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 88 +370     // Coordenada x inicial
+    mov x2, 251 -60        // Coordenada y inicial
+    mov x3, 104+370       // Coordenada x final
+    mov x4, 251 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +370     // Coordenada x inicial
+    mov x2, 250 -60        // Coordenada y inicial
+    mov x3, 104+370       // Coordenada x final
+    mov x4, 250 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +370     // Coordenada x inicial
+    mov x2, 249 -60        // Coordenada y inicial
+    mov x3, 104+370       // Coordenada x final
+    mov x4, 249 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+    
+    mov x1, 96 +370     
+    mov x2, 248 -60
+    ldr x10, verde_oscuro             
+    bl draw_pixel
+
+    mov x1, 105+370      // Coordenada x inicial
+    mov x2, 256 -60        // Coordenada y inicial
+    mov x3, 112+370       // Coordenada x final
+    mov x4, 256 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 112+370      // Coordenada x inicial
+    mov x2, 257 -60        // Coordenada y inicial
+    mov x3, 112+370       // Coordenada x final
+    mov x4, 260 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+370      // Coordenada x inicial
+    mov x2, 248 -60        // Coordenada y inicial
+    mov x3, 115+370       // Coordenada x final
+    mov x4, 248 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+370      // Coordenada x inicial
+    mov x2, 247 -60        // Coordenada y inicial
+    mov x3, 105+370       // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 106+370      // Coordenada x inicial
+    mov x2, 244 -60        // Coordenada y inicial
+    mov x3, 117+370       // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 117+370      
+    mov x2, 231 -60
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+370      // Coordenada x inicial
+    mov x2, 236 -60        // Coordenada y inicial
+    mov x3, 103+370       // Coordenada x final
+    mov x4, 235 -60       // Coordenada y final
+    ldr x10, negro             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_erase_jump7:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +370     // Coordenada x inicial
+    mov x2, 288 -60        // Coordenada y inicial
+    mov x3, 96 +370      // Coordenada x final
+    mov x4, 288 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +370     // Coordenada x inicial
+    mov x2, 287 -60        // Coordenada y inicial
+    mov x3, 89 +370      // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 86 +370     // Coordenada x inicial
+    mov x2, 280 -60        // Coordenada y inicial
+    mov x3, 86 +370      // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 85 +370     // Coordenada x inicial
+    mov x2, 277 -60        // Coordenada y inicial
+    mov x3, 85 +370      // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +370     // Coordenada x inicial
+    mov x2, 280 -60        // Coordenada y inicial
+    mov x3, 89 +370      // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +370     // Coordenada x inicial
+    mov x2, 278 -60        // Coordenada y inicial
+    mov x3, 90 +370      // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 91 +370     // Coordenada x inicial
+    mov x2, 276 -60        // Coordenada y inicial
+    mov x3, 91 +370      // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +370     // Coordenada x inicial
+    mov x2, 288 -60        // Coordenada y inicial
+    mov x3, 72 +370      // Coordenada x final
+    mov x4, 288 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 72 +370     // Coordenada x inicial
+    mov x2, 287 -60        // Coordenada y inicial
+    mov x3, 74 +370      // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 74 +370     // Coordenada x inicial
+    mov x2, 281 -60        // Coordenada y inicial
+    mov x3, 74 +370      // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 75 +370     // Coordenada x inicial
+    mov x2, 280 -60        // Coordenada y inicial
+    mov x3, 75 +370      // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 76 +370     // Coordenada x inicial
+    mov x2, 279 -60        // Coordenada y inicial
+    mov x3, 76 +370      // Coordenada x final
+    mov x4, 275 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 77 +370     // Coordenada x inicial
+    mov x2, 276 -60        // Coordenada y inicial
+    mov x3, 78 +370      // Coordenada x final
+    mov x4, 276 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +370     // Coordenada x inicial
+    mov x2, 275 -60        // Coordenada y inicial
+    mov x3, 91 +370      // Coordenada x final
+    mov x4, 255 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +370     // Coordenada x inicial
+    mov x2, 243 -60        // Coordenada y inicial
+    mov x3, 56 +370      // Coordenada x final
+    mov x4, 258 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 57 +370     // Coordenada x inicial
+    mov x2, 246 -60        // Coordenada y inicial
+    mov x3, 57 +370      // Coordenada x final
+    mov x4, 259 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 58 +370     // Coordenada x inicial
+    mov x2, 247 -60        // Coordenada y inicial
+    mov x3, 58 +370      // Coordenada x final
+    mov x4, 260 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 59 +370     // Coordenada x inicial
+    mov x2, 248 -60        // Coordenada y inicial
+    mov x3, 59 +370      // Coordenada x final
+    mov x4, 261 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 60 +370     // Coordenada x inicial
+    mov x2, 249 -60        // Coordenada y inicial
+    mov x3, 60 +370      // Coordenada x final
+    mov x4, 262 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 61 +370     // Coordenada x inicial
+    mov x2, 250 -60        // Coordenada y inicial
+    mov x3, 61 +370      // Coordenada x final
+    mov x4, 262 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 62 +370     // Coordenada x inicial
+    mov x2, 251 -60        // Coordenada y inicial
+    mov x3, 62 +370      // Coordenada x final
+    mov x4, 263 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 63 +370     // Coordenada x inicial
+    mov x2, 252 -60        // Coordenada y inicial
+    mov x3, 63 +370      // Coordenada x final
+    mov x4, 264 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 64 +370     // Coordenada x inicial
+    mov x2, 253 -60        // Coordenada y inicial
+    mov x3, 64 +370      // Coordenada x final
+    mov x4, 265 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 65 +370     // Coordenada x inicial
+    mov x2, 254 -60        // Coordenada y inicial
+    mov x3, 65 +370      // Coordenada x final
+    mov x4, 267 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 66 +370     // Coordenada x inicial
+    mov x2, 255 -60        // Coordenada y inicial
+    mov x3, 66 +370      // Coordenada x final
+    mov x4, 268 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 67 +370     // Coordenada x inicial
+    mov x2, 255 -60        // Coordenada y inicial
+    mov x3, 67 +370      // Coordenada x final
+    mov x4, 269 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 68 +370     // Coordenada x inicial
+    mov x2, 255 -60        // Coordenada y inicial
+    mov x3, 68 +370      // Coordenada x final
+    mov x4, 270 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 69 +370     // Coordenada x inicial
+    mov x2, 255 -60        // Coordenada y inicial
+    mov x3, 69 +370      // Coordenada x final
+    mov x4, 272 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 70 +370     // Coordenada x inicial
+    mov x2, 255 -60        // Coordenada y inicial
+    mov x3, 70 +370      // Coordenada x final
+    mov x4, 273 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 71 +370     // Coordenada x inicial
+    mov x2, 255 -60        // Coordenada y inicial
+    mov x3, 71 +370      // Coordenada x final
+    mov x4, 274 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +370     // Coordenada x inicial
+    mov x2, 276 -60        // Coordenada y inicial
+    mov x3, 91 +370      // Coordenada x final
+    mov x4, 249 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 92 +370     // Coordenada x inicial
+    mov x2, 274 -60        // Coordenada y inicial
+    mov x3, 94 +370      // Coordenada x final
+    mov x4, 249 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 95 +370     // Coordenada x inicial
+    mov x2, 273 -60        // Coordenada y inicial
+    mov x3, 95 +370      // Coordenada x final
+    mov x4, 247 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 96 +370     // Coordenada x inicial
+    mov x2, 271 -60        // Coordenada y inicial
+    mov x3, 96 +370      // Coordenada x final
+    mov x4, 248 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 97 +370     // Coordenada x inicial
+    mov x2, 269 -60        // Coordenada y inicial
+    mov x3, 97 +370      // Coordenada x final
+    mov x4, 232 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 98 +370     // Coordenada x inicial
+    mov x2, 268 -60        // Coordenada y inicial
+    mov x3, 98 +370      // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 99 +370     // Coordenada x inicial
+    mov x2, 267 -60        // Coordenada y inicial
+    mov x3, 99 +370      // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 100+370      // Coordenada x inicial
+    mov x2, 265 -60        // Coordenada y inicial
+    mov x3, 100+370       // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+370      // Coordenada x inicial
+    mov x2, 264 -60        // Coordenada y inicial
+    mov x3, 101+370       // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+370      // Coordenada x inicial
+    mov x2, 264 -60        // Coordenada y inicial
+    mov x3, 101+370       // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 102+370      // Coordenada x inicial
+    mov x2, 262 -60        // Coordenada y inicial
+    mov x3, 104+370       // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 104+90
+    mov x2, 262+-0    
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95+370  
+    mov x2, 247+-0    
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +370     // Coordenada x inicial
+    mov x2, 254 -60        // Coordenada y inicial
+    mov x3, 104+370       // Coordenada x final
+    mov x4, 254 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 81 +370     // Coordenada x inicial
+    mov x2, 253 -60        // Coordenada y inicial
+    mov x3, 104+370       // Coordenada x final
+    mov x4, 253 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +370     // Coordenada x inicial
+    mov x2, 252 -60        // Coordenada y inicial
+    mov x3, 104+370       // Coordenada x final
+    mov x4, 252 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 88 +370     // Coordenada x inicial
+    mov x2, 251 -60        // Coordenada y inicial
+    mov x3, 104+370       // Coordenada x final
+    mov x4, 251 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +370     // Coordenada x inicial
+    mov x2, 250 -60        // Coordenada y inicial
+    mov x3, 104+370       // Coordenada x final
+    mov x4, 250 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +370     // Coordenada x inicial
+    mov x2, 249 -60        // Coordenada y inicial
+    mov x3, 104+370       // Coordenada x final
+    mov x4, 249 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+    
+    mov x1, 96 +370     
+    mov x2, 248 -60
+    ldr x10, cielo             
+    bl draw_pixel
+
+    mov x1, 105+370      // Coordenada x inicial
+    mov x2, 256 -60        // Coordenada y inicial
+    mov x3, 112+370       // Coordenada x final
+    mov x4, 256 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 112+370      // Coordenada x inicial
+    mov x2, 257 -60        // Coordenada y inicial
+    mov x3, 112+370       // Coordenada x final
+    mov x4, 260 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+370      // Coordenada x inicial
+    mov x2, 248 -60        // Coordenada y inicial
+    mov x3, 115+370       // Coordenada x final
+    mov x4, 248 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+370      // Coordenada x inicial
+    mov x2, 247 -60        // Coordenada y inicial
+    mov x3, 105+370       // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 106+370      // Coordenada x inicial
+    mov x2, 244 -60        // Coordenada y inicial
+    mov x3, 117+370       // Coordenada x final
+    mov x4, 231 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 117+370      
+    mov x2, 231 -60
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+370      // Coordenada x inicial
+    mov x2, 236 -60        // Coordenada y inicial
+    mov x3, 103+370       // Coordenada x final
+    mov x4, 235 -60       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_jump8:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +410     // Coordenada x inicial
+    mov x2, 288 -50        // Coordenada y inicial
+    mov x3, 96 +410      // Coordenada x final
+    mov x4, 288 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +410     // Coordenada x inicial
+    mov x2, 287 -50        // Coordenada y inicial
+    mov x3, 89 +410      // Coordenada x final
+    mov x4, 275 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 86 +410     // Coordenada x inicial
+    mov x2, 280 -50        // Coordenada y inicial
+    mov x3, 86 +410      // Coordenada x final
+    mov x4, 275 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 85 +410     // Coordenada x inicial
+    mov x2, 277 -50        // Coordenada y inicial
+    mov x3, 85 +410      // Coordenada x final
+    mov x4, 275 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +410     // Coordenada x inicial
+    mov x2, 280 -50        // Coordenada y inicial
+    mov x3, 89 +410      // Coordenada x final
+    mov x4, 275 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +410     // Coordenada x inicial
+    mov x2, 278 -50        // Coordenada y inicial
+    mov x3, 90 +410      // Coordenada x final
+    mov x4, 275 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 91 +410     // Coordenada x inicial
+    mov x2, 276 -50        // Coordenada y inicial
+    mov x3, 91 +410      // Coordenada x final
+    mov x4, 275 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +410     // Coordenada x inicial
+    mov x2, 288 -50        // Coordenada y inicial
+    mov x3, 72 +410      // Coordenada x final
+    mov x4, 288 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 72 +410     // Coordenada x inicial
+    mov x2, 287 -50        // Coordenada y inicial
+    mov x3, 74 +410      // Coordenada x final
+    mov x4, 275 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 74 +410     // Coordenada x inicial
+    mov x2, 281 -50        // Coordenada y inicial
+    mov x3, 74 +410      // Coordenada x final
+    mov x4, 275 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 75 +410     // Coordenada x inicial
+    mov x2, 280 -50        // Coordenada y inicial
+    mov x3, 75 +410      // Coordenada x final
+    mov x4, 275 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 76 +410     // Coordenada x inicial
+    mov x2, 279 -50        // Coordenada y inicial
+    mov x3, 76 +410      // Coordenada x final
+    mov x4, 275 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 77 +410     // Coordenada x inicial
+    mov x2, 276 -50        // Coordenada y inicial
+    mov x3, 78 +410      // Coordenada x final
+    mov x4, 276 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +410     // Coordenada x inicial
+    mov x2, 275 -50        // Coordenada y inicial
+    mov x3, 91 +410      // Coordenada x final
+    mov x4, 255 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +410     // Coordenada x inicial
+    mov x2, 243 -50        // Coordenada y inicial
+    mov x3, 56 +410      // Coordenada x final
+    mov x4, 258 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 57 +410     // Coordenada x inicial
+    mov x2, 246 -50        // Coordenada y inicial
+    mov x3, 57 +410      // Coordenada x final
+    mov x4, 259 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 58 +410     // Coordenada x inicial
+    mov x2, 247 -50        // Coordenada y inicial
+    mov x3, 58 +410      // Coordenada x final
+    mov x4, 260 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 59 +410     // Coordenada x inicial
+    mov x2, 248 -50        // Coordenada y inicial
+    mov x3, 59 +410      // Coordenada x final
+    mov x4, 261 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 60 +410     // Coordenada x inicial
+    mov x2, 249 -50        // Coordenada y inicial
+    mov x3, 60 +410      // Coordenada x final
+    mov x4, 262 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 61 +410     // Coordenada x inicial
+    mov x2, 250 -50        // Coordenada y inicial
+    mov x3, 61 +410      // Coordenada x final
+    mov x4, 262 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 62 +410     // Coordenada x inicial
+    mov x2, 251 -50        // Coordenada y inicial
+    mov x3, 62 +410      // Coordenada x final
+    mov x4, 263 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 63 +410     // Coordenada x inicial
+    mov x2, 252 -50        // Coordenada y inicial
+    mov x3, 63 +410      // Coordenada x final
+    mov x4, 264 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 64 +410     // Coordenada x inicial
+    mov x2, 253 -50        // Coordenada y inicial
+    mov x3, 64 +410      // Coordenada x final
+    mov x4, 265 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 65 +410     // Coordenada x inicial
+    mov x2, 254 -50        // Coordenada y inicial
+    mov x3, 65 +410      // Coordenada x final
+    mov x4, 267 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 66 +410     // Coordenada x inicial
+    mov x2, 255 -50        // Coordenada y inicial
+    mov x3, 66 +410      // Coordenada x final
+    mov x4, 268 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 67 +410     // Coordenada x inicial
+    mov x2, 255 -50        // Coordenada y inicial
+    mov x3, 67 +410      // Coordenada x final
+    mov x4, 269 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 68 +410     // Coordenada x inicial
+    mov x2, 255 -50        // Coordenada y inicial
+    mov x3, 68 +410      // Coordenada x final
+    mov x4, 270 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 69 +410     // Coordenada x inicial
+    mov x2, 255 -50        // Coordenada y inicial
+    mov x3, 69 +410      // Coordenada x final
+    mov x4, 272 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 70 +410     // Coordenada x inicial
+    mov x2, 255 -50        // Coordenada y inicial
+    mov x3, 70 +410      // Coordenada x final
+    mov x4, 273 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 71 +410     // Coordenada x inicial
+    mov x2, 255 -50        // Coordenada y inicial
+    mov x3, 71 +410      // Coordenada x final
+    mov x4, 274 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +410     // Coordenada x inicial
+    mov x2, 276 -50        // Coordenada y inicial
+    mov x3, 91 +410      // Coordenada x final
+    mov x4, 249 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 92 +410     // Coordenada x inicial
+    mov x2, 274 -50        // Coordenada y inicial
+    mov x3, 94 +410      // Coordenada x final
+    mov x4, 249 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 95 +410     // Coordenada x inicial
+    mov x2, 273 -50        // Coordenada y inicial
+    mov x3, 95 +410      // Coordenada x final
+    mov x4, 247 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 96 +410     // Coordenada x inicial
+    mov x2, 271 -50        // Coordenada y inicial
+    mov x3, 96 +410      // Coordenada x final
+    mov x4, 248 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 97 +410     // Coordenada x inicial
+    mov x2, 269 -50        // Coordenada y inicial
+    mov x3, 97 +410      // Coordenada x final
+    mov x4, 232 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 98 +410     // Coordenada x inicial
+    mov x2, 268 -50        // Coordenada y inicial
+    mov x3, 98 +410      // Coordenada x final
+    mov x4, 231 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 99 +410     // Coordenada x inicial
+    mov x2, 267 -50        // Coordenada y inicial
+    mov x3, 99 +410      // Coordenada x final
+    mov x4, 231 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 100+410      // Coordenada x inicial
+    mov x2, 265 -50        // Coordenada y inicial
+    mov x3, 100+410       // Coordenada x final
+    mov x4, 231 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+410      // Coordenada x inicial
+    mov x2, 264 -50        // Coordenada y inicial
+    mov x3, 101+410       // Coordenada x final
+    mov x4, 231 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+410      // Coordenada x inicial
+    mov x2, 264 -50        // Coordenada y inicial
+    mov x3, 101+410       // Coordenada x final
+    mov x4, 231 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 102+410      // Coordenada x inicial
+    mov x2, 262 -50        // Coordenada y inicial
+    mov x3, 104+410       // Coordenada x final
+    mov x4, 231 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 104+90
+    mov x2, 262+-0    
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95+410  
+    mov x2, 247+-0    
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +410     // Coordenada x inicial
+    mov x2, 254 -50        // Coordenada y inicial
+    mov x3, 104+410       // Coordenada x final
+    mov x4, 254 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 81 +410     // Coordenada x inicial
+    mov x2, 253 -50        // Coordenada y inicial
+    mov x3, 104+410       // Coordenada x final
+    mov x4, 253 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +410     // Coordenada x inicial
+    mov x2, 252 -50        // Coordenada y inicial
+    mov x3, 104+410       // Coordenada x final
+    mov x4, 252 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 88 +410     // Coordenada x inicial
+    mov x2, 251 -50        // Coordenada y inicial
+    mov x3, 104+410       // Coordenada x final
+    mov x4, 251 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +410     // Coordenada x inicial
+    mov x2, 250 -50        // Coordenada y inicial
+    mov x3, 104+410       // Coordenada x final
+    mov x4, 250 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +410     // Coordenada x inicial
+    mov x2, 249 -50        // Coordenada y inicial
+    mov x3, 104+410       // Coordenada x final
+    mov x4, 249 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+    
+    mov x1, 96 +410     
+    mov x2, 248 -50
+    ldr x10, verde_oscuro             
+    bl draw_pixel
+
+    mov x1, 105+410      // Coordenada x inicial
+    mov x2, 256 -50        // Coordenada y inicial
+    mov x3, 112+410       // Coordenada x final
+    mov x4, 256 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 112+410      // Coordenada x inicial
+    mov x2, 257 -50        // Coordenada y inicial
+    mov x3, 112+410       // Coordenada x final
+    mov x4, 260 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+410      // Coordenada x inicial
+    mov x2, 248 -50        // Coordenada y inicial
+    mov x3, 115+410       // Coordenada x final
+    mov x4, 248 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+410      // Coordenada x inicial
+    mov x2, 247 -50        // Coordenada y inicial
+    mov x3, 105+410       // Coordenada x final
+    mov x4, 231 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 106+410      // Coordenada x inicial
+    mov x2, 244 -50        // Coordenada y inicial
+    mov x3, 117+410       // Coordenada x final
+    mov x4, 231 -50       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 117+410      
+    mov x2, 231 -50
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+410      // Coordenada x inicial
+    mov x2, 236 -50        // Coordenada y inicial
+    mov x3, 103+410       // Coordenada x final
+    mov x4, 235 -50       // Coordenada y final
+    ldr x10, negro             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_erase_jump8:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +410     // Coordenada x inicial
+    mov x2, 288 -50        // Coordenada y inicial
+    mov x3, 96 +410      // Coordenada x final
+    mov x4, 288 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +410     // Coordenada x inicial
+    mov x2, 287 -50        // Coordenada y inicial
+    mov x3, 89 +410      // Coordenada x final
+    mov x4, 275 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 86 +410     // Coordenada x inicial
+    mov x2, 280 -50        // Coordenada y inicial
+    mov x3, 86 +410      // Coordenada x final
+    mov x4, 275 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 85 +410     // Coordenada x inicial
+    mov x2, 277 -50        // Coordenada y inicial
+    mov x3, 85 +410      // Coordenada x final
+    mov x4, 275 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +410     // Coordenada x inicial
+    mov x2, 280 -50        // Coordenada y inicial
+    mov x3, 89 +410      // Coordenada x final
+    mov x4, 275 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +410     // Coordenada x inicial
+    mov x2, 278 -50        // Coordenada y inicial
+    mov x3, 90 +410      // Coordenada x final
+    mov x4, 275 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 91 +410     // Coordenada x inicial
+    mov x2, 276 -50        // Coordenada y inicial
+    mov x3, 91 +410      // Coordenada x final
+    mov x4, 275 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +410     // Coordenada x inicial
+    mov x2, 288 -50        // Coordenada y inicial
+    mov x3, 72 +410      // Coordenada x final
+    mov x4, 288 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 72 +410     // Coordenada x inicial
+    mov x2, 287 -50        // Coordenada y inicial
+    mov x3, 74 +410      // Coordenada x final
+    mov x4, 275 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 74 +410     // Coordenada x inicial
+    mov x2, 281 -50        // Coordenada y inicial
+    mov x3, 74 +410      // Coordenada x final
+    mov x4, 275 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 75 +410     // Coordenada x inicial
+    mov x2, 280 -50        // Coordenada y inicial
+    mov x3, 75 +410      // Coordenada x final
+    mov x4, 275 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 76 +410     // Coordenada x inicial
+    mov x2, 279 -50        // Coordenada y inicial
+    mov x3, 76 +410      // Coordenada x final
+    mov x4, 275 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 77 +410     // Coordenada x inicial
+    mov x2, 276 -50        // Coordenada y inicial
+    mov x3, 78 +410      // Coordenada x final
+    mov x4, 276 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +410     // Coordenada x inicial
+    mov x2, 275 -50        // Coordenada y inicial
+    mov x3, 91 +410      // Coordenada x final
+    mov x4, 255 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +410     // Coordenada x inicial
+    mov x2, 243 -50        // Coordenada y inicial
+    mov x3, 56 +410      // Coordenada x final
+    mov x4, 258 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 57 +410     // Coordenada x inicial
+    mov x2, 246 -50        // Coordenada y inicial
+    mov x3, 57 +410      // Coordenada x final
+    mov x4, 259 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 58 +410     // Coordenada x inicial
+    mov x2, 247 -50        // Coordenada y inicial
+    mov x3, 58 +410      // Coordenada x final
+    mov x4, 260 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 59 +410     // Coordenada x inicial
+    mov x2, 248 -50        // Coordenada y inicial
+    mov x3, 59 +410      // Coordenada x final
+    mov x4, 261 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 60 +410     // Coordenada x inicial
+    mov x2, 249 -50        // Coordenada y inicial
+    mov x3, 60 +410      // Coordenada x final
+    mov x4, 262 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 61 +410     // Coordenada x inicial
+    mov x2, 250 -50        // Coordenada y inicial
+    mov x3, 61 +410      // Coordenada x final
+    mov x4, 262 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 62 +410     // Coordenada x inicial
+    mov x2, 251 -50        // Coordenada y inicial
+    mov x3, 62 +410      // Coordenada x final
+    mov x4, 263 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 63 +410     // Coordenada x inicial
+    mov x2, 252 -50        // Coordenada y inicial
+    mov x3, 63 +410      // Coordenada x final
+    mov x4, 264 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 64 +410     // Coordenada x inicial
+    mov x2, 253 -50        // Coordenada y inicial
+    mov x3, 64 +410      // Coordenada x final
+    mov x4, 265 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 65 +410     // Coordenada x inicial
+    mov x2, 254 -50        // Coordenada y inicial
+    mov x3, 65 +410      // Coordenada x final
+    mov x4, 267 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 66 +410     // Coordenada x inicial
+    mov x2, 255 -50        // Coordenada y inicial
+    mov x3, 66 +410      // Coordenada x final
+    mov x4, 268 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 67 +410     // Coordenada x inicial
+    mov x2, 255 -50        // Coordenada y inicial
+    mov x3, 67 +410      // Coordenada x final
+    mov x4, 269 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 68 +410     // Coordenada x inicial
+    mov x2, 255 -50        // Coordenada y inicial
+    mov x3, 68 +410      // Coordenada x final
+    mov x4, 270 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 69 +410     // Coordenada x inicial
+    mov x2, 255 -50        // Coordenada y inicial
+    mov x3, 69 +410      // Coordenada x final
+    mov x4, 272 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 70 +410     // Coordenada x inicial
+    mov x2, 255 -50        // Coordenada y inicial
+    mov x3, 70 +410      // Coordenada x final
+    mov x4, 273 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 71 +410     // Coordenada x inicial
+    mov x2, 255 -50        // Coordenada y inicial
+    mov x3, 71 +410      // Coordenada x final
+    mov x4, 274 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +410     // Coordenada x inicial
+    mov x2, 276 -50        // Coordenada y inicial
+    mov x3, 91 +410      // Coordenada x final
+    mov x4, 249 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 92 +410     // Coordenada x inicial
+    mov x2, 274 -50        // Coordenada y inicial
+    mov x3, 94 +410      // Coordenada x final
+    mov x4, 249 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 95 +410     // Coordenada x inicial
+    mov x2, 273 -50        // Coordenada y inicial
+    mov x3, 95 +410      // Coordenada x final
+    mov x4, 247 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 96 +410     // Coordenada x inicial
+    mov x2, 271 -50        // Coordenada y inicial
+    mov x3, 96 +410      // Coordenada x final
+    mov x4, 248 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 97 +410     // Coordenada x inicial
+    mov x2, 269 -50        // Coordenada y inicial
+    mov x3, 97 +410      // Coordenada x final
+    mov x4, 232 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 98 +410     // Coordenada x inicial
+    mov x2, 268 -50        // Coordenada y inicial
+    mov x3, 98 +410      // Coordenada x final
+    mov x4, 231 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 99 +410     // Coordenada x inicial
+    mov x2, 267 -50        // Coordenada y inicial
+    mov x3, 99 +410      // Coordenada x final
+    mov x4, 231 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 100+410      // Coordenada x inicial
+    mov x2, 265 -50        // Coordenada y inicial
+    mov x3, 100+410       // Coordenada x final
+    mov x4, 231 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+410      // Coordenada x inicial
+    mov x2, 264 -50        // Coordenada y inicial
+    mov x3, 101+410       // Coordenada x final
+    mov x4, 231 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+410      // Coordenada x inicial
+    mov x2, 264 -50        // Coordenada y inicial
+    mov x3, 101+410       // Coordenada x final
+    mov x4, 231 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 102+410      // Coordenada x inicial
+    mov x2, 262 -50        // Coordenada y inicial
+    mov x3, 104+410       // Coordenada x final
+    mov x4, 231 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 104+90
+    mov x2, 262+-0    
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95+410  
+    mov x2, 247+-0    
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +410     // Coordenada x inicial
+    mov x2, 254 -50        // Coordenada y inicial
+    mov x3, 104+410       // Coordenada x final
+    mov x4, 254 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 81 +410     // Coordenada x inicial
+    mov x2, 253 -50        // Coordenada y inicial
+    mov x3, 104+410       // Coordenada x final
+    mov x4, 253 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +410     // Coordenada x inicial
+    mov x2, 252 -50        // Coordenada y inicial
+    mov x3, 104+410       // Coordenada x final
+    mov x4, 252 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 88 +410     // Coordenada x inicial
+    mov x2, 251 -50        // Coordenada y inicial
+    mov x3, 104+410       // Coordenada x final
+    mov x4, 251 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +410     // Coordenada x inicial
+    mov x2, 250 -50        // Coordenada y inicial
+    mov x3, 104+410       // Coordenada x final
+    mov x4, 250 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +410     // Coordenada x inicial
+    mov x2, 249 -50        // Coordenada y inicial
+    mov x3, 104+410       // Coordenada x final
+    mov x4, 249 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+    
+    mov x1, 96 +410     
+    mov x2, 248 -50
+    ldr x10, cielo             
+    bl draw_pixel
+
+    mov x1, 105+410      // Coordenada x inicial
+    mov x2, 256 -50        // Coordenada y inicial
+    mov x3, 112+410       // Coordenada x final
+    mov x4, 256 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 112+410      // Coordenada x inicial
+    mov x2, 257 -50        // Coordenada y inicial
+    mov x3, 112+410       // Coordenada x final
+    mov x4, 260 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+410      // Coordenada x inicial
+    mov x2, 248 -50        // Coordenada y inicial
+    mov x3, 115+410       // Coordenada x final
+    mov x4, 248 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+410      // Coordenada x inicial
+    mov x2, 247 -50        // Coordenada y inicial
+    mov x3, 105+410       // Coordenada x final
+    mov x4, 231 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 106+410      // Coordenada x inicial
+    mov x2, 244 -50        // Coordenada y inicial
+    mov x3, 117+410       // Coordenada x final
+    mov x4, 231 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 117+410      
+    mov x2, 231 -50
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+410      // Coordenada x inicial
+    mov x2, 236 -50        // Coordenada y inicial
+    mov x3, 103+410       // Coordenada x final
+    mov x4, 235 -50       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_jump9:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +440     // Coordenada x inicial
+    mov x2, 288 -20        // Coordenada y inicial
+    mov x3, 96 +440      // Coordenada x final
+    mov x4, 288 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +440     // Coordenada x inicial
+    mov x2, 287 -20        // Coordenada y inicial
+    mov x3, 89 +440      // Coordenada x final
+    mov x4, 275 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 86 +440     // Coordenada x inicial
+    mov x2, 280 -20        // Coordenada y inicial
+    mov x3, 86 +440      // Coordenada x final
+    mov x4, 275 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 85 +440     // Coordenada x inicial
+    mov x2, 277 -20        // Coordenada y inicial
+    mov x3, 85 +440      // Coordenada x final
+    mov x4, 275 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +440     // Coordenada x inicial
+    mov x2, 280 -20        // Coordenada y inicial
+    mov x3, 89 +440      // Coordenada x final
+    mov x4, 275 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +440     // Coordenada x inicial
+    mov x2, 278 -20        // Coordenada y inicial
+    mov x3, 90 +440      // Coordenada x final
+    mov x4, 275 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 91 +440     // Coordenada x inicial
+    mov x2, 276 -20        // Coordenada y inicial
+    mov x3, 91 +440      // Coordenada x final
+    mov x4, 275 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +440     // Coordenada x inicial
+    mov x2, 288 -20        // Coordenada y inicial
+    mov x3, 72 +440      // Coordenada x final
+    mov x4, 288 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 72 +440     // Coordenada x inicial
+    mov x2, 287 -20        // Coordenada y inicial
+    mov x3, 74 +440      // Coordenada x final
+    mov x4, 275 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 74 +440     // Coordenada x inicial
+    mov x2, 281 -20        // Coordenada y inicial
+    mov x3, 74 +440      // Coordenada x final
+    mov x4, 275 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 75 +440     // Coordenada x inicial
+    mov x2, 280 -20        // Coordenada y inicial
+    mov x3, 75 +440      // Coordenada x final
+    mov x4, 275 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 76 +440     // Coordenada x inicial
+    mov x2, 279 -20        // Coordenada y inicial
+    mov x3, 76 +440      // Coordenada x final
+    mov x4, 275 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 77 +440     // Coordenada x inicial
+    mov x2, 276 -20        // Coordenada y inicial
+    mov x3, 78 +440      // Coordenada x final
+    mov x4, 276 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +440     // Coordenada x inicial
+    mov x2, 275 -20        // Coordenada y inicial
+    mov x3, 91 +440      // Coordenada x final
+    mov x4, 255 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +440     // Coordenada x inicial
+    mov x2, 243 -20        // Coordenada y inicial
+    mov x3, 56 +440      // Coordenada x final
+    mov x4, 258 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 57 +440     // Coordenada x inicial
+    mov x2, 246 -20        // Coordenada y inicial
+    mov x3, 57 +440      // Coordenada x final
+    mov x4, 259 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 58 +440     // Coordenada x inicial
+    mov x2, 247 -20        // Coordenada y inicial
+    mov x3, 58 +440      // Coordenada x final
+    mov x4, 260 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 59 +440     // Coordenada x inicial
+    mov x2, 248 -20        // Coordenada y inicial
+    mov x3, 59 +440      // Coordenada x final
+    mov x4, 261 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 60 +440     // Coordenada x inicial
+    mov x2, 249 -20        // Coordenada y inicial
+    mov x3, 60 +440      // Coordenada x final
+    mov x4, 262 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 61 +440     // Coordenada x inicial
+    mov x2, 250 -20        // Coordenada y inicial
+    mov x3, 61 +440      // Coordenada x final
+    mov x4, 262 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 62 +440     // Coordenada x inicial
+    mov x2, 251 -20        // Coordenada y inicial
+    mov x3, 62 +440      // Coordenada x final
+    mov x4, 263 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 63 +440     // Coordenada x inicial
+    mov x2, 252 -20        // Coordenada y inicial
+    mov x3, 63 +440      // Coordenada x final
+    mov x4, 264 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 64 +440     // Coordenada x inicial
+    mov x2, 253 -20        // Coordenada y inicial
+    mov x3, 64 +440      // Coordenada x final
+    mov x4, 265 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 65 +440     // Coordenada x inicial
+    mov x2, 254 -20        // Coordenada y inicial
+    mov x3, 65 +440      // Coordenada x final
+    mov x4, 267 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 66 +440     // Coordenada x inicial
+    mov x2, 255 -20        // Coordenada y inicial
+    mov x3, 66 +440      // Coordenada x final
+    mov x4, 268 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 67 +440     // Coordenada x inicial
+    mov x2, 255 -20        // Coordenada y inicial
+    mov x3, 67 +440      // Coordenada x final
+    mov x4, 269 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 68 +440     // Coordenada x inicial
+    mov x2, 255 -20        // Coordenada y inicial
+    mov x3, 68 +440      // Coordenada x final
+    mov x4, 270 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 69 +440     // Coordenada x inicial
+    mov x2, 255 -20        // Coordenada y inicial
+    mov x3, 69 +440      // Coordenada x final
+    mov x4, 272 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 70 +440     // Coordenada x inicial
+    mov x2, 255 -20        // Coordenada y inicial
+    mov x3, 70 +440      // Coordenada x final
+    mov x4, 273 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 71 +440     // Coordenada x inicial
+    mov x2, 255 -20        // Coordenada y inicial
+    mov x3, 71 +440      // Coordenada x final
+    mov x4, 274 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +440     // Coordenada x inicial
+    mov x2, 276 -20        // Coordenada y inicial
+    mov x3, 91 +440      // Coordenada x final
+    mov x4, 249 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 92 +440     // Coordenada x inicial
+    mov x2, 274 -20        // Coordenada y inicial
+    mov x3, 94 +440      // Coordenada x final
+    mov x4, 249 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 95 +440     // Coordenada x inicial
+    mov x2, 273 -20        // Coordenada y inicial
+    mov x3, 95 +440      // Coordenada x final
+    mov x4, 247 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 96 +440     // Coordenada x inicial
+    mov x2, 271 -20        // Coordenada y inicial
+    mov x3, 96 +440      // Coordenada x final
+    mov x4, 248 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 97 +440     // Coordenada x inicial
+    mov x2, 269 -20        // Coordenada y inicial
+    mov x3, 97 +440      // Coordenada x final
+    mov x4, 232 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 98 +440     // Coordenada x inicial
+    mov x2, 268 -20        // Coordenada y inicial
+    mov x3, 98 +440      // Coordenada x final
+    mov x4, 231 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 99 +440     // Coordenada x inicial
+    mov x2, 267 -20        // Coordenada y inicial
+    mov x3, 99 +440      // Coordenada x final
+    mov x4, 231 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 100+440      // Coordenada x inicial
+    mov x2, 265 -20        // Coordenada y inicial
+    mov x3, 100+440       // Coordenada x final
+    mov x4, 231 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+440      // Coordenada x inicial
+    mov x2, 264 -20        // Coordenada y inicial
+    mov x3, 101+440       // Coordenada x final
+    mov x4, 231 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+440      // Coordenada x inicial
+    mov x2, 264 -20        // Coordenada y inicial
+    mov x3, 101+440       // Coordenada x final
+    mov x4, 231 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 102+440      // Coordenada x inicial
+    mov x2, 262 -20        // Coordenada y inicial
+    mov x3, 104+440       // Coordenada x final
+    mov x4, 231 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 104+90
+    mov x2, 262+-0    
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95+440  
+    mov x2, 247+-0    
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +440     // Coordenada x inicial
+    mov x2, 254 -20        // Coordenada y inicial
+    mov x3, 104+440       // Coordenada x final
+    mov x4, 254 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 81 +440     // Coordenada x inicial
+    mov x2, 253 -20        // Coordenada y inicial
+    mov x3, 104+440       // Coordenada x final
+    mov x4, 253 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +440     // Coordenada x inicial
+    mov x2, 252 -20        // Coordenada y inicial
+    mov x3, 104+440       // Coordenada x final
+    mov x4, 252 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 88 +440     // Coordenada x inicial
+    mov x2, 251 -20        // Coordenada y inicial
+    mov x3, 104+440       // Coordenada x final
+    mov x4, 251 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +440     // Coordenada x inicial
+    mov x2, 250 -20        // Coordenada y inicial
+    mov x3, 104+440       // Coordenada x final
+    mov x4, 250 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +440     // Coordenada x inicial
+    mov x2, 249 -20        // Coordenada y inicial
+    mov x3, 104+440       // Coordenada x final
+    mov x4, 249 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+    
+    mov x1, 96 +440     
+    mov x2, 248 -20
+    ldr x10, verde_oscuro             
+    bl draw_pixel
+
+    mov x1, 105+440      // Coordenada x inicial
+    mov x2, 256 -20        // Coordenada y inicial
+    mov x3, 112+440       // Coordenada x final
+    mov x4, 256 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 112+440      // Coordenada x inicial
+    mov x2, 257 -20        // Coordenada y inicial
+    mov x3, 112+440       // Coordenada x final
+    mov x4, 260 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+440      // Coordenada x inicial
+    mov x2, 248 -20        // Coordenada y inicial
+    mov x3, 115+440       // Coordenada x final
+    mov x4, 248 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+440      // Coordenada x inicial
+    mov x2, 247 -20        // Coordenada y inicial
+    mov x3, 105+440       // Coordenada x final
+    mov x4, 231 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 106+440      // Coordenada x inicial
+    mov x2, 244 -20        // Coordenada y inicial
+    mov x3, 117+440       // Coordenada x final
+    mov x4, 231 -20       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 117+440      
+    mov x2, 231 -20
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+440      // Coordenada x inicial
+    mov x2, 236 -20        // Coordenada y inicial
+    mov x3, 103+440       // Coordenada x final
+    mov x4, 235 -20       // Coordenada y final
+    ldr x10, negro             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_erase_jump9:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +440     // Coordenada x inicial
+    mov x2, 288 -20        // Coordenada y inicial
+    mov x3, 96 +440      // Coordenada x final
+    mov x4, 288 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +440     // Coordenada x inicial
+    mov x2, 287 -20        // Coordenada y inicial
+    mov x3, 89 +440      // Coordenada x final
+    mov x4, 275 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 86 +440     // Coordenada x inicial
+    mov x2, 280 -20        // Coordenada y inicial
+    mov x3, 86 +440      // Coordenada x final
+    mov x4, 275 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 85 +440     // Coordenada x inicial
+    mov x2, 277 -20        // Coordenada y inicial
+    mov x3, 85 +440      // Coordenada x final
+    mov x4, 275 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +440     // Coordenada x inicial
+    mov x2, 280 -20        // Coordenada y inicial
+    mov x3, 89 +440      // Coordenada x final
+    mov x4, 275 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +440     // Coordenada x inicial
+    mov x2, 278 -20        // Coordenada y inicial
+    mov x3, 90 +440      // Coordenada x final
+    mov x4, 275 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 91 +440     // Coordenada x inicial
+    mov x2, 276 -20        // Coordenada y inicial
+    mov x3, 91 +440      // Coordenada x final
+    mov x4, 275 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +440     // Coordenada x inicial
+    mov x2, 288 -20        // Coordenada y inicial
+    mov x3, 72 +440      // Coordenada x final
+    mov x4, 288 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 72 +440     // Coordenada x inicial
+    mov x2, 287 -20        // Coordenada y inicial
+    mov x3, 74 +440      // Coordenada x final
+    mov x4, 275 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 74 +440     // Coordenada x inicial
+    mov x2, 281 -20        // Coordenada y inicial
+    mov x3, 74 +440      // Coordenada x final
+    mov x4, 275 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 75 +440     // Coordenada x inicial
+    mov x2, 280 -20        // Coordenada y inicial
+    mov x3, 75 +440      // Coordenada x final
+    mov x4, 275 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 76 +440     // Coordenada x inicial
+    mov x2, 279 -20        // Coordenada y inicial
+    mov x3, 76 +440      // Coordenada x final
+    mov x4, 275 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 77 +440     // Coordenada x inicial
+    mov x2, 276 -20        // Coordenada y inicial
+    mov x3, 78 +440      // Coordenada x final
+    mov x4, 276 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +440     // Coordenada x inicial
+    mov x2, 275 -20        // Coordenada y inicial
+    mov x3, 91 +440      // Coordenada x final
+    mov x4, 255 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +440     // Coordenada x inicial
+    mov x2, 243 -20        // Coordenada y inicial
+    mov x3, 56 +440      // Coordenada x final
+    mov x4, 258 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 57 +440     // Coordenada x inicial
+    mov x2, 246 -20        // Coordenada y inicial
+    mov x3, 57 +440      // Coordenada x final
+    mov x4, 259 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 58 +440     // Coordenada x inicial
+    mov x2, 247 -20        // Coordenada y inicial
+    mov x3, 58 +440      // Coordenada x final
+    mov x4, 260 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 59 +440     // Coordenada x inicial
+    mov x2, 248 -20        // Coordenada y inicial
+    mov x3, 59 +440      // Coordenada x final
+    mov x4, 261 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 60 +440     // Coordenada x inicial
+    mov x2, 249 -20        // Coordenada y inicial
+    mov x3, 60 +440      // Coordenada x final
+    mov x4, 262 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 61 +440     // Coordenada x inicial
+    mov x2, 250 -20        // Coordenada y inicial
+    mov x3, 61 +440      // Coordenada x final
+    mov x4, 262 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 62 +440     // Coordenada x inicial
+    mov x2, 251 -20        // Coordenada y inicial
+    mov x3, 62 +440      // Coordenada x final
+    mov x4, 263 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 63 +440     // Coordenada x inicial
+    mov x2, 252 -20        // Coordenada y inicial
+    mov x3, 63 +440      // Coordenada x final
+    mov x4, 264 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 64 +440     // Coordenada x inicial
+    mov x2, 253 -20        // Coordenada y inicial
+    mov x3, 64 +440      // Coordenada x final
+    mov x4, 265 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 65 +440     // Coordenada x inicial
+    mov x2, 254 -20        // Coordenada y inicial
+    mov x3, 65 +440      // Coordenada x final
+    mov x4, 267 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 66 +440     // Coordenada x inicial
+    mov x2, 255 -20        // Coordenada y inicial
+    mov x3, 66 +440      // Coordenada x final
+    mov x4, 268 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 67 +440     // Coordenada x inicial
+    mov x2, 255 -20        // Coordenada y inicial
+    mov x3, 67 +440      // Coordenada x final
+    mov x4, 269 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 68 +440     // Coordenada x inicial
+    mov x2, 255 -20        // Coordenada y inicial
+    mov x3, 68 +440      // Coordenada x final
+    mov x4, 270 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 69 +440     // Coordenada x inicial
+    mov x2, 255 -20        // Coordenada y inicial
+    mov x3, 69 +440      // Coordenada x final
+    mov x4, 272 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 70 +440     // Coordenada x inicial
+    mov x2, 255 -20        // Coordenada y inicial
+    mov x3, 70 +440      // Coordenada x final
+    mov x4, 273 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 71 +440     // Coordenada x inicial
+    mov x2, 255 -20        // Coordenada y inicial
+    mov x3, 71 +440      // Coordenada x final
+    mov x4, 274 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +440     // Coordenada x inicial
+    mov x2, 276 -20        // Coordenada y inicial
+    mov x3, 91 +440      // Coordenada x final
+    mov x4, 249 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 92 +440     // Coordenada x inicial
+    mov x2, 274 -20        // Coordenada y inicial
+    mov x3, 94 +440      // Coordenada x final
+    mov x4, 249 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 95 +440     // Coordenada x inicial
+    mov x2, 273 -20        // Coordenada y inicial
+    mov x3, 95 +440      // Coordenada x final
+    mov x4, 247 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 96 +440     // Coordenada x inicial
+    mov x2, 271 -20        // Coordenada y inicial
+    mov x3, 96 +440      // Coordenada x final
+    mov x4, 248 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 97 +440     // Coordenada x inicial
+    mov x2, 269 -20        // Coordenada y inicial
+    mov x3, 97 +440      // Coordenada x final
+    mov x4, 232 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 98 +440     // Coordenada x inicial
+    mov x2, 268 -20        // Coordenada y inicial
+    mov x3, 98 +440      // Coordenada x final
+    mov x4, 231 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 99 +440     // Coordenada x inicial
+    mov x2, 267 -20        // Coordenada y inicial
+    mov x3, 99 +440      // Coordenada x final
+    mov x4, 231 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 100+440      // Coordenada x inicial
+    mov x2, 265 -20        // Coordenada y inicial
+    mov x3, 100+440       // Coordenada x final
+    mov x4, 231 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+440      // Coordenada x inicial
+    mov x2, 264 -20        // Coordenada y inicial
+    mov x3, 101+440       // Coordenada x final
+    mov x4, 231 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+440      // Coordenada x inicial
+    mov x2, 264 -20        // Coordenada y inicial
+    mov x3, 101+440       // Coordenada x final
+    mov x4, 231 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 102+440      // Coordenada x inicial
+    mov x2, 262 -20        // Coordenada y inicial
+    mov x3, 104+440       // Coordenada x final
+    mov x4, 231 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 104+90
+    mov x2, 262+-0    
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95+440  
+    mov x2, 247+-0    
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +440     // Coordenada x inicial
+    mov x2, 254 -20        // Coordenada y inicial
+    mov x3, 104+440       // Coordenada x final
+    mov x4, 254 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 81 +440     // Coordenada x inicial
+    mov x2, 253 -20        // Coordenada y inicial
+    mov x3, 104+440       // Coordenada x final
+    mov x4, 253 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +440     // Coordenada x inicial
+    mov x2, 252 -20        // Coordenada y inicial
+    mov x3, 104+440       // Coordenada x final
+    mov x4, 252 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 88 +440     // Coordenada x inicial
+    mov x2, 251 -20        // Coordenada y inicial
+    mov x3, 104+440       // Coordenada x final
+    mov x4, 251 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +440     // Coordenada x inicial
+    mov x2, 250 -20        // Coordenada y inicial
+    mov x3, 104+440       // Coordenada x final
+    mov x4, 250 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +440     // Coordenada x inicial
+    mov x2, 249 -20        // Coordenada y inicial
+    mov x3, 104+440       // Coordenada x final
+    mov x4, 249 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+    
+    mov x1, 96 +440     
+    mov x2, 248 -20
+    ldr x10, cielo             
+    bl draw_pixel
+
+    mov x1, 105+440      // Coordenada x inicial
+    mov x2, 256 -20        // Coordenada y inicial
+    mov x3, 112+440       // Coordenada x final
+    mov x4, 256 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 112+440      // Coordenada x inicial
+    mov x2, 257 -20        // Coordenada y inicial
+    mov x3, 112+440       // Coordenada x final
+    mov x4, 260 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+440      // Coordenada x inicial
+    mov x2, 248 -20        // Coordenada y inicial
+    mov x3, 115+440       // Coordenada x final
+    mov x4, 248 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+440      // Coordenada x inicial
+    mov x2, 247 -20        // Coordenada y inicial
+    mov x3, 105+440       // Coordenada x final
+    mov x4, 231 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 106+440      // Coordenada x inicial
+    mov x2, 244 -20        // Coordenada y inicial
+    mov x3, 117+440       // Coordenada x final
+    mov x4, 231 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 117+440      
+    mov x2, 231 -20
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+440      // Coordenada x inicial
+    mov x2, 236 -20        // Coordenada y inicial
+    mov x3, 103+440       // Coordenada x final
+    mov x4, 235 -20       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_jump10:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +470     // Coordenada x inicial
+    mov x2, 288 +0        // Coordenada y inicial
+    mov x3, 96 +470      // Coordenada x final
+    mov x4, 288 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +470     // Coordenada x inicial
+    mov x2, 287 +0        // Coordenada y inicial
+    mov x3, 89 +470      // Coordenada x final
+    mov x4, 275 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 86 +470     // Coordenada x inicial
+    mov x2, 280 +0        // Coordenada y inicial
+    mov x3, 86 +470      // Coordenada x final
+    mov x4, 275 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 85 +470     // Coordenada x inicial
+    mov x2, 277 +0        // Coordenada y inicial
+    mov x3, 85 +470      // Coordenada x final
+    mov x4, 275 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +470     // Coordenada x inicial
+    mov x2, 280 +0        // Coordenada y inicial
+    mov x3, 89 +470      // Coordenada x final
+    mov x4, 275 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +470     // Coordenada x inicial
+    mov x2, 278 +0        // Coordenada y inicial
+    mov x3, 90 +470      // Coordenada x final
+    mov x4, 275 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 91 +470     // Coordenada x inicial
+    mov x2, 276 +0        // Coordenada y inicial
+    mov x3, 91 +470      // Coordenada x final
+    mov x4, 275 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +470     // Coordenada x inicial
+    mov x2, 288 +0        // Coordenada y inicial
+    mov x3, 72 +470      // Coordenada x final
+    mov x4, 288 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 72 +470     // Coordenada x inicial
+    mov x2, 287 +0        // Coordenada y inicial
+    mov x3, 74 +470      // Coordenada x final
+    mov x4, 275 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 74 +470     // Coordenada x inicial
+    mov x2, 281 +0        // Coordenada y inicial
+    mov x3, 74 +470      // Coordenada x final
+    mov x4, 275 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 75 +470     // Coordenada x inicial
+    mov x2, 280 +0        // Coordenada y inicial
+    mov x3, 75 +470      // Coordenada x final
+    mov x4, 275 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 76 +470     // Coordenada x inicial
+    mov x2, 279 +0        // Coordenada y inicial
+    mov x3, 76 +470      // Coordenada x final
+    mov x4, 275 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 77 +470     // Coordenada x inicial
+    mov x2, 276 +0        // Coordenada y inicial
+    mov x3, 78 +470      // Coordenada x final
+    mov x4, 276 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +470     // Coordenada x inicial
+    mov x2, 275 +0        // Coordenada y inicial
+    mov x3, 91 +470      // Coordenada x final
+    mov x4, 255 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +470     // Coordenada x inicial
+    mov x2, 243 +0        // Coordenada y inicial
+    mov x3, 56 +470      // Coordenada x final
+    mov x4, 258 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 57 +470     // Coordenada x inicial
+    mov x2, 246 +0        // Coordenada y inicial
+    mov x3, 57 +470      // Coordenada x final
+    mov x4, 259 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 58 +470     // Coordenada x inicial
+    mov x2, 247 +0        // Coordenada y inicial
+    mov x3, 58 +470      // Coordenada x final
+    mov x4, 260 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 59 +470     // Coordenada x inicial
+    mov x2, 248 +0        // Coordenada y inicial
+    mov x3, 59 +470      // Coordenada x final
+    mov x4, 261 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 60 +470     // Coordenada x inicial
+    mov x2, 249 +0        // Coordenada y inicial
+    mov x3, 60 +470      // Coordenada x final
+    mov x4, 262 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 61 +470     // Coordenada x inicial
+    mov x2, 250 +0        // Coordenada y inicial
+    mov x3, 61 +470      // Coordenada x final
+    mov x4, 262 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 62 +470     // Coordenada x inicial
+    mov x2, 251 +0        // Coordenada y inicial
+    mov x3, 62 +470      // Coordenada x final
+    mov x4, 263 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 63 +470     // Coordenada x inicial
+    mov x2, 252 +0        // Coordenada y inicial
+    mov x3, 63 +470      // Coordenada x final
+    mov x4, 264 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 64 +470     // Coordenada x inicial
+    mov x2, 253 +0        // Coordenada y inicial
+    mov x3, 64 +470      // Coordenada x final
+    mov x4, 265 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 65 +470     // Coordenada x inicial
+    mov x2, 254 +0        // Coordenada y inicial
+    mov x3, 65 +470      // Coordenada x final
+    mov x4, 267 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 66 +470     // Coordenada x inicial
+    mov x2, 255 +0        // Coordenada y inicial
+    mov x3, 66 +470      // Coordenada x final
+    mov x4, 268 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 67 +470     // Coordenada x inicial
+    mov x2, 255 +0        // Coordenada y inicial
+    mov x3, 67 +470      // Coordenada x final
+    mov x4, 269 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 68 +470     // Coordenada x inicial
+    mov x2, 255 +0        // Coordenada y inicial
+    mov x3, 68 +470      // Coordenada x final
+    mov x4, 270 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 69 +470     // Coordenada x inicial
+    mov x2, 255 +0        // Coordenada y inicial
+    mov x3, 69 +470      // Coordenada x final
+    mov x4, 272 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 70 +470     // Coordenada x inicial
+    mov x2, 255 +0        // Coordenada y inicial
+    mov x3, 70 +470      // Coordenada x final
+    mov x4, 273 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 71 +470     // Coordenada x inicial
+    mov x2, 255 +0        // Coordenada y inicial
+    mov x3, 71 +470      // Coordenada x final
+    mov x4, 274 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +470     // Coordenada x inicial
+    mov x2, 276 +0        // Coordenada y inicial
+    mov x3, 91 +470      // Coordenada x final
+    mov x4, 249 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 92 +470     // Coordenada x inicial
+    mov x2, 274 +0        // Coordenada y inicial
+    mov x3, 94 +470      // Coordenada x final
+    mov x4, 249 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 95 +470     // Coordenada x inicial
+    mov x2, 273 +0        // Coordenada y inicial
+    mov x3, 95 +470      // Coordenada x final
+    mov x4, 247 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 96 +470     // Coordenada x inicial
+    mov x2, 271 +0        // Coordenada y inicial
+    mov x3, 96 +470      // Coordenada x final
+    mov x4, 248 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 97 +470     // Coordenada x inicial
+    mov x2, 269 +0        // Coordenada y inicial
+    mov x3, 97 +470      // Coordenada x final
+    mov x4, 232 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 98 +470     // Coordenada x inicial
+    mov x2, 268 +0        // Coordenada y inicial
+    mov x3, 98 +470      // Coordenada x final
+    mov x4, 231 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 99 +470     // Coordenada x inicial
+    mov x2, 267 +0        // Coordenada y inicial
+    mov x3, 99 +470      // Coordenada x final
+    mov x4, 231 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 100+470      // Coordenada x inicial
+    mov x2, 265 +0        // Coordenada y inicial
+    mov x3, 100+470       // Coordenada x final
+    mov x4, 231 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+470      // Coordenada x inicial
+    mov x2, 264 +0        // Coordenada y inicial
+    mov x3, 101+470       // Coordenada x final
+    mov x4, 231 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 101+470      // Coordenada x inicial
+    mov x2, 264 +0        // Coordenada y inicial
+    mov x3, 101+470       // Coordenada x final
+    mov x4, 231 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 102+470      // Coordenada x inicial
+    mov x2, 262 +0        // Coordenada y inicial
+    mov x3, 104+470       // Coordenada x final
+    mov x4, 231 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 104+90
+    mov x2, 262+-0    
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95+470  
+    mov x2, 247+-0    
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +470     // Coordenada x inicial
+    mov x2, 254 +0        // Coordenada y inicial
+    mov x3, 104+470       // Coordenada x final
+    mov x4, 254 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 81 +470     // Coordenada x inicial
+    mov x2, 253 +0        // Coordenada y inicial
+    mov x3, 104+470       // Coordenada x final
+    mov x4, 253 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 87 +470     // Coordenada x inicial
+    mov x2, 252 +0        // Coordenada y inicial
+    mov x3, 104+470       // Coordenada x final
+    mov x4, 252 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 88 +470     // Coordenada x inicial
+    mov x2, 251 +0        // Coordenada y inicial
+    mov x3, 104+470       // Coordenada x final
+    mov x4, 251 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 89 +470     // Coordenada x inicial
+    mov x2, 250 +0        // Coordenada y inicial
+    mov x3, 104+470       // Coordenada x final
+    mov x4, 250 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 90 +470     // Coordenada x inicial
+    mov x2, 249 +0        // Coordenada y inicial
+    mov x3, 104+470       // Coordenada x final
+    mov x4, 249 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+    
+    mov x1, 96 +470     
+    mov x2, 248 +0
+    ldr x10, verde_oscuro             
+    bl draw_pixel
+
+    mov x1, 105+470      // Coordenada x inicial
+    mov x2, 256 +0        // Coordenada y inicial
+    mov x3, 112+470       // Coordenada x final
+    mov x4, 256 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 112+470      // Coordenada x inicial
+    mov x2, 257 +0        // Coordenada y inicial
+    mov x3, 112+470       // Coordenada x final
+    mov x4, 260 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+470      // Coordenada x inicial
+    mov x2, 248 +0        // Coordenada y inicial
+    mov x3, 115+470       // Coordenada x final
+    mov x4, 248 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 105+470      // Coordenada x inicial
+    mov x2, 247 +0        // Coordenada y inicial
+    mov x3, 105+470       // Coordenada x final
+    mov x4, 231 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_line_straight
+
+    mov x1, 106+470      // Coordenada x inicial
+    mov x2, 244 +0        // Coordenada y inicial
+    mov x3, 117+470       // Coordenada x final
+    mov x4, 231 +0       // Coordenada y final
+    ldr x10, verde_oscuro             
+    bl draw_rectangle
+
+    mov x1, 117+470      
+    mov x2, 231 +0
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+470      // Coordenada x inicial
+    mov x2, 236 +0        // Coordenada y inicial
+    mov x3, 103+470       // Coordenada x final
+    mov x4, 235 +0       // Coordenada y final
+    ldr x10, negro             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
+dino_erase_jump10:
+    
+    //----------DINO-----------------
+    // Patas del dino
+    // Pata derecha
+    SUB SP, SP, #48
+    STR X1, [SP]
+    STR X2, [SP, #8]
+    STR X3, [SP, #16]
+    STR X4, [SP, #24]
+    STR X9, [SP, #32]
+    STR X30, [SP, #40]
+
+    mov x1, 87 +470     // Coordenada x inicial
+    mov x2, 288 +0        // Coordenada y inicial
+    mov x3, 96 +470      // Coordenada x final
+    mov x4, 288 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +470     // Coordenada x inicial
+    mov x2, 287 +0        // Coordenada y inicial
+    mov x3, 89 +470      // Coordenada x final
+    mov x4, 275 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 86 +470     // Coordenada x inicial
+    mov x2, 280 +0        // Coordenada y inicial
+    mov x3, 86 +470      // Coordenada x final
+    mov x4, 275 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 85 +470     // Coordenada x inicial
+    mov x2, 277 +0        // Coordenada y inicial
+    mov x3, 85 +470      // Coordenada x final
+    mov x4, 275 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +470     // Coordenada x inicial
+    mov x2, 280 +0        // Coordenada y inicial
+    mov x3, 89 +470      // Coordenada x final
+    mov x4, 275 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +470     // Coordenada x inicial
+    mov x2, 278 +0        // Coordenada y inicial
+    mov x3, 90 +470      // Coordenada x final
+    mov x4, 275 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 91 +470     // Coordenada x inicial
+    mov x2, 276 +0        // Coordenada y inicial
+    mov x3, 91 +470      // Coordenada x final
+    mov x4, 275 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Pata izquierda--------------------------------------------------------------
+
+    mov x1, 82 +470     // Coordenada x inicial
+    mov x2, 288 +0        // Coordenada y inicial
+    mov x3, 72 +470      // Coordenada x final
+    mov x4, 288 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 72 +470     // Coordenada x inicial
+    mov x2, 287 +0        // Coordenada y inicial
+    mov x3, 74 +470      // Coordenada x final
+    mov x4, 275 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 74 +470     // Coordenada x inicial
+    mov x2, 281 +0        // Coordenada y inicial
+    mov x3, 74 +470      // Coordenada x final
+    mov x4, 275 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 75 +470     // Coordenada x inicial
+    mov x2, 280 +0        // Coordenada y inicial
+    mov x3, 75 +470      // Coordenada x final
+    mov x4, 275 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 76 +470     // Coordenada x inicial
+    mov x2, 279 +0        // Coordenada y inicial
+    mov x3, 76 +470      // Coordenada x final
+    mov x4, 275 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 77 +470     // Coordenada x inicial
+    mov x2, 276 +0        // Coordenada y inicial
+    mov x3, 78 +470      // Coordenada x final
+    mov x4, 276 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuerpo del dino-------------------------------------------------
+
+    mov x1, 72 +470     // Coordenada x inicial
+    mov x2, 275 +0        // Coordenada y inicial
+    mov x3, 91 +470      // Coordenada x final
+    mov x4, 255 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    // Cola del dino--------------------------------------------------
+
+    mov x1, 56 +470     // Coordenada x inicial
+    mov x2, 243 +0        // Coordenada y inicial
+    mov x3, 56 +470      // Coordenada x final
+    mov x4, 258 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 57 +470     // Coordenada x inicial
+    mov x2, 246 +0        // Coordenada y inicial
+    mov x3, 57 +470      // Coordenada x final
+    mov x4, 259 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 58 +470     // Coordenada x inicial
+    mov x2, 247 +0        // Coordenada y inicial
+    mov x3, 58 +470      // Coordenada x final
+    mov x4, 260 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 59 +470     // Coordenada x inicial
+    mov x2, 248 +0        // Coordenada y inicial
+    mov x3, 59 +470      // Coordenada x final
+    mov x4, 261 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 60 +470     // Coordenada x inicial
+    mov x2, 249 +0        // Coordenada y inicial
+    mov x3, 60 +470      // Coordenada x final
+    mov x4, 262 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 61 +470     // Coordenada x inicial
+    mov x2, 250 +0        // Coordenada y inicial
+    mov x3, 61 +470      // Coordenada x final
+    mov x4, 262 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 62 +470     // Coordenada x inicial
+    mov x2, 251 +0        // Coordenada y inicial
+    mov x3, 62 +470      // Coordenada x final
+    mov x4, 263 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 63 +470     // Coordenada x inicial
+    mov x2, 252 +0        // Coordenada y inicial
+    mov x3, 63 +470      // Coordenada x final
+    mov x4, 264 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 64 +470     // Coordenada x inicial
+    mov x2, 253 +0        // Coordenada y inicial
+    mov x3, 64 +470      // Coordenada x final
+    mov x4, 265 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 65 +470     // Coordenada x inicial
+    mov x2, 254 +0        // Coordenada y inicial
+    mov x3, 65 +470      // Coordenada x final
+    mov x4, 267 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 66 +470     // Coordenada x inicial
+    mov x2, 255 +0        // Coordenada y inicial
+    mov x3, 66 +470      // Coordenada x final
+    mov x4, 268 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 67 +470     // Coordenada x inicial
+    mov x2, 255 +0        // Coordenada y inicial
+    mov x3, 67 +470      // Coordenada x final
+    mov x4, 269 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 68 +470     // Coordenada x inicial
+    mov x2, 255 +0        // Coordenada y inicial
+    mov x3, 68 +470      // Coordenada x final
+    mov x4, 270 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 69 +470     // Coordenada x inicial
+    mov x2, 255 +0        // Coordenada y inicial
+    mov x3, 69 +470      // Coordenada x final
+    mov x4, 272 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 70 +470     // Coordenada x inicial
+    mov x2, 255 +0        // Coordenada y inicial
+    mov x3, 70 +470      // Coordenada x final
+    mov x4, 273 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 71 +470     // Coordenada x inicial
+    mov x2, 255 +0        // Coordenada y inicial
+    mov x3, 71 +470      // Coordenada x final
+    mov x4, 274 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    // Cuello, cabeza y brazo del dino ------------------------------------------
+
+    mov x1, 91 +470     // Coordenada x inicial
+    mov x2, 276 +0        // Coordenada y inicial
+    mov x3, 91 +470      // Coordenada x final
+    mov x4, 249 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 92 +470     // Coordenada x inicial
+    mov x2, 274 +0        // Coordenada y inicial
+    mov x3, 94 +470      // Coordenada x final
+    mov x4, 249 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 95 +470     // Coordenada x inicial
+    mov x2, 273 +0        // Coordenada y inicial
+    mov x3, 95 +470      // Coordenada x final
+    mov x4, 247 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 96 +470     // Coordenada x inicial
+    mov x2, 271 +0        // Coordenada y inicial
+    mov x3, 96 +470      // Coordenada x final
+    mov x4, 248 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 97 +470     // Coordenada x inicial
+    mov x2, 269 +0        // Coordenada y inicial
+    mov x3, 97 +470      // Coordenada x final
+    mov x4, 232 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 98 +470     // Coordenada x inicial
+    mov x2, 268 +0        // Coordenada y inicial
+    mov x3, 98 +470      // Coordenada x final
+    mov x4, 231 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 99 +470     // Coordenada x inicial
+    mov x2, 267 +0        // Coordenada y inicial
+    mov x3, 99 +470      // Coordenada x final
+    mov x4, 231 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 100+470      // Coordenada x inicial
+    mov x2, 265 +0        // Coordenada y inicial
+    mov x3, 100+470       // Coordenada x final
+    mov x4, 231 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+470      // Coordenada x inicial
+    mov x2, 264 +0        // Coordenada y inicial
+    mov x3, 101+470       // Coordenada x final
+    mov x4, 231 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 101+470      // Coordenada x inicial
+    mov x2, 264 +0        // Coordenada y inicial
+    mov x3, 101+470       // Coordenada x final
+    mov x4, 231 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 102+470      // Coordenada x inicial
+    mov x2, 262 +0        // Coordenada y inicial
+    mov x3, 104+470       // Coordenada x final
+    mov x4, 231 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 104+90
+    mov x2, 262+-0    
+    ldr x10, cielo
+    bl draw_pixel
+    
+    mov x1, 95+470  
+    mov x2, 247+-0    
+    ldr x10, cielo
+    bl draw_pixel
+
+    mov x1, 76 +470     // Coordenada x inicial
+    mov x2, 254 +0        // Coordenada y inicial
+    mov x3, 104+470       // Coordenada x final
+    mov x4, 254 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 81 +470     // Coordenada x inicial
+    mov x2, 253 +0        // Coordenada y inicial
+    mov x3, 104+470       // Coordenada x final
+    mov x4, 253 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 87 +470     // Coordenada x inicial
+    mov x2, 252 +0        // Coordenada y inicial
+    mov x3, 104+470       // Coordenada x final
+    mov x4, 252 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 88 +470     // Coordenada x inicial
+    mov x2, 251 +0        // Coordenada y inicial
+    mov x3, 104+470       // Coordenada x final
+    mov x4, 251 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 89 +470     // Coordenada x inicial
+    mov x2, 250 +0        // Coordenada y inicial
+    mov x3, 104+470       // Coordenada x final
+    mov x4, 250 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 90 +470     // Coordenada x inicial
+    mov x2, 249 +0        // Coordenada y inicial
+    mov x3, 104+470       // Coordenada x final
+    mov x4, 249 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+    
+    mov x1, 96 +470     
+    mov x2, 248 +0
+    ldr x10, cielo             
+    bl draw_pixel
+
+    mov x1, 105+470      // Coordenada x inicial
+    mov x2, 256 +0        // Coordenada y inicial
+    mov x3, 112+470       // Coordenada x final
+    mov x4, 256 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 112+470      // Coordenada x inicial
+    mov x2, 257 +0        // Coordenada y inicial
+    mov x3, 112+470       // Coordenada x final
+    mov x4, 260 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+470      // Coordenada x inicial
+    mov x2, 248 +0        // Coordenada y inicial
+    mov x3, 115+470       // Coordenada x final
+    mov x4, 248 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 105+470      // Coordenada x inicial
+    mov x2, 247 +0        // Coordenada y inicial
+    mov x3, 105+470       // Coordenada x final
+    mov x4, 231 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_line_straight
+
+    mov x1, 106+470      // Coordenada x inicial
+    mov x2, 244 +0        // Coordenada y inicial
+    mov x3, 117+470       // Coordenada x final
+    mov x4, 231 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+
+    mov x1, 117+470      
+    mov x2, 231 +0
+    ldr x10, cielo             
+    bl draw_pixel
+
+    // OJO -----------------------------------------------------
+
+    mov x1, 102+470      // Coordenada x inicial
+    mov x2, 236 +0        // Coordenada y inicial
+    mov x3, 103+470       // Coordenada x final
+    mov x4, 235 +0       // Coordenada y final
+    ldr x10, cielo             
+    bl draw_rectangle
+    
+    LDR X30, [SP, #40]
+    LDR X9, [SP, #32]
+    LDR X4, [SP, #24]
+    LDR X3, [SP, #16]
+    LDR X2, [SP, #8]
+    LDR X1, [SP]
+    ADD SP, SP, #48
+
+    ret
+
 erase_clouds:
     SUB SP, SP, #40
     STR X1, [SP]
@@ -29,6 +14389,8 @@ erase_clouds:
     LDR X1, [SP]
     ADD SP, SP, #40
     ret
+
+
 
 nubes2:
     SUB SP, SP, #40

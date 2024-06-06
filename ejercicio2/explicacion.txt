@@ -1,0 +1,1 @@
+Misma idea que el ejercicio uno, solamente que nuestro dino salta los cactus y al llegar al final ganamos la partida, luego la apartida se reinicia.
