@@ -1,4 +1,13 @@
 # Lab Org. y Arq. de Computadoras
+Proyecto realizado por Ilan David Esquenazi y Fabrizio Mandile.
+El ejercicio 1 trata de representar una copia del famoso juego de "El dino de Google" el cual se podia jugar cuando nos quedabamos
+sin internet. Pero lo hicimos a nuestro estilo, con colores y demas.
+El ejercicio 2 intenta representar lo mismo que el 1, pero muestra de forma animada como el dino salta los cactus y llega a ganar, distinto
+al juego original donde unicamente puede perder.
+
+Aclaracion: Los commits fueron hechos por Fabrizio Mandile, por un tema de organizacion y de problema con cargar los archivos a bitbucket. 
+Pero ambos trabajamos en conjunto. (Tadeo Bazan no participo del grupo ya que es recursante y tenia el proyecto del año pasado).
+
 
 * Configuración de pantalla: `640x480` pixels, formato `ARGB` 32 bits.
 * El registro `X0` contiene la dirección base del FrameBuffer (Pixel 1).
